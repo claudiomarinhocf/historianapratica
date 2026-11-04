@@ -20,6 +20,12 @@ import slideHistoria5 from "@/assets/slide_historia_05.webp.asset.json";
 import slideHistoria6 from "@/assets/slide_historia_06.webp.asset.json";
 import slideHistoria7 from "@/assets/slide_historia_07.webp.asset.json";
 import slideHistoria8 from "@/assets/slide_historia_08.webp.asset.json";
+import heroHistoriaImg from "@/assets/hero_historia_pratica.png.asset.json";
+import depoimentoHistoria1 from "@/assets/depoimento_historia_01.png.asset.json";
+import depoimentoHistoria2 from "@/assets/depoimento_historia_02.png.asset.json";
+import depoimentoHistoria3 from "@/assets/depoimento_historia_03.png.asset.json";
+import depoimentoHistoria4 from "@/assets/depoimento_historia_04.png.asset.json";
+import depoimentoHistoria5 from "@/assets/depoimento_historia_05.png.asset.json";
 function B1(N) {
   if (typeof window > "u" || !window.location.search) return N;
   const Z = window.location.search.replace(/^\?/, "");
@@ -70,27 +76,27 @@ const w1 = [
     {
       id: 1,
       name: "Depoimento de Professor 1",
-      imageUrl: "/img/depoimento-01.webp",
+      imageUrl: depoimentoHistoria1.url,
     },
     {
       id: 2,
       name: "Depoimento de Professor 2",
-      imageUrl: "/img/depoimento-02.webp",
+      imageUrl: depoimentoHistoria2.url,
     },
     {
       id: 3,
       name: "Depoimento de Professor 3",
-      imageUrl: "/img/depoimento-03.webp",
+      imageUrl: depoimentoHistoria3.url,
     },
     {
       id: 4,
       name: "Depoimento de Professor 4",
-      imageUrl: "/img/depoimento-04.webp",
+      imageUrl: depoimentoHistoria4.url,
     },
     {
       id: 5,
       name: "Depoimento de Professor 5",
-      imageUrl: "/img/depoimento-05.webp",
+      imageUrl: depoimentoHistoria5.url,
     },
   ],
   U1 = [
