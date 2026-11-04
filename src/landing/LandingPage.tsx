@@ -986,13 +986,12 @@ export default function Q1() {
                 id: "hero-image-container",
                 className: "w-full my-3 sm:my-6 flex justify-center",
                 children: c.jsx("img", {
-                  src: "/img/mockup-hero-640.webp",
-                  srcSet:
-                    "/img/mockup-hero-640.webp 640w, /img/mockup-hero.webp 1254w",
+                  src: heroHistoriaImg.url,
+                  srcSet: heroHistoriaImg.url,
                   sizes: "(max-width: 640px) 100vw, 896px",
                   alt: "Mockup do Pacote de Slides de História",
-                  width: 640,
-                  height: 640,
+                  width: 600,
+                  height: 600,
                   className:
                     "flutua w-full max-w-4xl lg:max-w-5xl h-auto object-contain drop-shadow-xl rounded-xl sm:rounded-2xl",
                   loading: "eager",
@@ -2111,14 +2110,9 @@ export default function Q1() {
                 className:
                   "mt-3 text-sm sm:text-base md:text-lg font-bold text-gray-700 max-w-xl mx-auto mb-8 sm:mb-10 leading-snug",
                 children:
-                  "Em breve, depoimentos de professores que já utilizam o História na Prática em sala de aula.",
+                  "Resultados e depoimentos reais de professores que já estão utilizando em sala:",
               }),
-              c.jsx("div", {
-                className:
-                  "max-w-md mx-auto bg-[#F7F3EA] border border-dashed border-[#5E4B8B]/30 rounded-2xl px-6 py-10 text-sm sm:text-base font-bold text-gray-500",
-                children:
-                  "Estamos reunindo os primeiros depoimentos de professores. Volte em breve!",
-              }),
+              c.jsx(q1, {}),
             ],
           }),
         ],
