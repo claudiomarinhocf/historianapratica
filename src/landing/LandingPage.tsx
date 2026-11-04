@@ -2156,9 +2156,14 @@ export default function Q1() {
                 className:
                   "mt-3 text-sm sm:text-base md:text-lg font-bold text-gray-700 max-w-xl mx-auto mb-8 sm:mb-10 leading-snug",
                 children:
-                  "Resultados e depoimentos reais de professores que já estão utilizando em sala:",
+                  "Em breve, depoimentos de professores que já utilizam o História na Prática em sala de aula.",
               }),
-              c.jsx(q1, {}),
+              c.jsx("div", {
+                className:
+                  "max-w-md mx-auto bg-[#F7F3EA] border border-dashed border-[#5E4B8B]/30 rounded-2xl px-6 py-10 text-sm sm:text-base font-bold text-gray-500",
+                children:
+                  "Estamos reunindo os primeiros depoimentos de professores. Volte em breve!",
+              }),
             ],
           }),
         ],
