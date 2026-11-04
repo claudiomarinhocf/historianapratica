@@ -2,14 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import LandingPage from "@/landing/LandingPage";
 
 const DESC =
-  "+300 Slides completos e editáveis de Artes prontos para professores de Ensino Médio e Fundamental II.";
+  "+300 Slides completos e editáveis de História prontos para professores de Ensino Médio e Fundamental II.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "+300 Slides de Artes" },
+      { title: "+300 Slides de História | História na Prática" },
       { name: "description", content: DESC },
-      { property: "og:title", content: "+300 Slides de Artes" },
+      { property: "og:title", content: "+300 Slides de História | História na Prática" },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "+300 Slides de Artes" },
+      { title: "+300 Slides de História | História na Prática" },
     ],
     links: [
       {

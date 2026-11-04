@@ -8,6 +8,10 @@ import {
   Infinity as t0, Download as e0, Clock as p1, ChevronUp as N1, ChevronDown as S1,
   ShoppingCart as E1,
 } from "lucide-react";
+import bonusAtividadesImg from "@/assets/bonus_atividades_historia.webp.asset.json";
+import bonusMapasImg from "@/assets/bonus_mapas_historia.webp.asset.json";
+import bonusPlanosImg from "@/assets/bonus_planos_historia.webp.asset.json";
+import bonusGuiaImg from "@/assets/bonus_guia_historia.webp.asset.json";
 function B1(N) {
   if (typeof window > "u" || !window.location.search) return N;
   const Z = window.location.search.replace(/^\?/, "");
@@ -23,35 +27,35 @@ function Tf(N) {
 const w1 = [
     {
       id: 1,
-      title: "+500 Atividades para Imprimir",
+      title: "+60 Atividades de História para Imprimir",
       description:
-        "Fichas, exercícios e atividades práticas de todos os níveis, prontas para imprimir e aplicar nas suas aulas de Artes.",
+        "Fichas, exercícios e atividades práticas para o Ensino Fundamental II e Médio, prontas para imprimir e aplicar nas suas aulas de História.",
       price: 47,
-      imageUrl: "/img/bonus-atividades.webp",
+      imageUrl: bonusAtividadesImg.url,
     },
     {
       id: 2,
-      title: "+200 Mapas Mentais de Artes",
+      title: "+30 Mapas Mentais de História",
       description:
-        "Resumos visuais dos principais movimentos artísticos, linguagens e conceitos — prontos para projetar, imprimir ou revisar antes da aula.",
+        "Resumos visuais dos principais períodos históricos, acontecimentos e conceitos — prontos para projetar, imprimir ou revisar antes da aula.",
       price: 57,
-      imageUrl: "/img/bonus-mapas.webp",
+      imageUrl: bonusMapasImg.url,
     },
     {
       id: 3,
-      title: "+150 Dinâmicas de Artes",
+      title: "+30 Planos de Aula de História",
       description:
-        "Roteiros passo a passo com dinâmicas práticas, projetos criativos e temas da BNCC para engajar a turma.",
+        "Roteiros passo a passo com objetivos, conteúdos, atividades práticas e temas da BNCC para facilitar o planejamento e engajar a turma.",
       price: 67,
-      imageUrl: "/img/bonus-dinamicas.webp",
+      imageUrl: bonusPlanosImg.url,
     },
     {
       id: 4,
-      title: "Guia Anual de Planejamento (BNCC)",
+      title: "Guia Anual de Planejamento de História (BNCC)",
       description:
-        "Cronograma completo do ano letivo, organizado por bimestre, competência e tema — alinhado à BNCC e ao Novo Ensino Médio.",
+        "Cronograma completo do ano letivo de História, organizado por bimestre, competência e tema — alinhado à BNCC e ao Novo Ensino Médio.",
       price: 47,
-      imageUrl: "/img/bonus-guia.webp",
+      imageUrl: bonusGuiaImg.url,
     },
   ],
   qt = [
@@ -85,22 +89,22 @@ const w1 = [
     {
       question: "Para qual professor é indicado?",
       answer:
-        "O material é feito para professores de Artes do Ensino Fundamental II e Ensino Médio, cursinhos e projetos culturais, especialmente para quem busca praticidade e segurança para lecionar as quatro linguagens da BNCC.",
+        "O material é feito para professores de História do Ensino Fundamental II e Ensino Médio, especialmente para quem busca praticidade e segurança para lecionar os principais períodos históricos, da Pré-História à História do Brasil.",
     },
     {
       question: "Recebo em qual formato? Consigo editar os slides?",
       answer:
-        "Sim! Você recebe o material em PDF e PPTX, prontos para projetar e 100% editáveis para personalizar textos, cores ou adicionar suas próprias obras e anotações sempre que quiser.",
+        "Sim! Você recebe o material em PowerPoint (PPTX) e PDF, prontos para projetar e 100% editáveis para personalizar textos, cores ou adicionar suas próprias imagens e anotações sempre que quiser.",
     },
     {
       question: "Consigo abrir e apresentar os slides em qualquer dispositivo?",
       answer:
-        "Sim! Como os materiais são entregues em formato PDF e PPTX, você pode abrir e projetar diretamente pelo computador, notebook, tablet ou celular, além de usar no PowerPoint ou Google Apresentações.",
+        "Como os materiais são entregues em formato PPTX e PDF, você pode abrir e projetar pelo computador ou notebook com PowerPoint ou Google Apresentações, e também abrir o PDF em tablets e celulares compatíveis.",
     },
     {
       question: "O material é alinhado à BNCC / ENEM?",
       answer:
-        "Sim. O material cobre integralmente as quatro linguagens da BNCC: Artes Visuais, Música, Teatro e Dança, além de contextualizações históricas e estéticas presentes no ENEM e vestibulares, com guia de planejamento alinhado à BNCC.",
+        "O Guia Anual de Planejamento de História é organizado por bimestre, competência e tema, com referência à BNCC e ao Novo Ensino Médio, e os conteúdos cobrem os principais períodos cobrados em sala e em avaliações.",
     },
     {
       question: "É assinatura mensal ou pagamento único?",
@@ -559,7 +563,7 @@ function x0({ imageUrl: N, index: Z }) {
       "relative w-[280px] sm:w-[360px] md:w-[420px] lg:w-[460px] aspect-[16/9] flex-shrink-0 rounded-xl sm:rounded-2xl overflow-hidden border border-slate-200/90 bg-white shadow-[0_4px_16px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_24px_rgba(94,75,139,0.18)] hover:border-[#5E4B8B]/50 transition-all duration-300 select-none group",
     children: c.jsx("img", {
       src: N,
-      alt: `Apresentação de Slide de Artes ${Z + 1}`,
+      alt: `Apresentação de Slide de História ${Z + 1}`,
       className:
         "w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500",
       loading: "lazy",
@@ -726,7 +730,7 @@ function V1({
                             children: "✕",
                           }),
                           c.jsx("span", {
-                            children: "+500 Atividades para Imprimir",
+                            children: "+60 Atividades de História para Imprimir",
                           }),
                         ],
                       }),
@@ -739,7 +743,7 @@ function V1({
                             children: "✕",
                           }),
                           c.jsx("span", {
-                            children: "+200 Mapas Mentais de Artes",
+                            children: "+30 Mapas Mentais de História",
                           }),
                         ],
                       }),
@@ -752,7 +756,7 @@ function V1({
                             children: "✕",
                           }),
                           c.jsx("span", {
-                            children: "+150 Dinâmicas de Artes",
+                            children: "+30 Planos de Aula de História",
                           }),
                         ],
                       }),
@@ -765,7 +769,7 @@ function V1({
                             children: "✕",
                           }),
                           c.jsx("span", {
-                            children: "Guia Anual de Planejamento (BNCC)",
+                            children: "Guia Anual de Planejamento de História (BNCC)",
                           }),
                         ],
                       }),
@@ -972,7 +976,7 @@ export default function Q1() {
                   c.jsx("span", {
                     className: "text-xs font-semibold text-gray-700 font-sans",
                     children:
-                      "Aprovado por +1.250 professores de Artes no Brasil",
+                      "História na Prática — Material para o Ensino Fundamental II e Ensino Médio",
                   }),
                 ],
               }),
@@ -987,7 +991,7 @@ export default function Q1() {
                       "+300 ",
                       c.jsx("span", {
                         className: "text-[#5E4B8B] grifo-pincel",
-                        children: "Slides de Artes",
+                        children: "Slides de História",
                       }),
                       " prontos para utilizar",
                     ],
@@ -1003,7 +1007,7 @@ export default function Q1() {
                   srcSet:
                     "/img/mockup-hero-640.webp 640w, /img/mockup-hero.webp 1254w",
                   sizes: "(max-width: 640px) 100vw, 896px",
-                  alt: "Mockup do Pacote de Slides de Artes",
+                  alt: "Mockup do Pacote de Slides de História",
                   width: 640,
                   height: 640,
                   className:
@@ -1019,7 +1023,7 @@ export default function Q1() {
                 className:
                   "text-xs sm:text-sm text-gray-600 max-w-2xl mx-auto font-sans leading-relaxed px-2 sm:px-4",
                 children:
-                  "Apresentações completas pra projetar em sala. Economize horas de planejamento e tenha aulas visuais que prendem a atenção dos alunos.",
+                  "Apresentações completas pra projetar em sala. Economize horas de planejamento e tenha aulas visuais de História que prendem a atenção dos alunos.",
               }),
               c.jsxs("div", {
                 className: "space-y-4 max-w-md mx-auto pt-2",
@@ -1150,7 +1154,7 @@ export default function Q1() {
                       className:
                         "text-xs sm:text-sm md:text-base text-gray-800 font-medium font-sans leading-snug",
                       children:
-                        "Ensinar um conteúdo que você não estudou na faculdade",
+                        "Ensinar um conteúdo de História que você não estudou na faculdade",
                     }),
                   ],
                 }),
@@ -1190,7 +1194,7 @@ export default function Q1() {
                       className:
                         "text-xs sm:text-sm md:text-base text-gray-800 font-medium font-sans leading-snug",
                       children:
-                        "Sentir insegurança ao abordar linguagens fora da sua área de formação",
+                        "Sentir insegurança ao abordar períodos históricos fora da sua especialidade",
                     }),
                   ],
                 }),
@@ -1203,7 +1207,7 @@ export default function Q1() {
                 className:
                   "text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-white font-sans leading-relaxed",
                 children:
-                  "Porque você já encontra tudo pronto, organizado e com total segurança sobre o conteúdo em um único lugar — cobrindo as quatro linguagens da BNCC: Artes Visuais, Música, Teatro e Dança.",
+                  "Porque você já encontra tudo pronto, organizado e com total segurança sobre o conteúdo em um único lugar — cobrindo os principais períodos da História: Pré-História, História Antiga, Idade Média, Idade Moderna, História Contemporânea e História do Brasil.",
               }),
             }),
           ],
@@ -1606,7 +1610,7 @@ export default function Q1() {
                 className:
                   "text-sm sm:text-base text-gray-600 max-w-2xl mx-auto font-sans leading-relaxed",
                 children:
-                  "Mais praticidade pra planejar e ministrar suas aulas de Artes, com apresentações de slides completas e materiais extras prontos pra aplicar com total segurança.",
+                  "Mais praticidade pra planejar e ministrar suas aulas de História, com apresentações de slides completas e materiais extras prontos pra aplicar com total segurança.",
               }),
               c.jsxs("div", {
                 className:
@@ -1705,7 +1709,7 @@ export default function Q1() {
                                   "w-5 h-5 text-[#5E4B8B] flex-shrink-0 stroke-[2.5]",
                               }),
                               c.jsx("span", {
-                                children: "+150 Slides de Artes",
+                                children: "+150 Slides de História",
                               }),
                             ],
                           }),
@@ -1885,7 +1889,7 @@ export default function Q1() {
                               }),
                               c.jsx("span", {
                                 children:
-                                  "+300 Slides de Artes + Todos os Bônus Exclusivos!",
+                                  "+300 Slides de História + Todos os Bônus Exclusivos!",
                               }),
                             ],
                           }),
@@ -1930,7 +1934,7 @@ export default function Q1() {
                               c.jsx("span", { children: "🎁" }),
                               c.jsx("span", {
                                 children:
-                                  "BÔNUS EXCLUSIVOS (VALOR: R$ 97,24 POR R$ 0,00):",
+                                  "BÔNUS EXCLUSIVOS INCLUSOS GRATUITAMENTE:",
                               }),
                             ],
                           }),
@@ -1946,7 +1950,8 @@ export default function Q1() {
                                     children: "📊",
                                   }),
                                   c.jsx("span", {
-                                    children: "+500 Atividades para Imprimir",
+                                    children:
+                                      "+60 Atividades de História para Imprimir",
                                   }),
                                 ],
                               }),
@@ -1959,7 +1964,7 @@ export default function Q1() {
                                     children: "📦",
                                   }),
                                   c.jsx("span", {
-                                    children: "+200 Mapas Mentais de Artes",
+                                    children: "+30 Mapas Mentais de História",
                                   }),
                                 ],
                               }),
@@ -1972,7 +1977,7 @@ export default function Q1() {
                                     children: "🎯",
                                   }),
                                   c.jsx("span", {
-                                    children: "+150 Dinâmicas de Artes",
+                                    children: "+30 Planos de Aula de História",
                                   }),
                                 ],
                               }),
@@ -1986,7 +1991,7 @@ export default function Q1() {
                                   }),
                                   c.jsx("span", {
                                     children:
-                                      "Guia Anual de Planejamento (BNCC)",
+                                      "Guia Anual de Planejamento de História (BNCC)",
                                   }),
                                 ],
                               }),
@@ -2073,7 +2078,7 @@ export default function Q1() {
                   c.jsx("p", {
                     className:
                       "font-bold text-gray-800 text-xs sm:text-[15px] leading-snug",
-                    children: "A compra é confirmada na hora via Pix ou Cartão",
+                    children: "A compra é confirmada após a aprovação do pagamento via Pix ou Cartão",
                   }),
                 ],
               }),
@@ -2107,7 +2112,7 @@ export default function Q1() {
                     className:
                       "font-bold text-gray-800 text-xs sm:text-[15px] leading-snug",
                     children:
-                      "Você acessa os slides no Drive, escolhe o tema e já projeta na sala ou edita quando quiser",
+                      "Você acessa os slides de História no Drive, escolhe o tema e já projeta na sala ou edita quando quiser",
                   }),
                 ],
               }),
@@ -2151,9 +2156,14 @@ export default function Q1() {
                 className:
                   "mt-3 text-sm sm:text-base md:text-lg font-bold text-gray-700 max-w-xl mx-auto mb-8 sm:mb-10 leading-snug",
                 children:
-                  "Resultados e depoimentos reais de professores que já estão utilizando em sala:",
+                  "Em breve, depoimentos de professores que já utilizam o História na Prática em sala de aula.",
               }),
-              c.jsx(q1, {}),
+              c.jsx("div", {
+                className:
+                  "max-w-md mx-auto bg-[#F7F3EA] border border-dashed border-[#5E4B8B]/30 rounded-2xl px-6 py-10 text-sm sm:text-base font-bold text-gray-500",
+                children:
+                  "Estamos reunindo os primeiros depoimentos de professores. Volte em breve!",
+              }),
             ],
           }),
         ],
@@ -2237,7 +2247,7 @@ export default function Q1() {
                   className:
                     "text-sm sm:text-base text-gray-600 leading-relaxed max-w-xl mx-auto",
                   children:
-                    "Se você não achar que este material economizou seu tempo, melhorou suas aulas e te deu total segurança para lecionar Arte, basta enviar um e-mail em até 7 dias que devolvemos 100% do seu dinheiro, sem perguntas.",
+                    "Se você não achar que este material economizou seu tempo, melhorou suas aulas e te deu total segurança para lecionar História, basta solicitar o reembolso em até 7 dias e receber 100% do seu dinheiro de volta, conforme as condições da garantia.",
                 }),
                 c.jsxs("div", {
                   className:
@@ -2435,7 +2445,7 @@ export default function Q1() {
                       }),
                       c.jsx("img", {
                         src: "/img/slide-15.webp",
-                        alt: "Slide do acervo: Pop Art",
+                        alt: "Slide do acervo: Revolução Industrial",
                         loading: "lazy",
                         decoding: "async",
                         width: 920,
@@ -2457,14 +2467,14 @@ export default function Q1() {
                 className:
                   "text-3xl sm:text-5xl font-black font-display tracking-tight",
                 children:
-                  "PROFESSOR, TENHA CENTENAS DE SLIDES PRONTOS HOJE MESMO!",
+                  "PROFESSOR, TENHA CENTENAS DE SLIDES DE HISTÓRIA PRONTOS HOJE MESMO!",
               }),
               c.jsx("div", { className: "filete-ouro w-36" }),
               c.jsx("p", {
                 className:
                   "text-sm sm:text-base text-[#E4DCF5]/90 max-w-2xl mx-auto",
                 children:
-                  "Não perca mais noites montando apresentações de slides do zero. Tenha em mãos +300 slides completos de Artes com todos os bônus inclusos por um valor simbólico.",
+                  "Não perca mais noites montando apresentações de slides do zero. Tenha em mãos +300 slides completos de História com todos os bônus inclusos por um valor simbólico.",
               }),
               c.jsxs("a", {
                 href: "#checkout-section",
@@ -2533,7 +2543,7 @@ export default function Q1() {
               }),
               c.jsx("p", {
                 className: "font-bold text-gray-900 font-display text-sm",
-                children: "+300 Slides de Artes Prontos",
+                children: "História na Prática — +300 Slides de História Prontos",
               }),
               c.jsx("div", { className: "filete-ouro w-24" }),
               c.jsx("p", {
@@ -2556,7 +2566,6 @@ export default function Q1() {
           ],
         }),
       c.jsx(V1, { isOpen: C, onClose: () => v(!1) }),
-      c.jsx(H1, {}),
     ],
   });
 }
