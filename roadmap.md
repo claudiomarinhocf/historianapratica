@@ -2,6 +2,7 @@
 
 ## Identidade visual histórica
 - [x] Aplicar paleta e tipografia aprovadas sem alterar conteúdo ou funcionalidades.
+- [x] Tipografia revertida para Poppins (fonte original); paleta histórica mantida.
 - [x] Validar contraste, imagens, botões e organização em desktop e mobile (393px e 320px); textos, links e seções preservados.
 
 - [x] Mapear seções em src/landing/LandingPage.tsx
