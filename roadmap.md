@@ -14,6 +14,9 @@
 - [x] Validação: build OK, sem textos de "Artes", mobile sem cortes
 
 ## Pendentes (aguardando o usuário)
+- [ ] Trocar as galerias pelos oito slides de História enviados.
+- [ ] Atualizar prova social, respostas de FAQ e símbolos de História.
+- [ ] Remover fundo preto das quatro imagens de bônus, preservando as molduras.
 - Mockup do produto História na Prática (primeira dobra ainda usa o mockup de Artes)
 - Imagens reais dos slides de História para a galeria "Veja os slides por dentro" e a galeria final (hoje exibem slides de Artes)
 - Links de checkout do História na Prática (básico, completo e oferta do modal) — mantidos os links atuais até confirmação
