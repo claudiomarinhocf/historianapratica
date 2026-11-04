@@ -16,16 +16,14 @@
   --history-border: color-mix(in oklab, var(--history-gold) 30%, var(--history-parchment));
   --history-muted: color-mix(in oklab, var(--history-graphite) 78%, var(--history-ivory));
   --history-progress: linear-gradient(90deg, var(--history-ink), var(--history-gold));
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", sans-serif;
   --color-creme-custom: var(--history-parchment);
   --color-ouro-custom: var(--history-gold);
 }
 body { background-color: var(--history-parchment); color: var(--history-graphite); }
 .history-page { background-color: var(--history-ivory); color: var(--history-graphite); font-family: var(--font-sans); }
-.history-page *, .history-page *::before, .history-page *::after { letter-spacing: 0; }
 .history-page .font-display:not(:is(h1,h2,h3,h4,h5,h6)) { font-family: var(--font-sans); }
-.history-page :is(h1,h2,h3,h4,h5,h6) { font-family: var(--font-display); font-weight: 700; }
 .history-page [class~="bg-[#16A34A]"] { background-color: var(--history-conversion); }
 .history-page [class~="bg-[#1C1630]"] { background-color: var(--history-graphite); }
 .history-page [class~="bg-[#2A2145]"] { background-color: var(--history-ink); }
