@@ -2462,14 +2462,14 @@ export default function Q1() {
                 className:
                   "text-3xl sm:text-5xl font-black font-display tracking-tight",
                 children:
-                  "PROFESSOR, TENHA CENTENAS DE SLIDES PRONTOS HOJE MESMO!",
+                  "PROFESSOR, TENHA CENTENAS DE SLIDES DE HISTÓRIA PRONTOS HOJE MESMO!",
               }),
               c.jsx("div", { className: "filete-ouro w-36" }),
               c.jsx("p", {
                 className:
                   "text-sm sm:text-base text-[#E4DCF5]/90 max-w-2xl mx-auto",
                 children:
-                  "Não perca mais noites montando apresentações de slides do zero. Tenha em mãos +300 slides completos de Artes com todos os bônus inclusos por um valor simbólico.",
+                  "Não perca mais noites montando apresentações de slides do zero. Tenha em mãos +300 slides completos de História com todos os bônus inclusos por um valor simbólico.",
               }),
               c.jsxs("a", {
                 href: "#checkout-section",
@@ -2538,7 +2538,7 @@ export default function Q1() {
               }),
               c.jsx("p", {
                 className: "font-bold text-gray-900 font-display text-sm",
-                children: "+300 Slides de Artes Prontos",
+                children: "História na Prática — +300 Slides de História Prontos",
               }),
               c.jsx("div", { className: "filete-ouro w-24" }),
               c.jsx("p", {
@@ -2561,7 +2561,6 @@ export default function Q1() {
           ],
         }),
       c.jsx(V1, { isOpen: C, onClose: () => v(!1) }),
-      c.jsx(H1, {}),
     ],
   });
 }
