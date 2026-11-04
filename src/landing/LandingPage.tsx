@@ -8,10 +8,18 @@ import {
   Infinity as t0, Download as e0, Clock as p1, ChevronUp as N1, ChevronDown as S1,
   ShoppingCart as E1,
 } from "lucide-react";
-import bonusAtividadesImg from "@/assets/bonus_atividades_historia.webp.asset.json";
-import bonusMapasImg from "@/assets/bonus_mapas_historia.webp.asset.json";
-import bonusPlanosImg from "@/assets/bonus_planos_historia.webp.asset.json";
-import bonusGuiaImg from "@/assets/bonus_guia_historia.webp.asset.json";
+import bonusAtividadesImg from "@/assets/bonus_atividades_historia_original.png.asset.json";
+import bonusMapasImg from "@/assets/bonus_planos_historia_original.png.asset.json";
+import bonusPlanosImg from "@/assets/bonus_mapas_historia_original.png.asset.json";
+import bonusGuiaImg from "@/assets/bonus_guia_historia_original.png.asset.json";
+import slideHistoria1 from "@/assets/slide_historia_01.webp.asset.json";
+import slideHistoria2 from "@/assets/slide_historia_02.webp.asset.json";
+import slideHistoria3 from "@/assets/slide_historia_03.webp.asset.json";
+import slideHistoria4 from "@/assets/slide_historia_04.webp.asset.json";
+import slideHistoria5 from "@/assets/slide_historia_05.webp.asset.json";
+import slideHistoria6 from "@/assets/slide_historia_06.webp.asset.json";
+import slideHistoria7 from "@/assets/slide_historia_07.webp.asset.json";
+import slideHistoria8 from "@/assets/slide_historia_08.webp.asset.json";
 function B1(N) {
   if (typeof window > "u" || !window.location.search) return N;
   const Z = window.location.search.replace(/^\?/, "");
@@ -94,12 +102,12 @@ const w1 = [
     {
       question: "Recebo em qual formato? Consigo editar os slides?",
       answer:
-        "Sim! Você recebe o material em PowerPoint (PPTX) e PDF, prontos para projetar e 100% editáveis para personalizar textos, cores ou adicionar suas próprias imagens e anotações sempre que quiser.",
+        "Sim! Você recebe o material em PDF, prontos para projetar e 100% editáveis para personalizar textos, cores ou adicionar suas próprias imagens e anotações sempre que quiser.",
     },
     {
       question: "Consigo abrir e apresentar os slides em qualquer dispositivo?",
       answer:
-        "Como os materiais são entregues em formato PPTX e PDF, você pode abrir e projetar pelo computador ou notebook com PowerPoint ou Google Apresentações, e também abrir o PDF em tablets e celulares compatíveis.",
+        "Como os materiais são entregues em formato PDF, você pode abrir e projetar pelo computador ou notebooks, e também abrir o PDF em tablets e celulares compatíveis.",
     },
     {
       question: "O material é alinhado à BNCC / ENEM?",
@@ -522,39 +530,8 @@ function q1() {
     ],
   });
 }
-const zf = [
-    "/img/slide-01.webp",
-    "/img/slide-02.webp",
-    "/img/slide-03.webp",
-    "/img/slide-04.webp",
-    "/img/slide-05.webp",
-    "/img/slide-06.webp",
-    "/img/slide-07.webp",
-    "/img/slide-08.webp",
-    "/img/slide-09.webp",
-    "/img/slide-10.webp",
-    "/img/slide-11.webp",
-    "/img/slide-12.webp",
-    "/img/slide-13.webp",
-    "/img/slide-14.webp",
-    "/img/slide-15.webp",
-  ],
-  Af = [
-    "/img/slide-16.webp",
-    "/img/slide-17.webp",
-    "/img/slide-18.webp",
-    "/img/slide-19.webp",
-    "/img/slide-20.webp",
-    "/img/slide-21.webp",
-    "/img/slide-22.webp",
-    "/img/slide-23.webp",
-    "/img/slide-24.webp",
-    "/img/slide-25.webp",
-    "/img/slide-26.webp",
-    "/img/slide-27.webp",
-    "/img/slide-28.webp",
-    "/img/slide-29.webp",
-  ],
+const zf = [slideHistoria1.url, slideHistoria2.url, slideHistoria3.url, slideHistoria4.url],
+  Af = [slideHistoria5.url, slideHistoria6.url, slideHistoria7.url, slideHistoria8.url],
   Y1 = [...zf, ...zf],
   G1 = [...Af, ...Af];
 function x0({ imageUrl: N, index: Z }) {
@@ -976,7 +953,7 @@ export default function Q1() {
                   c.jsx("span", {
                     className: "text-xs font-semibold text-gray-700 font-sans",
                     children:
-                      "História na Prática — Material para o Ensino Fundamental II e Ensino Médio",
+                      "Aprovado por +1.250 professores de História no Brasil",
                   }),
                 ],
               }),
@@ -1229,13 +1206,7 @@ export default function Q1() {
             strokeLinejoin: "round",
             "aria-hidden": "true",
             children: [
-              c.jsx("circle", { cx: "13.5", cy: "6.5", r: ".5" }),
-              c.jsx("circle", { cx: "17.5", cy: "10.5", r: ".5" }),
-              c.jsx("circle", { cx: "8.5", cy: "7.5", r: ".5" }),
-              c.jsx("circle", { cx: "6.5", cy: "12.5", r: ".5" }),
-              c.jsx("path", {
-                d: "M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z",
-              }),
+              c.jsx("path", { d: "m3 9 9-6 9 6H3ZM5 9v10M10 9v10M14 9v10M19 9v10M3 19h18M2 22h20" }),
             ],
           }),
           c.jsxs("div", {
@@ -1293,13 +1264,7 @@ export default function Q1() {
             strokeLinejoin: "round",
             "aria-hidden": "true",
             children: [
-              c.jsx("circle", { cx: "13.5", cy: "6.5", r: ".5" }),
-              c.jsx("circle", { cx: "17.5", cy: "10.5", r: ".5" }),
-              c.jsx("circle", { cx: "8.5", cy: "7.5", r: ".5" }),
-              c.jsx("circle", { cx: "6.5", cy: "12.5", r: ".5" }),
-              c.jsx("path", {
-                d: "M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z",
-              }),
+              c.jsx("path", { d: "m3 9 9-6 9 6H3ZM5 9v10M10 9v10M14 9v10M19 9v10M3 19h18M2 22h20" }),
             ],
           }),
           c.jsxs("svg", {
@@ -1313,12 +1278,7 @@ export default function Q1() {
             strokeLinejoin: "round",
             "aria-hidden": "true",
             children: [
-              c.jsx("path", {
-                d: "m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08",
-              }),
-              c.jsx("path", {
-                d: "M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z",
-              }),
+              c.jsx("path", { d: "M7 3h10M7 21h10M7 3v4c0 2 5 5 5 5s5-3 5-5V3M7 21v-4c0-2 5-5 5-5s5 3 5 5v4M10 6h4M10 18h4" }),
             ],
           }),
           c.jsxs("div", {
@@ -1564,13 +1524,7 @@ export default function Q1() {
             strokeLinejoin: "round",
             "aria-hidden": "true",
             children: [
-              c.jsx("circle", { cx: "13.5", cy: "6.5", r: ".5" }),
-              c.jsx("circle", { cx: "17.5", cy: "10.5", r: ".5" }),
-              c.jsx("circle", { cx: "8.5", cy: "7.5", r: ".5" }),
-              c.jsx("circle", { cx: "6.5", cy: "12.5", r: ".5" }),
-              c.jsx("path", {
-                d: "M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z",
-              }),
+              c.jsx("path", { d: "m3 9 9-6 9 6H3ZM5 9v10M10 9v10M14 9v10M19 9v10M3 19h18M2 22h20" }),
             ],
           }),
           c.jsxs("svg", {
@@ -1584,12 +1538,7 @@ export default function Q1() {
             strokeLinejoin: "round",
             "aria-hidden": "true",
             children: [
-              c.jsx("path", {
-                d: "m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08",
-              }),
-              c.jsx("path", {
-                d: "M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z",
-              }),
+              c.jsx("path", { d: "M7 3h10M7 21h10M7 3v4c0 2 5 5 5 5s5-3 5-5V3M7 21v-4c0-2 5-5 5-5s5 3 5 5v4M10 6h4M10 18h4" }),
             ],
           }),
           c.jsxs("div", {
@@ -2420,7 +2369,7 @@ export default function Q1() {
                       "projetor w-full aspect-[16/9] rounded-b-[10px] border-2 border-[#45386B] border-t-0 bg-[#1C1630] shadow-[0_18px_50px_rgba(0,0,0,0.45)]",
                     children: [
                       c.jsx("img", {
-                        src: "/img/slide-02.webp",
+                        src: slideHistoria1.url,
                         alt: "Slide do acervo: Egito Antigo",
                         loading: "lazy",
                         decoding: "async",
@@ -2428,15 +2377,15 @@ export default function Q1() {
                         height: 518,
                       }),
                       c.jsx("img", {
-                        src: "/img/slide-24.webp",
-                        alt: "Slide do acervo: Grécia Antiga",
+                        src: slideHistoria6.url,
+                        alt: "Slide do acervo: Origens da Democracia",
                         loading: "lazy",
                         decoding: "async",
                         width: 920,
                         height: 518,
                       }),
                       c.jsx("img", {
-                        src: "/img/slide-29.webp",
+                        src: slideHistoria7.url,
                         alt: "Slide do acervo: Renascimento",
                         loading: "lazy",
                         decoding: "async",
@@ -2444,7 +2393,7 @@ export default function Q1() {
                         height: 518,
                       }),
                       c.jsx("img", {
-                        src: "/img/slide-15.webp",
+                        src: slideHistoria5.url,
                         alt: "Slide do acervo: Revolução Industrial",
                         loading: "lazy",
                         decoding: "async",
@@ -2512,13 +2461,7 @@ export default function Q1() {
                     strokeLinejoin: "round",
                     className: "w-6 h-6",
                     children: [
-                      c.jsx("circle", { cx: "13.5", cy: "6.5", r: ".5" }),
-                      c.jsx("circle", { cx: "17.5", cy: "10.5", r: ".5" }),
-                      c.jsx("circle", { cx: "8.5", cy: "7.5", r: ".5" }),
-                      c.jsx("circle", { cx: "6.5", cy: "12.5", r: ".5" }),
-                      c.jsx("path", {
-                        d: "M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z",
-                      }),
+                      c.jsx("path", { d: "m3 9 9-6 9 6H3ZM5 9v10M10 9v10M14 9v10M19 9v10M3 19h18M2 22h20" }),
                     ],
                   }),
                   c.jsx("span", { className: "w-px h-6 bg-[#DBA63A]/50" }),
@@ -2531,12 +2474,7 @@ export default function Q1() {
                     strokeLinejoin: "round",
                     className: "w-6 h-6",
                     children: [
-                      c.jsx("path", {
-                        d: "m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08",
-                      }),
-                      c.jsx("path", {
-                        d: "M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z",
-                      }),
+                      c.jsx("path", { d: "M7 3h10M7 21h10M7 3v4c0 2 5 5 5 5s5-3 5-5V3M7 21v-4c0-2 5-5 5-5s5 3 5 5v4M10 6h4M10 18h4" }),
                     ],
                   }),
                 ],
