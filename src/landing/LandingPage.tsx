@@ -898,14 +898,14 @@ export default function Q1() {
   };
   return c.jsxs("div", {
     className:
-      "min-h-screen bg-[#F7F3EA] text-[#2B2B2B] font-sans selection:bg-[#5E4B8B]/15 selection:text-[#5E4B8B] overflow-x-hidden",
+      "history-page min-h-screen bg-[#F7F3EA] text-[#2B2B2B] font-sans selection:bg-[#5E4B8B]/15 selection:text-[#5E4B8B] overflow-x-hidden",
     children: [
       c.jsx("div", {
         id: "reading-progress",
         className: "fixed top-0 left-0 h-[3px] z-50 pointer-events-none",
         style: {
           width: `${X}%`,
-          background: "linear-gradient(90deg,#5E4B8B,#F2C14E)",
+          background: "var(--history-progress)",
           transition: "width 100ms linear",
         },
         "aria-hidden": "true",
@@ -1256,7 +1256,7 @@ export default function Q1() {
             "aria-hidden": "true",
             children: c.jsx("path", {
               d: "M0 26V8c10 0 10-8 20-8s10 8 20 8 10-8 20-8 10 8 20 8 10-8 20-8 10 8 20 8v18z",
-              fill: "#F7F3EA",
+              fill: "var(--history-parchment)",
             }),
           }),
           c.jsxs("svg", {
@@ -1316,7 +1316,7 @@ export default function Q1() {
             "aria-hidden": "true",
             children: c.jsx("path", {
               d: "M0 26V8c10 0 10-8 20-8s10 8 20 8 10-8 20-8 10 8 20 8 10-8 20-8 10 8 20 8v18z",
-              fill: "#F7F3EA",
+              fill: "var(--history-parchment)",
             }),
           }),
         ],
@@ -2138,7 +2138,7 @@ export default function Q1() {
                     c.jsxs("svg", {
                       viewBox: "0 0 24 24",
                       fill: "none",
-                      stroke: "#F2C14E",
+                      stroke: "var(--history-gold)",
                       strokeWidth: "1.6",
                       className: "w-7 h-9 opacity-85 -scale-x-100",
                       "aria-hidden": "true",
@@ -2161,7 +2161,7 @@ export default function Q1() {
                     c.jsxs("svg", {
                       viewBox: "0 0 24 24",
                       fill: "none",
-                      stroke: "#F2C14E",
+                      stroke: "var(--history-gold)",
                       strokeWidth: "1.6",
                       className: "w-7 h-9 opacity-85",
                       "aria-hidden": "true",
@@ -2314,7 +2314,7 @@ export default function Q1() {
             "aria-hidden": "true",
             children: c.jsx("path", {
               d: "M0 26V8c10 0 10-8 20-8s10 8 20 8 10-8 20-8 10 8 20 8 10-8 20-8 10 8 20 8v18z",
-              fill: "#F7F3EA",
+              fill: "var(--history-parchment)",
             }),
           }),
           c.jsx("div", {
