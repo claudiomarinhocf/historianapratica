@@ -17,8 +17,10 @@
 - [x] Trocar as galerias pelos oito slides de História enviados.
 - [x] Atualizar prova social, respostas de FAQ e símbolos de História.
 - [x] Remover fundo preto das quatro imagens de bônus, preservando as molduras e os pixels originais.
-- Mockup do produto História na Prática (primeira dobra ainda usa o mockup de Artes)
+- [x] Mockup do produto História na Prática na primeira dobra (imagem enviada pelo usuário).
+- [x] Depoimentos: cinco capturas reais enviadas pelo usuário no carrossel de "O que dizem nossos clientes".
+
+## Pendentes (aguardando o usuário)
 - Links de checkout do História na Prática (básico, completo e oferta do modal) — mantidos os links atuais até confirmação
-- Depoimentos reais autorizados
 - Confirmação dos valores riscados (R$ 37,90 / R$ 127,00), valor dos bônus (R$ 97,24) e desconto do modal (R$ 15,90 / +R$ 5,90)
 - Confirmação de entrega por WhatsApp/Drive na Hotmart
