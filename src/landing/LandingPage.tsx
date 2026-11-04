@@ -1610,7 +1610,7 @@ export default function Q1() {
                 className:
                   "text-sm sm:text-base text-gray-600 max-w-2xl mx-auto font-sans leading-relaxed",
                 children:
-                  "Mais praticidade pra planejar e ministrar suas aulas de Artes, com apresentações de slides completas e materiais extras prontos pra aplicar com total segurança.",
+                  "Mais praticidade pra planejar e ministrar suas aulas de História, com apresentações de slides completas e materiais extras prontos pra aplicar com total segurança.",
               }),
               c.jsxs("div", {
                 className:
@@ -1709,7 +1709,7 @@ export default function Q1() {
                                   "w-5 h-5 text-[#5E4B8B] flex-shrink-0 stroke-[2.5]",
                               }),
                               c.jsx("span", {
-                                children: "+150 Slides de Artes",
+                                children: "+150 Slides de História",
                               }),
                             ],
                           }),
@@ -1889,7 +1889,7 @@ export default function Q1() {
                               }),
                               c.jsx("span", {
                                 children:
-                                  "+300 Slides de Artes + Todos os Bônus Exclusivos!",
+                                  "+300 Slides de História + Todos os Bônus Exclusivos!",
                               }),
                             ],
                           }),
@@ -1934,7 +1934,7 @@ export default function Q1() {
                               c.jsx("span", { children: "🎁" }),
                               c.jsx("span", {
                                 children:
-                                  "BÔNUS EXCLUSIVOS (VALOR: R$ 97,24 POR R$ 0,00):",
+                                  "BÔNUS EXCLUSIVOS INCLUSOS GRATUITAMENTE:",
                               }),
                             ],
                           }),
@@ -1950,7 +1950,8 @@ export default function Q1() {
                                     children: "📊",
                                   }),
                                   c.jsx("span", {
-                                    children: "+500 Atividades para Imprimir",
+                                    children:
+                                      "+60 Atividades de História para Imprimir",
                                   }),
                                 ],
                               }),
@@ -1963,7 +1964,7 @@ export default function Q1() {
                                     children: "📦",
                                   }),
                                   c.jsx("span", {
-                                    children: "+200 Mapas Mentais de Artes",
+                                    children: "+30 Mapas Mentais de História",
                                   }),
                                 ],
                               }),
@@ -1976,7 +1977,7 @@ export default function Q1() {
                                     children: "🎯",
                                   }),
                                   c.jsx("span", {
-                                    children: "+150 Dinâmicas de Artes",
+                                    children: "+30 Planos de Aula de História",
                                   }),
                                 ],
                               }),
@@ -1990,7 +1991,7 @@ export default function Q1() {
                                   }),
                                   c.jsx("span", {
                                     children:
-                                      "Guia Anual de Planejamento (BNCC)",
+                                      "Guia Anual de Planejamento de História (BNCC)",
                                   }),
                                 ],
                               }),
