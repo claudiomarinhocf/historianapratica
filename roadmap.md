@@ -4,6 +4,7 @@
 - [x] Aplicar paleta e tipografia aprovadas sem alterar conteúdo ou funcionalidades.
 - [x] Tipografia revertida para Poppins (fonte original); paleta histórica mantida.
 - [x] Validar contraste, imagens, botões e organização em desktop e mobile (393px e 320px); textos, links e seções preservados.
+- [x] Bloco "VALOR TOTAL DOS BÔNUS / R$ 97,24 / Inclusos GRÁTIS no Pacote Completo!" na paleta (fundo azul-tinta, rótulo dourado, selo dourado com texto grafite, texto marfim).
 
 - [x] Mapear seções em src/landing/LandingPage.tsx
 - [x] Primeira dobra (headline, descrição, prova social)
