@@ -730,7 +730,7 @@ function V1({
                             children: "✕",
                           }),
                           c.jsx("span", {
-                            children: "+500 Atividades para Imprimir",
+                            children: "+60 Atividades de História para Imprimir",
                           }),
                         ],
                       }),
@@ -743,7 +743,7 @@ function V1({
                             children: "✕",
                           }),
                           c.jsx("span", {
-                            children: "+200 Mapas Mentais de Artes",
+                            children: "+30 Mapas Mentais de História",
                           }),
                         ],
                       }),
@@ -756,7 +756,7 @@ function V1({
                             children: "✕",
                           }),
                           c.jsx("span", {
-                            children: "+150 Dinâmicas de Artes",
+                            children: "+30 Planos de Aula de História",
                           }),
                         ],
                       }),
@@ -769,7 +769,7 @@ function V1({
                             children: "✕",
                           }),
                           c.jsx("span", {
-                            children: "Guia Anual de Planejamento (BNCC)",
+                            children: "Guia Anual de Planejamento de História (BNCC)",
                           }),
                         ],
                       }),
@@ -2078,7 +2078,7 @@ export default function Q1() {
                   c.jsx("p", {
                     className:
                       "font-bold text-gray-800 text-xs sm:text-[15px] leading-snug",
-                    children: "A compra é confirmada na hora via Pix ou Cartão",
+                    children: "A compra é confirmada após a aprovação do pagamento via Pix ou Cartão",
                   }),
                 ],
               }),
@@ -2112,7 +2112,7 @@ export default function Q1() {
                     className:
                       "font-bold text-gray-800 text-xs sm:text-[15px] leading-snug",
                     children:
-                      "Você acessa os slides no Drive, escolhe o tema e já projeta na sala ou edita quando quiser",
+                      "Você acessa os slides de História no Drive, escolhe o tema e já projeta na sala ou edita quando quiser",
                   }),
                 ],
               }),
@@ -2242,7 +2242,7 @@ export default function Q1() {
                   className:
                     "text-sm sm:text-base text-gray-600 leading-relaxed max-w-xl mx-auto",
                   children:
-                    "Se você não achar que este material economizou seu tempo, melhorou suas aulas e te deu total segurança para lecionar Arte, basta enviar um e-mail em até 7 dias que devolvemos 100% do seu dinheiro, sem perguntas.",
+                    "Se você não achar que este material economizou seu tempo, melhorou suas aulas e te deu total segurança para lecionar História, basta solicitar o reembolso em até 7 dias e receber 100% do seu dinheiro de volta, conforme as condições da garantia.",
                 }),
                 c.jsxs("div", {
                   className:
@@ -2440,7 +2440,7 @@ export default function Q1() {
                       }),
                       c.jsx("img", {
                         src: "/img/slide-15.webp",
-                        alt: "Slide do acervo: Pop Art",
+                        alt: "Slide do acervo: Revolução Industrial",
                         loading: "lazy",
                         decoding: "async",
                         width: 920,
