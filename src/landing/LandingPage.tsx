@@ -563,7 +563,7 @@ function x0({ imageUrl: N, index: Z }) {
       "relative w-[280px] sm:w-[360px] md:w-[420px] lg:w-[460px] aspect-[16/9] flex-shrink-0 rounded-xl sm:rounded-2xl overflow-hidden border border-slate-200/90 bg-white shadow-[0_4px_16px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_24px_rgba(94,75,139,0.18)] hover:border-[#5E4B8B]/50 transition-all duration-300 select-none group",
     children: c.jsx("img", {
       src: N,
-      alt: `Apresentação de Slide de Artes ${Z + 1}`,
+      alt: `Apresentação de Slide de História ${Z + 1}`,
       className:
         "w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500",
       loading: "lazy",
@@ -976,7 +976,7 @@ export default function Q1() {
                   c.jsx("span", {
                     className: "text-xs font-semibold text-gray-700 font-sans",
                     children:
-                      "Aprovado por +1.250 professores de Artes no Brasil",
+                      "História na Prática — Material para o Ensino Fundamental II e Ensino Médio",
                   }),
                 ],
               }),
@@ -991,7 +991,7 @@ export default function Q1() {
                       "+300 ",
                       c.jsx("span", {
                         className: "text-[#5E4B8B] grifo-pincel",
-                        children: "Slides de Artes",
+                        children: "Slides de História",
                       }),
                       " prontos para utilizar",
                     ],
@@ -1007,7 +1007,7 @@ export default function Q1() {
                   srcSet:
                     "/img/mockup-hero-640.webp 640w, /img/mockup-hero.webp 1254w",
                   sizes: "(max-width: 640px) 100vw, 896px",
-                  alt: "Mockup do Pacote de Slides de Artes",
+                  alt: "Mockup do Pacote de Slides de História",
                   width: 640,
                   height: 640,
                   className:
@@ -1023,7 +1023,7 @@ export default function Q1() {
                 className:
                   "text-xs sm:text-sm text-gray-600 max-w-2xl mx-auto font-sans leading-relaxed px-2 sm:px-4",
                 children:
-                  "Apresentações completas pra projetar em sala. Economize horas de planejamento e tenha aulas visuais que prendem a atenção dos alunos.",
+                  "Apresentações completas pra projetar em sala. Economize horas de planejamento e tenha aulas visuais de História que prendem a atenção dos alunos.",
               }),
               c.jsxs("div", {
                 className: "space-y-4 max-w-md mx-auto pt-2",
@@ -1154,7 +1154,7 @@ export default function Q1() {
                       className:
                         "text-xs sm:text-sm md:text-base text-gray-800 font-medium font-sans leading-snug",
                       children:
-                        "Ensinar um conteúdo que você não estudou na faculdade",
+                        "Ensinar um conteúdo de História que você não estudou na faculdade",
                     }),
                   ],
                 }),
@@ -1194,7 +1194,7 @@ export default function Q1() {
                       className:
                         "text-xs sm:text-sm md:text-base text-gray-800 font-medium font-sans leading-snug",
                       children:
-                        "Sentir insegurança ao abordar linguagens fora da sua área de formação",
+                        "Sentir insegurança ao abordar períodos históricos fora da sua especialidade",
                     }),
                   ],
                 }),
@@ -1207,7 +1207,7 @@ export default function Q1() {
                 className:
                   "text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-white font-sans leading-relaxed",
                 children:
-                  "Porque você já encontra tudo pronto, organizado e com total segurança sobre o conteúdo em um único lugar — cobrindo as quatro linguagens da BNCC: Artes Visuais, Música, Teatro e Dança.",
+                  "Porque você já encontra tudo pronto, organizado e com total segurança sobre o conteúdo em um único lugar — cobrindo os principais períodos da História: Pré-História, História Antiga, Idade Média, Idade Moderna, História Contemporânea e História do Brasil.",
               }),
             }),
           ],
