@@ -99,3 +99,9 @@ body { background-color: var(--history-parchment); color: var(--history-graphite
 .history-page :is(a,button)[class~="bg-[#16A34A]"] { color: var(--history-on-action); }
 .history-page .marca-secao { color: var(--history-terracotta); }
 .history-page :is(#middle-cta-banner,#final-cta-section) .marca-secao { color: var(--history-gold); }
+.history-page #bonus-section .cantoneira.rev { background-color: var(--history-ink); border-color: color-mix(in oklab, var(--history-gold) 45%, var(--history-ink)); box-shadow: 0 14px 40px color-mix(in oklab, var(--history-ink) 34%, transparent); color: var(--history-ivory); }
+.history-page #bonus-section .cantoneira.rev [class~="bg-white/10"] { background-color: color-mix(in oklab, var(--history-ivory) 10%, transparent); }
+.history-page #bonus-section .cantoneira.rev [class~="text-white/85"] { color: var(--history-gold); }
+.history-page #bonus-section .cantoneira.rev [class~="text-white/70"] { color: color-mix(in oklab, var(--history-ivory) 70%, transparent); }
+.history-page #bonus-section .cantoneira.rev [class~="text-white"] { color: var(--history-ivory); }
+.history-page #bonus-section .cantoneira.rev [class~="text-[#2A2145]"] { color: var(--history-graphite); }
