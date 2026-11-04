@@ -1,5 +1,9 @@
 # Atualização: História na Prática
 
+## Identidade visual histórica
+- [ ] Aplicar paleta e tipografia aprovadas sem alterar conteúdo ou funcionalidades.
+- [ ] Validar contraste, imagens, botões e organização em desktop e mobile.
+
 - [x] Mapear seções em src/landing/LandingPage.tsx
 - [x] Primeira dobra (headline, descrição, prova social)
 - [x] Seção de problemas
