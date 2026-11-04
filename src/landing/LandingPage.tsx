@@ -993,7 +993,7 @@ export default function Q1() {
                   width: 600,
                   height: 600,
                   className:
-                    "flutua w-full max-w-4xl lg:max-w-5xl h-auto object-contain drop-shadow-xl rounded-xl sm:rounded-2xl",
+                    "flutua w-full max-w-4xl lg:max-w-5xl h-auto object-contain",
                   loading: "eager",
                   fetchPriority: "high",
                   decoding: "async",
