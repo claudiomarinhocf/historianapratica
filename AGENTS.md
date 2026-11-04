@@ -11,3 +11,4 @@
 
 - Preserve the imported sales page and its existing section styles; content updates stay localized to avoid layout regressions.
 - Use original transparent PNG bonus assets via CDN pointers rather than flattened images, to preserve artwork pixels and transparency.
+- Apply sales-page identity through scoped semantic theme overrides in the global stylesheet; preserve imported layout utilities and interactions to prevent visual-update regressions.
