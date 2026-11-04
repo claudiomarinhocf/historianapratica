@@ -8,6 +8,10 @@ import {
   Infinity as t0, Download as e0, Clock as p1, ChevronUp as N1, ChevronDown as S1,
   ShoppingCart as E1,
 } from "lucide-react";
+import bonusAtividadesImg from "@/assets/bonus_atividades_historia.webp.asset.json";
+import bonusMapasImg from "@/assets/bonus_mapas_historia.webp.asset.json";
+import bonusPlanosImg from "@/assets/bonus_planos_historia.webp.asset.json";
+import bonusGuiaImg from "@/assets/bonus_guia_historia.webp.asset.json";
 function B1(N) {
   if (typeof window > "u" || !window.location.search) return N;
   const Z = window.location.search.replace(/^\?/, "");
@@ -23,35 +27,35 @@ function Tf(N) {
 const w1 = [
     {
       id: 1,
-      title: "+500 Atividades para Imprimir",
+      title: "+60 Atividades de História para Imprimir",
       description:
-        "Fichas, exercícios e atividades práticas de todos os níveis, prontas para imprimir e aplicar nas suas aulas de Artes.",
+        "Fichas, exercícios e atividades práticas para o Ensino Fundamental II e Médio, prontas para imprimir e aplicar nas suas aulas de História.",
       price: 47,
-      imageUrl: "/img/bonus-atividades.webp",
+      imageUrl: bonusAtividadesImg.url,
     },
     {
       id: 2,
-      title: "+200 Mapas Mentais de Artes",
+      title: "+30 Mapas Mentais de História",
       description:
-        "Resumos visuais dos principais movimentos artísticos, linguagens e conceitos — prontos para projetar, imprimir ou revisar antes da aula.",
+        "Resumos visuais dos principais períodos históricos, acontecimentos e conceitos — prontos para projetar, imprimir ou revisar antes da aula.",
       price: 57,
-      imageUrl: "/img/bonus-mapas.webp",
+      imageUrl: bonusMapasImg.url,
     },
     {
       id: 3,
-      title: "+150 Dinâmicas de Artes",
+      title: "+30 Planos de Aula de História",
       description:
-        "Roteiros passo a passo com dinâmicas práticas, projetos criativos e temas da BNCC para engajar a turma.",
+        "Roteiros passo a passo com objetivos, conteúdos, atividades práticas e temas da BNCC para facilitar o planejamento e engajar a turma.",
       price: 67,
-      imageUrl: "/img/bonus-dinamicas.webp",
+      imageUrl: bonusPlanosImg.url,
     },
     {
       id: 4,
-      title: "Guia Anual de Planejamento (BNCC)",
+      title: "Guia Anual de Planejamento de História (BNCC)",
       description:
-        "Cronograma completo do ano letivo, organizado por bimestre, competência e tema — alinhado à BNCC e ao Novo Ensino Médio.",
+        "Cronograma completo do ano letivo de História, organizado por bimestre, competência e tema — alinhado à BNCC e ao Novo Ensino Médio.",
       price: 47,
-      imageUrl: "/img/bonus-guia.webp",
+      imageUrl: bonusGuiaImg.url,
     },
   ],
   qt = [
@@ -85,22 +89,22 @@ const w1 = [
     {
       question: "Para qual professor é indicado?",
       answer:
-        "O material é feito para professores de Artes do Ensino Fundamental II e Ensino Médio, cursinhos e projetos culturais, especialmente para quem busca praticidade e segurança para lecionar as quatro linguagens da BNCC.",
+        "O material é feito para professores de História do Ensino Fundamental II e Ensino Médio, especialmente para quem busca praticidade e segurança para lecionar os principais períodos históricos, da Pré-História à História do Brasil.",
     },
     {
       question: "Recebo em qual formato? Consigo editar os slides?",
       answer:
-        "Sim! Você recebe o material em PDF e PPTX, prontos para projetar e 100% editáveis para personalizar textos, cores ou adicionar suas próprias obras e anotações sempre que quiser.",
+        "Sim! Você recebe o material em PowerPoint (PPTX) e PDF, prontos para projetar e 100% editáveis para personalizar textos, cores ou adicionar suas próprias imagens e anotações sempre que quiser.",
     },
     {
       question: "Consigo abrir e apresentar os slides em qualquer dispositivo?",
       answer:
-        "Sim! Como os materiais são entregues em formato PDF e PPTX, você pode abrir e projetar diretamente pelo computador, notebook, tablet ou celular, além de usar no PowerPoint ou Google Apresentações.",
+        "Como os materiais são entregues em formato PPTX e PDF, você pode abrir e projetar pelo computador ou notebook com PowerPoint ou Google Apresentações, e também abrir o PDF em tablets e celulares compatíveis.",
     },
     {
       question: "O material é alinhado à BNCC / ENEM?",
       answer:
-        "Sim. O material cobre integralmente as quatro linguagens da BNCC: Artes Visuais, Música, Teatro e Dança, além de contextualizações históricas e estéticas presentes no ENEM e vestibulares, com guia de planejamento alinhado à BNCC.",
+        "O Guia Anual de Planejamento de História é organizado por bimestre, competência e tema, com referência à BNCC e ao Novo Ensino Médio, e os conteúdos cobrem os principais períodos cobrados em sala e em avaliações.",
     },
     {
       question: "É assinatura mensal ou pagamento único?",
