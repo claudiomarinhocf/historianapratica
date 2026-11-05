@@ -30,3 +30,5 @@
 - Links de checkout do História na Prática (básico, completo e oferta do modal) — mantidos os links atuais até confirmação
 - Confirmação dos valores riscados (R$ 37,90 / R$ 127,00), valor dos bônus (R$ 97,24) e desconto do modal (R$ 15,90 / +R$ 5,90)
 - Confirmação de entrega por WhatsApp/Drive na Hotmart
+
+- Hero substituído pela versão Hero-2.png (1000×1000, sem embaçamento); asset antigo removido do CDN.
