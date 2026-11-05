@@ -20,7 +20,7 @@ import slideHistoria5 from "@/assets/slide_historia_05.webp.asset.json";
 import slideHistoria6 from "@/assets/slide_historia_06.webp.asset.json";
 import slideHistoria7 from "@/assets/slide_historia_07.webp.asset.json";
 import slideHistoria8 from "@/assets/slide_historia_08.webp.asset.json";
-import heroHistoriaImg from "@/assets/hero_historia_pratica_v2.png.asset.json";
+import heroHistoriaImg from "@/assets/hero_historia_pratica.png.asset.json";
 import depoimentoHistoria1 from "@/assets/depoimento_historia_01.png.asset.json";
 import depoimentoHistoria2 from "@/assets/depoimento_historia_02.png.asset.json";
 import depoimentoHistoria3 from "@/assets/depoimento_historia_03.png.asset.json";
@@ -990,8 +990,8 @@ export default function Q1() {
                   srcSet: heroHistoriaImg.url,
                   sizes: "(max-width: 640px) 100vw, 896px",
                   alt: "Mockup do Pacote de Slides de História",
-                  width: 1000,
-                  height: 1000,
+                  width: 600,
+                  height: 600,
                   className:
                     "flutua w-full max-w-4xl lg:max-w-5xl h-auto object-contain",
                   loading: "eager",

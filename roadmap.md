@@ -32,3 +32,4 @@
 - Confirmação de entrega por WhatsApp/Drive na Hotmart
 
 - Hero substituído pela versão Hero-2.png (1000×1000, sem embaçamento); asset antigo removido do CDN.
+- Hero revertido para a imagem anterior (Hero.png, 600×600); Hero-2 removida do CDN.
