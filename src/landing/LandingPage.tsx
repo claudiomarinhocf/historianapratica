@@ -1974,11 +1974,11 @@ export default function Q1() {
                     children: [
                       c.jsx("a", {
                         id: "btn-buy-complete",
-                        href: "https://ggcheckout.app/checkout/v5/KHejZ6vBDcnlo0d8hT7n",
+                        href: "https://pay.hotmart.com/V108330893P?checkoutMode=10",
                         onClick: (S) => {
                           (S.preventDefault(),
                             Tf(
-                              "https://ggcheckout.app/checkout/v5/KHejZ6vBDcnlo0d8hT7n",
+                              "https://pay.hotmart.com/V108330893P?checkoutMode=10",
                             ));
                         },
                         className:
