@@ -8,10 +8,10 @@ import {
   Infinity as t0, Download as e0, Clock as p1, ChevronUp as N1, ChevronDown as S1,
   ShoppingCart as E1,
 } from "lucide-react";
-import bonusAtividadesImg from "@/assets/bonus_atividades_historia_original.png.asset.json";
-import bonusMapasImg from "@/assets/bonus_planos_historia_original.png.asset.json";
-import bonusPlanosImg from "@/assets/bonus_mapas_historia_original.png.asset.json";
-import bonusGuiaImg from "@/assets/bonus_guia_historia_original.png.asset.json";
+import bonusAtividadesImg from "@/assets/bonus_atividades_historia_original.webp.asset.json";
+import bonusMapasImg from "@/assets/bonus_planos_historia_original.webp.asset.json";
+import bonusPlanosImg from "@/assets/bonus_mapas_historia_original.webp.asset.json";
+import bonusGuiaImg from "@/assets/bonus_guia_historia_original.webp.asset.json";
 import slideHistoria1 from "@/assets/slide_historia_01.webp.asset.json";
 import slideHistoria2 from "@/assets/slide_historia_02.webp.asset.json";
 import slideHistoria3 from "@/assets/slide_historia_03.webp.asset.json";
@@ -20,12 +20,12 @@ import slideHistoria5 from "@/assets/slide_historia_05.webp.asset.json";
 import slideHistoria6 from "@/assets/slide_historia_06.webp.asset.json";
 import slideHistoria7 from "@/assets/slide_historia_07.webp.asset.json";
 import slideHistoria8 from "@/assets/slide_historia_08.webp.asset.json";
-import heroHistoriaImg from "@/assets/hero_historia_pratica_v2.png.asset.json";
-import depoimentoHistoria1 from "@/assets/depoimento_historia_01.png.asset.json";
-import depoimentoHistoria2 from "@/assets/depoimento_historia_02.png.asset.json";
-import depoimentoHistoria3 from "@/assets/depoimento_historia_03.png.asset.json";
-import depoimentoHistoria4 from "@/assets/depoimento_historia_04.png.asset.json";
-import depoimentoHistoria5 from "@/assets/depoimento_historia_05.png.asset.json";
+import heroHistoriaImg from "@/assets/hero_historia_pratica_v2.webp.asset.json";
+import depoimentoHistoria1 from "@/assets/depoimento_historia_01.webp.asset.json";
+import depoimentoHistoria2 from "@/assets/depoimento_historia_02.webp.asset.json";
+import depoimentoHistoria3 from "@/assets/depoimento_historia_03.webp.asset.json";
+import depoimentoHistoria4 from "@/assets/depoimento_historia_04.webp.asset.json";
+import depoimentoHistoria5 from "@/assets/depoimento_historia_05.webp.asset.json";
 function B1(N) {
   if (typeof window > "u" || !window.location.search) return N;
   const Z = window.location.search.replace(/^\?/, "");

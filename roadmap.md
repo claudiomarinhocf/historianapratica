@@ -1,5 +1,10 @@
 # Atualização: História na Prática
 
+## Otimização de imagens WebP
+- [x] Converter 10 imagens PNG usadas na página para WebP sem perda, preservando pixels, resolução e transparência; 8 slides já estavam em WebP.
+- [x] Atualizar referências e conferir carregamento das 18 imagens em computador e celular (393px e 320px); build OK. Aviso de conexão do pixel externo Utmify identificado, sem relação com as imagens.
+- [x] Medir peso anterior de 7.927.525 bytes, final de 5.952.206 bytes e redução de 1.975.319 bytes (24,92%).
+
 ## Identidade visual histórica
 - [x] Aplicar paleta e tipografia aprovadas sem alterar conteúdo ou funcionalidades.
 - [x] Tipografia revertida para Poppins (fonte original); paleta histórica mantida.
