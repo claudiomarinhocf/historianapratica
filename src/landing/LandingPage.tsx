@@ -38,6 +38,11 @@ function Tf(N) {
     ? (window.location.hash = N)
     : (window.location.href = B1(N));
 }
+function trackInitiateCheckout() {
+  if (typeof window === "undefined") return;
+  const Z = window.fbq;
+  if (typeof Z === "function") Z("track", "InitiateCheckout");
+}
 const w1 = [
     {
       id: 1,
@@ -584,7 +589,7 @@ function X1() {
                 className: "w-full overflow-hidden flex py-1",
                 children: c.jsx("div", {
                   className:
-                    "animate-marquee-left hover:[animation-play-state:paused] flex gap-3.5 sm:gap-5 items-center cursor-pointer",
+                    "animate-marquee-left flex gap-3.5 sm:gap-5 items-center cursor-pointer",
                   style: { animationPlayState: C ? void 0 : "paused" },
                   children: Y1.map((J, X) =>
                     c.jsx(
@@ -599,7 +604,7 @@ function X1() {
                 className: "w-full overflow-hidden flex py-1",
                 children: c.jsx("div", {
                   className:
-                    "animate-marquee-right hover:[animation-play-state:paused] flex gap-3.5 sm:gap-5 items-center cursor-pointer",
+                    "animate-marquee-right flex gap-3.5 sm:gap-5 items-center cursor-pointer",
                   style: { animationPlayState: C ? void 0 : "paused" },
                   children: G1.map((J, X) =>
                     c.jsx(
@@ -628,7 +633,8 @@ function V1({
   onUpgradeToComplete: C,
   onContinueBasic: v,
 }) {
-  const [L, J] = ol.useState(!1);
+  const [L, J] = ol.useState(!1),
+    [T, sT] = ol.useState(120);
   return (
     ol.useEffect(() => {
       if (N) J(!0);
@@ -636,6 +642,12 @@ function V1({
         const X = setTimeout(() => J(!1), 200);
         return () => clearTimeout(X);
       }
+    }, [N]),
+    ol.useEffect(() => {
+      if (!N) return;
+      sT(120);
+      const X = setInterval(() => sT((Y) => (Y > 0 ? Y - 1 : 0)), 1e3);
+      return () => clearInterval(X);
     }, [N]),
     !N && !L
       ? null
@@ -660,43 +672,56 @@ function V1({
                       "w-9 h-9 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center mb-1.5 text-white shadow-inner",
                     children: c.jsx(g0, { className: "w-5 h-5" }),
                   }),
-                  c.jsxs("h3", {
+                  c.jsx("h3", {
                     className:
-                      "text-sm sm:text-base font-extrabold tracking-tight text-white flex items-center gap-1.5 justify-center leading-snug",
-                    children: [
-                      c.jsx("span", { children: "🎁" }),
-                      c.jsx("span", {
-                        children: "ESPERE! Vai deixar esses bônus incríveis?",
-                      }),
-                    ],
+                      "oferta-badge inline-flex items-center gap-1.5 justify-center text-sm sm:text-base font-black tracking-wide uppercase px-4 py-1.5 rounded-full shadow-md leading-snug",
+                    children: "🚨 ÚLTIMA OFERTA",
                   }),
                 ],
               }),
               c.jsxs("div", {
                 className: "p-4 sm:p-5 space-y-3",
                 children: [
-                  c.jsxs("p", {
+                  c.jsxs("div", {
                     className:
-                      "text-center font-extrabold text-slate-700 text-xs sm:text-sm uppercase tracking-wide",
+                      "oferta-timer rounded-xl px-3 py-2.5 flex items-center justify-center gap-2 text-center",
                     children: [
-                      "O Pacote Básico ",
-                      c.jsx("span", {
-                        className: "text-red-500",
-                        children: "NÃO INCLUI:",
+                      c.jsx(p1, {
+                        className:
+                          "w-4 h-4 oferta-timer-texto stroke-[2.5] flex-shrink-0",
+                      }),
+                      c.jsxs("p", {
+                        className:
+                          "oferta-timer-texto text-[11px] sm:text-xs font-extrabold uppercase tracking-wide",
+                        children: [
+                          "A oferta expira em ",
+                          c.jsx("span", {
+                            className: "oferta-timer-num font-black",
+                            children: `${String(Math.floor(T / 60)).padStart(2, "0")}:${String(T % 60).padStart(2, "0")}`,
+                          }),
+                        ],
                       }),
                     ],
                   }),
+                  c.jsx("p", {
+                    className:
+                      "text-center font-extrabold text-slate-700 text-xs sm:text-sm uppercase tracking-wide",
+                    children: c.jsx("span", {
+                      className: "text-[#16A34A]",
+                      children: "TUDO O QUE VOCÊ GANHA:",
+                    }),
+                  }),
                   c.jsxs("div", {
                     className:
-                      "bg-red-50/70 border border-red-100 rounded-xl p-3 space-y-1.5",
+                      "oferta-ganhos rounded-xl p-3 space-y-1.5",
                     children: [
                       c.jsxs("div", {
                         className:
-                          "flex items-center space-x-2 text-[11px] sm:text-xs text-red-900/80 font-bold",
+                          "flex items-center space-x-2 text-[11px] sm:text-xs oferta-ganhos-item font-bold",
                         children: [
                           c.jsx("span", {
-                            className: "text-red-500 font-extrabold text-xs",
-                            children: "✕",
+                            className: "oferta-check font-extrabold text-xs",
+                            children: "✓",
                           }),
                           c.jsx("span", {
                             children:
@@ -706,11 +731,11 @@ function V1({
                       }),
                       c.jsxs("div", {
                         className:
-                          "flex items-center space-x-2 text-[11px] sm:text-xs text-red-900/80 font-bold",
+                          "flex items-center space-x-2 text-[11px] sm:text-xs oferta-ganhos-item font-bold",
                         children: [
                           c.jsx("span", {
-                            className: "text-red-500 font-extrabold text-xs",
-                            children: "✕",
+                            className: "oferta-check font-extrabold text-xs",
+                            children: "✓",
                           }),
                           c.jsx("span", {
                             children: "+60 Atividades de História para Imprimir",
@@ -719,11 +744,11 @@ function V1({
                       }),
                       c.jsxs("div", {
                         className:
-                          "flex items-center space-x-2 text-[11px] sm:text-xs text-red-900/80 font-bold",
+                          "flex items-center space-x-2 text-[11px] sm:text-xs oferta-ganhos-item font-bold",
                         children: [
                           c.jsx("span", {
-                            className: "text-red-500 font-extrabold text-xs",
-                            children: "✕",
+                            className: "oferta-check font-extrabold text-xs",
+                            children: "✓",
                           }),
                           c.jsx("span", {
                             children: "+30 Mapas Mentais de História",
@@ -732,11 +757,11 @@ function V1({
                       }),
                       c.jsxs("div", {
                         className:
-                          "flex items-center space-x-2 text-[11px] sm:text-xs text-red-900/80 font-bold",
+                          "flex items-center space-x-2 text-[11px] sm:text-xs oferta-ganhos-item font-bold",
                         children: [
                           c.jsx("span", {
-                            className: "text-red-500 font-extrabold text-xs",
-                            children: "✕",
+                            className: "oferta-check font-extrabold text-xs",
+                            children: "✓",
                           }),
                           c.jsx("span", {
                             children: "+30 Planos de Aula de História",
@@ -745,11 +770,11 @@ function V1({
                       }),
                       c.jsxs("div", {
                         className:
-                          "flex items-center space-x-2 text-[11px] sm:text-xs text-red-900/80 font-bold",
+                          "flex items-center space-x-2 text-[11px] sm:text-xs oferta-ganhos-item font-bold",
                         children: [
                           c.jsx("span", {
-                            className: "text-red-500 font-extrabold text-xs",
-                            children: "✕",
+                            className: "oferta-check font-extrabold text-xs",
+                            children: "✓",
                           }),
                           c.jsx("span", {
                             children: "Guia Anual de Planejamento de História (BNCC)",
@@ -765,10 +790,15 @@ function V1({
                       c.jsxs("p", {
                         className: "text-xs font-extrabold text-[#5E4B8B]",
                         children: [
-                          "Por apenas ",
+                          "De ",
                           c.jsx("span", {
-                            className: "text-[#5E4B8B] font-black",
-                            children: "+ R$ 5,90",
+                            className: "text-red-500 font-black line-through",
+                            children: "R$ 19,90",
+                          }),
+                          " por apenas ",
+                          c.jsx("span", {
+                            className: "text-[#16A34A] font-black",
+                            children: "R$ 14,90",
                           }),
                           ", destrave o",
                         ],
@@ -791,6 +821,7 @@ function V1({
                         id: "btn-modal-upgrade-complete",
                         href: "https://ggcheckout.app/checkout/v5/nCx49LrTVFiCFbjY9URd",
                         onClick: (X) => {
+                          trackInitiateCheckout();
                           C
                             ? (X.preventDefault(), C())
                             : Tf(
@@ -799,13 +830,13 @@ function V1({
                         },
                         className:
                           "w-full bg-[#16A34A] hover:bg-[#15803D] text-white py-3 px-3.5 rounded-xl sm:rounded-2xl font-black text-xs sm:text-sm cursor-pointer shadow-[0_4px_16px_rgba(22,163,74,0.3)] hover:scale-[1.01] active:scale-[0.98] transition-all text-center leading-snug block",
-                        children:
-                          "SIM! Quero o Pacote Completo Com Desconto (R$ 15,90)",
+                        children: "Sim, quero a oferta!",
                       }),
                       c.jsx("a", {
                         id: "btn-modal-continue-basic",
                         href: "https://ggcheckout.app/checkout/v5/MRifqMwACteBaJOdDdNK",
                         onClick: (X) => {
+                          trackInitiateCheckout();
                           v
                             ? (X.preventDefault(), v())
                             : Tf(
@@ -814,7 +845,7 @@ function V1({
                         },
                         className:
                           "w-full bg-white border border-slate-200 hover:bg-slate-50 text-slate-500 hover:text-slate-700 py-2.5 px-3 rounded-xl font-bold text-xs cursor-pointer transition-all text-center block",
-                        children: "Continuar apenas com o pacote básico",
+                        children: "Continuar com o básico",
                       }),
                     ],
                   }),
@@ -1636,7 +1667,7 @@ export default function Q1() {
                       c.jsx("div", {
                         className:
                           "text-5xl sm:text-6xl font-black text-[#16A34A] font-display tracking-tight mb-1",
-                        children: "R$ 10",
+                        children: "R$ 9,90",
                       }),
                       c.jsx("p", {
                         className:
@@ -1646,7 +1677,7 @@ export default function Q1() {
                       c.jsx("div", {
                         className:
                           "inline-block bg-[#E8F8F0] text-[#16A34A] border border-[#A7F3D0] font-black text-[11px] sm:text-xs px-4 py-1 rounded-full uppercase tracking-wider mb-6",
-                        children: "ECONOMIZE R$ 27,90",
+                        children: "ECONOMIZE R$ 28,00",
                       }),
                       c.jsx("div", {
                         className: "w-full border-t border-gray-100 my-4",
@@ -1774,7 +1805,7 @@ export default function Q1() {
                     id: "btn-buy-basic",
                     href: "https://ggcheckout.app/checkout/v5/MRifqMwACteBaJOdDdNK",
                     onClick: (S) => {
-                      (S.preventDefault(), v(!0));
+                      (S.preventDefault(), trackInitiateCheckout(), v(!0));
                     },
                     className:
                       "w-full bg-[#16A34A] hover:bg-[#15803D] text-white py-4 px-6 rounded-2xl font-black text-base sm:text-lg cursor-pointer shadow-[0_8px_25px_rgba(22,163,74,0.3)] hover:scale-[1.02] active:scale-[0.98] transition-all text-center block",
@@ -1977,6 +2008,7 @@ export default function Q1() {
                         href: "https://pay.hotmart.com/V108330893P?checkoutMode=10",
                         onClick: (S) => {
                           (S.preventDefault(),
+                            trackInitiateCheckout(),
                             Tf(
                               "https://pay.hotmart.com/V108330893P?checkoutMode=10",
                             ));
@@ -2493,16 +2525,6 @@ export default function Q1() {
           }),
         ],
       }),
-      L &&
-        c.jsxs("a", {
-          href: "#checkout-section",
-          className:
-            "fixed bottom-7 right-4 sm:bottom-9 sm:right-6 z-40 bg-[#16A34A] hover:bg-[#15803D] text-white px-4 py-3 sm:px-6 sm:py-3.5 rounded-full font-black text-xs sm:text-sm flex items-center justify-center space-x-2 shadow-[0_10px_30px_rgba(22,163,74,0.45)] hover:scale-105 active:scale-95 transition-all cursor-pointer border border-green-400/30 animate-fade-in-up",
-          children: [
-            c.jsx(E1, { className: "w-4 h-4 sm:w-5 sm:h-5 stroke-[2.5]" }),
-            c.jsx("span", { children: "Garantir Acesso" }),
-          ],
-        }),
       c.jsx(V1, { isOpen: C, onClose: () => v(!1) }),
     ],
   });
