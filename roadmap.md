@@ -1,5 +1,10 @@
 # Atualização: História na Prática
 
+## Otimização de imagens WebP
+- [ ] Converter imagens PNG usadas na página para WebP sem perda, preservando resolução e transparência.
+- [ ] Atualizar referências e conferir carregamento em computador e celular.
+- [ ] Informar peso anterior, final e redução total das imagens usadas.
+
 ## Identidade visual histórica
 - [x] Aplicar paleta e tipografia aprovadas sem alterar conteúdo ou funcionalidades.
 - [x] Tipografia revertida para Poppins (fonte original); paleta histórica mantida.
