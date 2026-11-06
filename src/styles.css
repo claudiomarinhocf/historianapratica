@@ -105,3 +105,12 @@ body { background-color: var(--history-parchment); color: var(--history-graphite
 .history-page #bonus-section .cantoneira.rev [class~="text-white/70"] { color: color-mix(in oklab, var(--history-ivory) 70%, transparent); }
 .history-page #bonus-section .cantoneira.rev [class~="text-white"] { color: var(--history-ivory); }
 .history-page #bonus-section .cantoneira.rev [class~="text-[#2A2145]"] { color: var(--history-graphite); }
+
+/* Modal "Última oferta" */
+.history-page .oferta-badge { background: oklch(0.55 0.22 27); color: oklch(1 0 0); }
+.history-page .oferta-timer { background: oklch(0.96 0.03 27); border: 1px solid oklch(0.85 0.08 27); }
+.history-page .oferta-timer-texto { color: oklch(0.5 0.2 27); }
+.history-page .oferta-timer-num { font-variant-numeric: tabular-nums; font-size: 0.95rem; color: oklch(0.45 0.2 27); }
+.history-page .oferta-ganhos { background: oklch(0.96 0.04 150); border: 1px solid oklch(0.85 0.08 150); }
+.history-page .oferta-ganhos-item { color: oklch(0.3 0.08 150); }
+.history-page .oferta-check { color: oklch(0.5 0.15 150); }
