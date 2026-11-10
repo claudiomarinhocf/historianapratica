@@ -1269,18 +1269,10 @@ export default function Q1() {
       }),
       c.jsxs("section", {
         id: "produto-apresentacao-section",
-        className: "cv-auto relative px-4 py-12 sm:py-16 overflow-hidden",
-        style: { backgroundColor: "var(--history-parchment)" },
+        className: "cv-auto hist-intro",
         children: [
           c.jsxs("div", {
-            className:
-              "rev mx-auto w-full max-w-[700px] rounded-[24px] border p-6 sm:p-9 md:p-11",
-            style: {
-              backgroundColor: "var(--history-ivory)",
-              borderColor: "var(--history-border)",
-              boxShadow:
-                "0 22px 60px -24px color-mix(in oklab, var(--history-ink) 34%, transparent)",
-            },
+            className: "rev hist-intro__card",
             children: [
               c.jsx("img", {
                 src: produtoHistoriaImg.url,
@@ -1289,16 +1281,13 @@ export default function Q1() {
                 height: 405,
                 loading: "lazy",
                 decoding: "async",
-                className: "mx-auto w-full max-w-[520px] h-auto",
-                style: { objectFit: "contain" },
+                className: "hist-intro__img",
               }),
               c.jsxs("div", {
-                className: "mt-6 sm:mt-8 text-center",
+                className: "hist-intro__head",
                 children: [
                   c.jsx("h2", {
-                    className:
-                      "font-display font-black text-2xl sm:text-3xl md:text-[32px] leading-tight tracking-tight mx-auto max-w-[560px]",
-                    style: { color: "var(--history-ink)" },
+                    className: "hist-intro__title",
                     children: productIntroTitle,
                   }),
                   c.jsx("div", {
@@ -1307,20 +1296,15 @@ export default function Q1() {
                 ],
               }),
               c.jsx("ul", {
-                className: "mt-7 sm:mt-9 space-y-3 sm:space-y-3.5",
+                className: "hist-intro__list",
                 children: productIntroBenefits.map((item) =>
                   c.jsxs("li", {
                     key: item,
-                    className: "flex items-start gap-3 sm:gap-3.5 text-left",
+                    className: "hist-intro__item",
                     children: [
                       c.jsx("span", {
                         "aria-hidden": "true",
-                        className:
-                          "grid place-items-center shrink-0 rounded-full w-[1.55em] h-[1.55em]",
-                        style: {
-                          backgroundColor:
-                            "color-mix(in oklab, var(--history-conversion) 12%, var(--history-ivory))",
-                        },
+                        className: "hist-intro__icon",
                         children: c.jsx("svg", {
                           viewBox: "0 0 24 24",
                           fill: "none",
@@ -1328,17 +1312,14 @@ export default function Q1() {
                           strokeWidth: "3",
                           strokeLinecap: "round",
                           strokeLinejoin: "round",
-                          className: "w-[0.85em] h-[0.85em]",
-                          style: { color: "var(--history-conversion)" },
+                          className: "hist-intro__check",
                           children: c.jsx("path", {
                             d: "m5 13 4 4L19 7",
                           }),
                         }),
                       }),
                       c.jsx("span", {
-                        className:
-                          "min-w-0 text-sm sm:text-base leading-snug font-medium",
-                        style: { color: "var(--history-graphite)" },
+                        className: "hist-intro__text",
                         children: item,
                       }),
                     ],
@@ -1346,9 +1327,7 @@ export default function Q1() {
                 ),
               }),
               c.jsx("p", {
-                className:
-                  "mt-8 sm:mt-10 text-center text-lg sm:text-xl font-bold tracking-tight",
-                style: { color: "var(--history-deep-green)" },
+                className: "hist-intro__closing",
                 children: productIntroClosing,
               }),
             ],
