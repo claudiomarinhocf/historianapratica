@@ -54,3 +54,7 @@
 - [x] Card Pacote Completo: faixa de formas de pagamento (1200×144) abaixo de "OFERTA ESPECIAL DISPONÍVEL POR TEMPO LIMITADO".
 - [x] Validação no computador e celular (393px e 320px): imagens carregando, sem cortes nem rolagem horizontal; build OK.
 
+## Troca de 4 slides da galeria "Veja os slides por dentro"
+- [x] Substituir China Antiga (slide 02), Revolução Industrial (slide 05), Origens da Democracia (slide 06) e Brasil Colonial (slide 08) pelas artes enviadas, publicadas no CDN em WebP q85 (430 KB, 447 KB, 386 KB, 386 KB).
+- [x] Validar no computador: 16 imagens da galeria carregando, 4 novas no ar, projetor final atualizado, sem rolagem horizontal; 14 testes aprovados e build OK.
+
