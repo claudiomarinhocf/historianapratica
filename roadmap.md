@@ -32,8 +32,8 @@
 - [x] Depoimentos: cinco capturas reais enviadas pelo usuário no carrossel de "O que dizem nossos clientes".
 
 ## Atualização das ofertas
-- [ ] Atualizar preços, economias, links Hotmart do popup e textos solicitados; remover descrição e acesso vitalício dos cards.
-- [ ] Aplicar preços antigos vermelhos e CTA do popup com movimento suave; validar preços e navegação em desktop e celular.
+- [x] Atualizar preços, economias, links Hotmart do popup e textos solicitados; remover descrição e acesso vitalício dos cards.
+- [x] Aplicar preços antigos vermelhos e CTA do popup com movimento suave; validar preços e navegação em desktop e celular (393px e 320px); 11 testes aprovados e build OK.
 
 ## Pendentes (aguardando o usuário)
 - Confirmação de entrega por WhatsApp/Drive na Hotmart
