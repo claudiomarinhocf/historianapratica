@@ -1036,13 +1036,6 @@ export default function Q1() {
                   }),
                 ],
               }),
-              c.jsx("p", {
-                id: "hero-subtitle",
-                className:
-                  "text-xs sm:text-sm text-gray-600 max-w-2xl mx-auto font-sans leading-relaxed px-2 sm:px-4",
-                children:
-                  "Apresentações completas pra projetar em sala. Economize horas de planejamento e tenha aulas visuais de História que prendem a atenção dos alunos.",
-              }),
               c.jsxs("div", {
                 className: "space-y-4 max-w-md mx-auto pt-2",
                 children: [
