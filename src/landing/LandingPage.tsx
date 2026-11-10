@@ -24,6 +24,9 @@ import slideHistoria8 from "@/assets/slide_historia_08.webp.asset.json";
 import heroHistoriaImg from "@/assets/hero_historia_pratica_v2.webp.asset.json";
 import produtoHistoriaImg from "@/assets/produto_historia_pratica_mockup.webp.asset.json";
 import {
+  productContentsClosing,
+  productContentsTitle,
+  productContentsTopics,
   productIntroBenefits,
   productIntroClosing,
   productIntroTitle,
