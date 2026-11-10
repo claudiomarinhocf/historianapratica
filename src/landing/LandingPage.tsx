@@ -1,6 +1,7 @@
 // @ts-nocheck
 /* Faithful port of the original slidesdeartes.netlify.app landing page. */
 import * as ol from "react";
+import { offers, formatPrice } from "./offers";
 import * as c from "react/jsx-runtime";
 import {
   Check as tn, ArrowLeft as x1, ArrowRight as Ui, X as Be, Gift as g0, Star as l0,
@@ -708,7 +709,7 @@ function V1({
                       "text-center font-extrabold text-slate-700 text-xs sm:text-sm uppercase tracking-wide",
                     children: c.jsx("span", {
                       className: "text-[#16A34A]",
-                      children: "TUDO O QUE VOCÊ GANHA:",
+                      children: "OFERTA ESPECIAL: LEVE O PACOTE COMPLETO COM DESCONTO",
                     }),
                   }),
                   c.jsxs("div", {
@@ -725,7 +726,7 @@ function V1({
                           }),
                           c.jsx("span", {
                             children:
-                              "+150 Slides Adicionais (Total de +300 Slides)",
+                              "+300 Slides de História",
                           }),
                         ],
                       }),
@@ -792,25 +793,15 @@ function V1({
                         children: [
                           "De ",
                           c.jsx("span", {
-                            className: "text-red-500 font-black line-through",
-                            children: "R$ 19,90",
+                            className: "offer-original-price font-black line-through",
+                            children: formatPrice(offers.special.original),
                           }),
                           " por apenas ",
                           c.jsx("span", {
-                            className: "text-[#16A34A] font-black",
-                            children: "R$ 14,90",
+                            className: "offer-special-price font-black",
+                            children: formatPrice(offers.special.price),
                           }),
-                          ", destrave o",
                         ],
-                      }),
-                      c.jsx("p", {
-                        className:
-                          "text-lg sm:text-xl font-black text-[#5E4B8B] font-display tracking-tight uppercase",
-                        children: "PACOTE COMPLETO",
-                      }),
-                      c.jsx("p", {
-                        className: "text-[11px] font-bold text-slate-500",
-                        children: "com todos os Bônus (valem R$ 97,24)",
                       }),
                     ],
                   }),
@@ -819,28 +810,28 @@ function V1({
                     children: [
                       c.jsx("a", {
                         id: "btn-modal-upgrade-complete",
-                        href: "https://ggcheckout.app/checkout/v5/nCx49LrTVFiCFbjY9URd",
+                        href: offers.special.checkout,
                         onClick: (X) => {
                           trackInitiateCheckout();
                           C
                             ? (X.preventDefault(), C())
                             : Tf(
-                                "https://ggcheckout.app/checkout/v5/nCx49LrTVFiCFbjY9URd",
+                                offers.special.checkout,
                               );
                         },
                         className:
-                          "w-full bg-[#16A34A] hover:bg-[#15803D] text-white py-3 px-3.5 rounded-xl sm:rounded-2xl font-black text-xs sm:text-sm cursor-pointer shadow-[0_4px_16px_rgba(22,163,74,0.3)] hover:scale-[1.01] active:scale-[0.98] transition-all text-center leading-snug block",
+                          "offer-cta-pop w-full bg-[#16A34A] hover:bg-[#15803D] text-white py-3 px-3.5 rounded-xl sm:rounded-2xl font-black text-xs sm:text-sm cursor-pointer shadow-[0_4px_16px_rgba(22,163,74,0.3)] hover:scale-[1.01] active:scale-[0.98] transition-all text-center leading-snug block",
                         children: "Sim, quero a oferta!",
                       }),
                       c.jsx("a", {
                         id: "btn-modal-continue-basic",
-                        href: "https://ggcheckout.app/checkout/v5/MRifqMwACteBaJOdDdNK",
+                        href: offers.basic.checkout,
                         onClick: (X) => {
                           trackInitiateCheckout();
                           v
                             ? (X.preventDefault(), v())
                             : Tf(
-                                "https://ggcheckout.app/checkout/v5/MRifqMwACteBaJOdDdNK",
+                                offers.basic.checkout,
                               );
                         },
                         className:
@@ -1591,12 +1582,6 @@ export default function Q1() {
                 children: "Escolha o Melhor Pacote Para Você!",
               }),
               c.jsx("div", { className: "filete-ouro w-40 mx-auto !mt-5" }),
-              c.jsx("p", {
-                className:
-                  "text-sm sm:text-base text-gray-600 max-w-2xl mx-auto font-sans leading-relaxed",
-                children:
-                  "Mais praticidade pra planejar e ministrar suas aulas de História, com apresentações de slides completas e materiais extras prontos pra aplicar com total segurança.",
-              }),
               c.jsxs("div", {
                 className:
                   "pt-2 flex flex-col items-center justify-center gap-2 text-[#5E4B8B] text-xs sm:text-sm font-extrabold uppercase tracking-wide",
@@ -1660,14 +1645,14 @@ export default function Q1() {
                         className: "mt-3 mb-1",
                         children: c.jsx("span", {
                           className:
-                            "text-sm font-bold text-gray-400 line-through",
-                          children: "R$ 37,90",
+                            "text-sm font-bold offer-original-price line-through",
+                          children: formatPrice(offers.basic.original, true),
                         }),
                       }),
                       c.jsx("div", {
                         className:
                           "text-5xl sm:text-6xl font-black text-[#16A34A] font-display tracking-tight mb-1",
-                        children: "R$ 9,90",
+                        children: formatPrice(offers.basic.price),
                       }),
                       c.jsx("p", {
                         className:
@@ -1677,7 +1662,7 @@ export default function Q1() {
                       c.jsx("div", {
                         className:
                           "inline-block bg-[#E8F8F0] text-[#16A34A] border border-[#A7F3D0] font-black text-[11px] sm:text-xs px-4 py-1 rounded-full uppercase tracking-wider mb-6",
-                        children: "ECONOMIZE R$ 28,00",
+                        children: `ECONOMIZE ${formatPrice(offers.basic.original - offers.basic.price)}`,
                       }),
                       c.jsx("div", {
                         className: "w-full border-t border-gray-100 my-4",
@@ -1712,18 +1697,6 @@ export default function Q1() {
                               }),
                             ],
                           }),
-                          c.jsxs("li", {
-                            className:
-                              "flex items-center gap-3 text-sm sm:text-base font-bold text-gray-800",
-                            children: [
-                              c.jsx(t0, {
-                                className:
-                                  "w-5 h-5 text-[#5E4B8B] flex-shrink-0 stroke-[2.5]",
-                              }),
-                              c.jsx("span", {
-                                children:
-                                  "Acesso vitalício ao material principal",
-                              }),
                             ],
                           }),
                         ],
@@ -1803,7 +1776,7 @@ export default function Q1() {
                   }),
                   c.jsx("a", {
                     id: "btn-buy-basic",
-                    href: "https://ggcheckout.app/checkout/v5/MRifqMwACteBaJOdDdNK",
+                    href: offers.basic.checkout,
                     onClick: (S) => {
                       (S.preventDefault(), trackInitiateCheckout(), v(!0));
                     },
@@ -1839,14 +1812,14 @@ export default function Q1() {
                         className: "mt-3 mb-1",
                         children: c.jsx("span", {
                           className:
-                            "text-sm font-bold text-gray-400 line-through",
-                          children: "R$ 127,00",
+                            "text-sm font-bold offer-original-price line-through",
+                          children: formatPrice(offers.complete.original, true),
                         }),
                       }),
                       c.jsx("div", {
                         className:
                           "text-5xl sm:text-6xl font-black text-[#16A34A] font-display tracking-tight mb-1",
-                        children: "R$ 19,90",
+                        children: formatPrice(offers.complete.price),
                       }),
                       c.jsx("p", {
                         className:
@@ -1856,7 +1829,7 @@ export default function Q1() {
                       c.jsx("div", {
                         className:
                           "inline-block bg-[#E8F8F0] text-[#16A34A] border border-[#A7F3D0] font-black text-[11px] sm:text-xs px-4 py-1 rounded-full uppercase tracking-wider mb-6",
-                        children: "ECONOMIZE R$ 107,10",
+                        children: `ECONOMIZE ${formatPrice(offers.complete.original - offers.complete.price)}`,
                       }),
                       c.jsx("div", {
                         className: "w-full border-t border-gray-100 my-4",
@@ -1892,18 +1865,6 @@ export default function Q1() {
                               }),
                             ],
                           }),
-                          c.jsxs("li", {
-                            className:
-                              "flex items-center gap-3 text-sm sm:text-base font-bold text-gray-800",
-                            children: [
-                              c.jsx(t0, {
-                                className:
-                                  "w-5 h-5 text-[#5E4B8B] flex-shrink-0 stroke-[2.5]",
-                              }),
-                              c.jsx("span", {
-                                children:
-                                  "Acesso vitalício ao material principal e bônus",
-                              }),
                             ],
                           }),
                         ],
