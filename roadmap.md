@@ -36,6 +36,11 @@
 - [x] Atualizar preços, economias, links Hotmart do popup e textos solicitados; remover descrição e acesso vitalício dos cards.
 - [x] Aplicar preços antigos vermelhos e CTA do popup com movimento suave; validar preços e navegação em desktop e celular (393px e 320px); 11 testes aprovados e build OK.
 
+## Nova seção de apresentação do produto
+- [x] Inserir seção entre "Veja os slides por dentro" e "Bônus Exclusivos": card marfim centralizado (máx. 700px), arte do produto no topo, título, 10 benefícios com check verde e "E muito mais...".
+- [x] Publicar a arte do produto (600×405, transparência original preservada) no CDN em WebP sem perda.
+- [x] Validar no computador e celular (393px e 320px): card 700px, imagem 600×405 carregada, 10 itens, sem rolagem horizontal; 14 testes aprovados e build OK.
+
 ## Pendentes (aguardando o usuário)
 - Confirmação de entrega por WhatsApp/Drive na Hotmart
 

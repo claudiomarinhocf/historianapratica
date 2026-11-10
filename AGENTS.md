@@ -13,3 +13,4 @@
 - Serve sales-page raster images via CDN pointers in WebP; convert original PNGs losslessly without resizing or flattening so artwork pixels and bonus transparency remain intact, and retain old assets for previous deployments.
 - Apply sales-page identity through scoped semantic theme overrides in the global stylesheet; preserve imported layout utilities and interactions to prevent visual-update regressions.
 - Keep offer prices and checkout destinations in a shared browser-safe offers module; derive savings from those values to prevent inconsistent pricing.
+- The committed global stylesheet is prebuilt Tailwind output that the build does not regenerate, so utility classes not already present there silently do nothing; style new sections with plain CSS rules added to that file rather than new utility classes.
