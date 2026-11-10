@@ -7,7 +7,7 @@
   --history-parchment: oklch(0.9403645 0.0250329 81.12459);
   --history-imperial: oklch(0.3998467 0.0640153 313.61453);
   --history-ivory: oklch(0.9917162 0.0085372 84.57217);
-  --history-conversion: oklch(0.4925385 0.1095435 156.13739);
+  --history-conversion: #16A34A;
   --history-graphite: oklch(0.2758715 0.0102015 260.70361);
   --history-terracotta: oklch(0.5448183 0.0816973 43.83195);
   --history-on-action: oklch(1.0000000 0.0000000 89.87556);
