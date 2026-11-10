@@ -32,6 +32,7 @@
 - [x] Depoimentos: cinco capturas reais enviadas pelo usuário no carrossel de "O que dizem nossos clientes".
 
 ## Atualização das ofertas
+- [ ] Aplicar verde #16A34A aos preços e CTAs e mover os depoimentos imediatamente antes dos pacotes; conferir no computador e celular.
 - [x] Atualizar preços, economias, links Hotmart do popup e textos solicitados; remover descrição e acesso vitalício dos cards.
 - [x] Aplicar preços antigos vermelhos e CTA do popup com movimento suave; validar preços e navegação em desktop e celular (393px e 320px); 11 testes aprovados e build OK.
 
