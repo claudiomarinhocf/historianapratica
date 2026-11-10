@@ -7,7 +7,7 @@ import {
   Check as tn, ArrowLeft as x1, ArrowRight as Ui, X as Be, Gift as g0, Star as l0,
   Zap as v1, Award as g1, ShieldCheck as bf, MessageSquare as y1, Printer as b1,
   Infinity as t0, Download as e0, Clock as p1, ChevronUp as N1, ChevronDown as S1,
-  ShoppingCart as E1,
+  ShoppingCart as E1, ChevronsDown as pcDown,
 } from "lucide-react";
 import bonusAtividadesImg from "@/assets/bonus_atividades_historia_original.webp.asset.json";
 import bonusMapasImg from "@/assets/bonus_planos_historia_original.webp.asset.json";
@@ -21,7 +21,8 @@ import slideHistoria5 from "@/assets/slide_historia_05.webp.asset.json";
 import slideHistoria6 from "@/assets/slide_historia_06.webp.asset.json";
 import slideHistoria7 from "@/assets/slide_historia_07.webp.asset.json";
 import slideHistoria8 from "@/assets/slide_historia_08.webp.asset.json";
-import heroHistoriaImg from "@/assets/hero_historia_pratica_v2.webp.asset.json";
+import pacoteBasicoImg from "@/assets/historia_pacote_basico.webp.asset.json";
+import pacoteCompletoImg from "@/assets/historia_pacote_completo.webp.asset.json";
 import produtoHistoriaImg from "@/assets/produto_historia_pratica_mockup.webp.asset.json";
 import {
   productContentsClosing,
@@ -1009,12 +1010,12 @@ export default function Q1() {
                 id: "hero-image-container",
                 className: "w-full my-3 sm:my-6 flex justify-center",
                 children: c.jsx("img", {
-                  src: heroHistoriaImg.url,
-                  srcSet: heroHistoriaImg.url,
+                  src: pacoteCompletoImg.url,
+                  srcSet: pacoteCompletoImg.url,
                   sizes: "(max-width: 640px) 100vw, 896px",
                   alt: "Mockup do Pacote de Slides de História",
-                  width: 1000,
-                  height: 1000,
+                  width: 700,
+                  height: 700,
                   className:
                     "flutua w-full max-w-4xl lg:max-w-5xl h-auto object-contain",
                   loading: "eager",
@@ -1022,6 +1023,17 @@ export default function Q1() {
                   decoding: "async",
                   referrerPolicy: "no-referrer",
                 }),
+              }),
+              c.jsxs("div", {
+                className: "hero-benefits",
+                children: [
+                  c.jsx("p", { className: "hero-benefits-title", children: "Benefícios" }),
+                  c.jsx("ul", {
+                    children: ["Aulas de História prontas, visuais e envolventes", "Economize horas de planejamento toda semana", "Mais de 300 slides prontos para projetar", "100% editáveis e prontos para usar em sala"].map((t) =>
+                      c.jsxs("li", { children: [c.jsx(tn, { className: "hero-benefits-icon" }), c.jsx("span", { children: t })] }, t),
+                    ),
+                  }),
+                ],
               }),
               c.jsx("p", {
                 id: "hero-subtitle",
@@ -1742,361 +1754,103 @@ export default function Q1() {
             children: [
               c.jsxs("div", {
                 id: "plan-basic-card",
-                className:
-                  "bg-white border border-[#E3DCCF] rounded-[32px] p-6 sm:p-8 flex flex-col justify-between shadow-sm relative text-center",
+                className: "pc-card",
                 children: [
+                  c.jsx("h3", { className: "pc-title", children: "Pacote Básico" }),
                   c.jsxs("div", {
+                    className: "pc-body",
                     children: [
-                      c.jsx("h3", {
-                        className:
-                          "text-2xl sm:text-3xl font-black text-gray-900 font-display",
-                        children: "Pacote Básico",
-                      }),
-                      c.jsx("div", {
-                        className: "mt-3 mb-1",
-                        children: c.jsx("span", {
-                          className:
-                            "text-sm font-bold offer-original-price line-through",
-                          children: formatPrice(offers.basic.original, true),
-                        }),
-                      }),
-                      c.jsx("div", {
-                        className:
-                          "text-5xl sm:text-6xl font-black text-[#16A34A] font-display tracking-tight mb-1",
-                        children: formatPrice(offers.basic.price),
-                      }),
-                      c.jsx("p", {
-                        className:
-                          "text-xs sm:text-sm font-bold text-gray-500 mb-2",
-                        children: "Pagamento único",
-                      }),
-                      c.jsx("div", {
-                        className:
-                          "inline-block bg-[#E8F8F0] text-[#16A34A] border border-[#A7F3D0] font-black text-[11px] sm:text-xs px-4 py-1 rounded-full uppercase tracking-wider mb-6",
-                        children: `ECONOMIZE ${formatPrice(offers.basic.original - offers.basic.price)}`,
-                      }),
-                      c.jsx("div", {
-                        className: "w-full border-t border-gray-100 my-4",
-                      }),
-                      c.jsxs("ul", {
-                        className: "space-y-3.5 text-left mb-6",
-                        children: [
-                          c.jsxs("li", {
-                            className:
-                              "flex items-center gap-3 text-sm sm:text-base font-bold text-gray-800",
-                            children: [
-                              c.jsx(tn, {
-                                className:
-                                  "w-5 h-5 text-[#5E4B8B] flex-shrink-0 stroke-[2.5]",
-                              }),
-                              c.jsx("span", {
-                                children: "+150 Slides de História",
-                              }),
-                            ],
-                          }),
-                          c.jsxs("li", {
-                            className:
-                              "flex items-center gap-3 text-sm sm:text-base font-bold text-gray-800",
-                            children: [
-                              c.jsx(tn, {
-                                className:
-                                  "w-5 h-5 text-[#5E4B8B] flex-shrink-0 stroke-[2.5]",
-                              }),
-                              c.jsx("span", {
-                                children:
-                                  "Prontos para projetar e 100% editáveis",
-                              }),
-                            ],
-                          }),
-                        ],
+                      c.jsx("img", { src: pacoteBasicoImg.url, alt: "Pacote Básico História na Prática", width: 600, height: 405, loading: "lazy", decoding: "async", className: "pc-img" }),
+                      c.jsx("ul", {
+                        className: "pc-list",
+                        children: ["+150 Slides de História", "Prontos para projetar e 100% editáveis"].map((t) =>
+                          c.jsxs("li", { className: "pc-item", children: [c.jsx("span", { className: "pc-check", children: c.jsx(tn, { className: "w-3.5 h-3.5 stroke-[3]" }) }), c.jsx("span", { children: t })] }, t),
+                        ),
                       }),
                       c.jsxs("div", {
-                        className: "text-left mb-8",
+                        className: "pc-price",
                         children: [
-                          c.jsx("p", {
-                            className:
-                              "text-[11px] font-extrabold text-slate-400 uppercase tracking-wider mb-3",
-                            children: "NÃO INCLUSOS NESTE PACOTE:",
-                          }),
-                          c.jsxs("ul", {
-                            className: "space-y-3",
-                            children: [
-                              c.jsxs("li", {
-                                className:
-                                  "flex items-center gap-3 text-xs sm:text-sm text-slate-400 line-through",
-                                children: [
-                                  c.jsx(Be, {
-                                    className:
-                                      "w-4 h-4 text-slate-300 flex-shrink-0 stroke-[2.5]",
-                                  }),
-                                  c.jsx("span", {
-                                    children:
-                                      "+150 Slides Adicionais (Total de +300)",
-                                  }),
-                                ],
-                              }),
-                              c.jsxs("li", {
-                                className:
-                                  "flex items-center gap-3 text-xs sm:text-sm text-slate-400 line-through",
-                                children: [
-                                  c.jsx(Be, {
-                                    className:
-                                      "w-4 h-4 text-slate-300 flex-shrink-0 stroke-[2.5]",
-                                  }),
-                                  c.jsx("span", {
-                                    children: "Todos os Bônus Exclusivos",
-                                  }),
-                                ],
-                              }),
-                              c.jsxs("li", {
-                                className:
-                                  "flex items-center gap-3 text-xs sm:text-sm text-slate-400 line-through",
-                                children: [
-                                  c.jsx(Be, {
-                                    className:
-                                      "w-4 h-4 text-slate-300 flex-shrink-0 stroke-[2.5]",
-                                  }),
-                                  c.jsx("span", {
-                                    children:
-                                      "Atualizações periódicas de conteúdo",
-                                  }),
-                                ],
-                              }),
-                            ],
-                          }),
+                          c.jsxs("p", { className: "pc-from", children: ["De ", c.jsx("span", { className: "offer-original-price line-through", children: formatPrice(offers.basic.original, true) }), " por:"] }),
+                          c.jsx("div", { className: "pc-value", children: formatPrice(offers.basic.price) }),
+                          c.jsx("p", { className: "pc-note", children: "Pagamento único" }),
+                          c.jsx("p", { className: "pc-save", children: `ECONOMIZE ${formatPrice(offers.basic.original - offers.basic.price)}` }),
                         ],
                       }),
+                      c.jsx("a", {
+                        id: "btn-buy-basic",
+                        href: offers.basic.checkout,
+                        onClick: (S) => {
+                          (S.preventDefault(), trackInitiateCheckout(), v(!0));
+                        },
+                        className: "pc-cta",
+                        children: "Quero o Pacote Básico",
+                      }),
                       c.jsxs("div", {
-                        className:
-                          "bg-[#5E4B8B]/10 border border-[#5E4B8B]/20 rounded-2xl p-3.5 sm:p-4 mb-6 flex items-center justify-center gap-2 text-center text-[#5E4B8B]",
+                        className: "pc-alert",
                         children: [
-                          c.jsx(e0, {
-                            className: "w-5 h-5 flex-shrink-0 stroke-[2.5]",
-                          }),
-                          c.jsx("span", {
-                            className:
-                              "text-xs sm:text-sm font-bold italic leading-snug",
-                            children:
-                              "Receba o link de download instantaneamente no seu e-mail e WhatsApp.",
-                          }),
+                          c.jsx("p", { children: "ATENÇÃO: Temos uma oferta ainda mais VANTAJOSA para você! Veja logo abaixo" }),
+                          c.jsx(pcDown, { className: "pc-alert-icon" }),
                         ],
                       }),
                     ],
-                  }),
-                  c.jsx("a", {
-                    id: "btn-buy-basic",
-                    href: offers.basic.checkout,
-                    onClick: (S) => {
-                      (S.preventDefault(), trackInitiateCheckout(), v(!0));
-                    },
-                    className:
-                      "w-full bg-[#16A34A] hover:bg-[#15803D] text-white py-4 px-6 rounded-2xl font-black text-base sm:text-lg cursor-pointer shadow-[0_8px_25px_rgba(22,163,74,0.3)] hover:scale-[1.02] active:scale-[0.98] transition-all text-center block",
-                    children: "Quero o Pacote Básico",
                   }),
                 ],
               }),
               c.jsxs("div", {
                 id: "plan-complete-card",
-                className:
-                  "cantoneira bg-white border-[3px] border-[#5E4B8B] rounded-[32px] p-6 sm:p-8 flex flex-col justify-between shadow-xl relative text-center md:scale-105",
+                className: "pc-card pc-card-featured",
                 children: [
-                  c.jsxs("span", {
-                    className:
-                      "absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#5E4B8B] text-white text-[11px] sm:text-xs font-black tracking-wider px-4 sm:px-5 py-1.5 rounded-full uppercase flex items-center space-x-1.5 shadow-md",
+                  c.jsxs("div", {
+                    className: "pc-band",
                     children: [
-                      c.jsx(l0, {
-                        className: "w-3.5 h-3.5 fill-[#F2C14E] text-[#F2C14E]",
-                      }),
-                      c.jsx("span", { children: "MELHOR ESCOLHA" }),
+                      c.jsx("h3", { className: "pc-band-title", children: "Pacote Completo" }),
+                      c.jsxs("span", { className: "pc-band-pill", children: [c.jsx(l0, { className: "w-3.5 h-3.5" }), "Todos os bônus inclusos"] }),
                     ],
                   }),
                   c.jsxs("div", {
+                    className: "pc-body",
                     children: [
-                      c.jsx("h3", {
-                        className:
-                          "text-2xl sm:text-3xl font-black text-gray-900 font-display",
-                        children: "Pacote Completo",
+                      c.jsx("img", { src: pacoteCompletoImg.url, alt: "Pacote Completo História na Prática com bônus", width: 700, height: 700, loading: "lazy", decoding: "async", className: "pc-img" }),
+                      c.jsx("ul", {
+                        className: "pc-list",
+                        children: ["+300 Slides de História + Todos os Bônus Exclusivos!", "Prontos para projetar e 100% editáveis", "Acesso Vitalício", "Suporte Prioritário"].map((t) =>
+                          c.jsxs("li", { className: "pc-item", children: [c.jsx("span", { className: "pc-check", children: c.jsx(tn, { className: "w-3.5 h-3.5 stroke-[3]" }) }), c.jsx("span", { children: t })] }, t),
+                        ),
                       }),
-                      c.jsx("div", {
-                        className: "mt-3 mb-1",
-                        children: c.jsx("span", {
-                          className:
-                            "text-sm font-bold offer-original-price line-through",
-                          children: formatPrice(offers.complete.original, true),
-                        }),
-                      }),
-                      c.jsx("div", {
-                        className:
-                          "text-5xl sm:text-6xl font-black text-[#16A34A] font-display tracking-tight mb-1",
-                        children: formatPrice(offers.complete.price),
-                      }),
-                      c.jsx("p", {
-                        className:
-                          "text-xs sm:text-sm font-bold text-gray-500 mb-2",
-                        children: "Pagamento único",
-                      }),
-                      c.jsx("div", {
-                        className:
-                          "inline-block bg-[#E8F8F0] text-[#16A34A] border border-[#A7F3D0] font-black text-[11px] sm:text-xs px-4 py-1 rounded-full uppercase tracking-wider mb-6",
-                        children: `ECONOMIZE ${formatPrice(offers.complete.original - offers.complete.price)}`,
-                      }),
-                      c.jsx("div", {
-                        className: "w-full border-t border-gray-100 my-4",
-                      }),
-                      c.jsxs("ul", {
-                        className: "space-y-3.5 text-left mb-6",
+                      c.jsxs("div", {
+                        className: "pc-bonus",
                         children: [
-                          c.jsxs("li", {
-                            className:
-                              "flex items-center gap-3 text-sm sm:text-base font-black text-gray-900",
-                            children: [
-                              c.jsx(tn, {
-                                className:
-                                  "w-5 h-5 text-[#5E4B8B] flex-shrink-0 stroke-[2.5]",
-                              }),
-                              c.jsx("span", {
-                                children:
-                                  "+300 Slides de História + Todos os Bônus Exclusivos!",
-                              }),
-                            ],
-                          }),
-                          c.jsxs("li", {
-                            className:
-                              "flex items-center gap-3 text-sm sm:text-base font-bold text-gray-800",
-                            children: [
-                              c.jsx(tn, {
-                                className:
-                                  "w-5 h-5 text-[#5E4B8B] flex-shrink-0 stroke-[2.5]",
-                              }),
-                              c.jsx("span", {
-                                children:
-                                  "Prontos para projetar e 100% editáveis",
-                              }),
-                            ],
+                          c.jsx("p", { className: "pc-bonus-title", children: "BÔNUS EXCLUSIVOS INCLUSOS GRATUITAMENTE:" }),
+                          c.jsx("ul", {
+                            children: ["+60 Atividades de História para Imprimir", "+30 Mapas Mentais de História", "+30 Planos de Aula de História", "Guia Anual de Planejamento de História (BNCC)"].map((t) =>
+                              c.jsxs("li", { children: [c.jsx(g0, { className: "w-4 h-4 flex-shrink-0" }), c.jsx("span", { children: t })] }, t),
+                            ),
                           }),
                         ],
                       }),
                       c.jsxs("div", {
-                        className:
-                          "bg-[#5E4B8B]/10 border border-[#5E4B8B]/20 rounded-2xl p-4 sm:p-5 text-left mb-6 space-y-3",
+                        className: "pc-price",
                         children: [
-                          c.jsxs("p", {
-                            className:
-                              "text-xs font-black text-[#5E4B8B] uppercase tracking-wide flex items-center gap-1.5",
-                            children: [
-                              c.jsx("span", { children: "🎁" }),
-                              c.jsx("span", {
-                                children:
-                                  "BÔNUS EXCLUSIVOS INCLUSOS GRATUITAMENTE:",
-                              }),
-                            ],
-                          }),
-                          c.jsxs("div", {
-                            className: "space-y-2",
-                            children: [
-                              c.jsxs("div", {
-                                className:
-                                  "bg-white rounded-xl p-3 sm:py-3.5 sm:px-4 shadow-xs border border-gray-100/80 flex items-center gap-2.5 font-bold text-xs sm:text-sm text-gray-800",
-                                children: [
-                                  c.jsx("span", {
-                                    className: "text-base",
-                                    children: "📊",
-                                  }),
-                                  c.jsx("span", {
-                                    children:
-                                      "+60 Atividades de História para Imprimir",
-                                  }),
-                                ],
-                              }),
-                              c.jsxs("div", {
-                                className:
-                                  "bg-white rounded-xl p-3 sm:py-3.5 sm:px-4 shadow-xs border border-gray-100/80 flex items-center gap-2.5 font-bold text-xs sm:text-sm text-gray-800",
-                                children: [
-                                  c.jsx("span", {
-                                    className: "text-base",
-                                    children: "📦",
-                                  }),
-                                  c.jsx("span", {
-                                    children: "+30 Mapas Mentais de História",
-                                  }),
-                                ],
-                              }),
-                              c.jsxs("div", {
-                                className:
-                                  "bg-white rounded-xl p-3 sm:py-3.5 sm:px-4 shadow-xs border border-gray-100/80 flex items-center gap-2.5 font-bold text-xs sm:text-sm text-gray-800",
-                                children: [
-                                  c.jsx("span", {
-                                    className: "text-base",
-                                    children: "🎯",
-                                  }),
-                                  c.jsx("span", {
-                                    children: "+30 Planos de Aula de História",
-                                  }),
-                                ],
-                              }),
-                              c.jsxs("div", {
-                                className:
-                                  "bg-white rounded-xl p-3 sm:py-3.5 sm:px-4 shadow-xs border border-gray-100/80 flex items-center gap-2.5 font-bold text-xs sm:text-sm text-gray-800",
-                                children: [
-                                  c.jsx("span", {
-                                    className: "text-base",
-                                    children: "📅",
-                                  }),
-                                  c.jsx("span", {
-                                    children:
-                                      "Guia Anual de Planejamento de História (BNCC)",
-                                  }),
-                                ],
-                              }),
-                            ],
-                          }),
+                          c.jsxs("p", { className: "pc-from", children: ["De ", c.jsx("span", { className: "offer-original-price line-through", children: formatPrice(offers.complete.original, true) }), " por:"] }),
+                          c.jsx("div", { className: "pc-value", children: formatPrice(offers.complete.price) }),
+                          c.jsx("p", { className: "pc-note", children: "Pagamento único" }),
+                          c.jsx("p", { className: "pc-save", children: `ECONOMIZE ${formatPrice(offers.complete.original - offers.complete.price)}` }),
                         ],
                       }),
-                      c.jsxs("div", {
-                        className:
-                          "bg-[#5E4B8B]/10 border border-[#5E4B8B]/20 rounded-2xl p-3.5 sm:p-4 mb-6 flex items-center justify-center gap-2 text-center text-[#5E4B8B]",
-                        children: [
-                          c.jsx(e0, {
-                            className: "w-5 h-5 flex-shrink-0 stroke-[2.5]",
-                          }),
-                          c.jsx("span", {
-                            className:
-                              "text-xs sm:text-sm font-bold italic leading-snug",
-                            children:
-                              "Receba o link de download instantaneamente no seu e-mail e WhatsApp.",
-                          }),
-                        ],
-                      }),
-                    ],
-                  }),
-                  c.jsxs("div", {
-                    children: [
                       c.jsx("a", {
                         id: "btn-buy-complete",
                         href: "https://pay.hotmart.com/V108330893P?checkoutMode=10",
                         onClick: (S) => {
                           (S.preventDefault(),
                             trackInitiateCheckout(),
-                            Tf(
-                              "https://pay.hotmart.com/V108330893P?checkoutMode=10",
-                            ));
+                            Tf("https://pay.hotmart.com/V108330893P?checkoutMode=10"));
                         },
-                        className:
-                          "w-full bg-[#16A34A] hover:bg-[#15803D] text-white py-4 px-6 rounded-2xl font-black text-base sm:text-lg cursor-pointer shadow-[0_8px_25px_rgba(22,163,74,0.35)] hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center space-x-2 text-center",
-                        children: c.jsx("span", {
-                          children: "Quero o Pacote Completo",
-                        }),
+                        className: "pc-cta",
+                        children: "Quero o Pacote Completo",
                       }),
                       c.jsxs("div", {
-                        className:
-                          "mt-4 flex items-center justify-center gap-1.5 text-gray-500 text-[11px] font-extrabold uppercase tracking-wider",
-                        children: [
-                          c.jsx(p1, { className: "w-3.5 h-3.5 stroke-[2.5]" }),
-                          c.jsx("span", {
-                            children:
-                              "OFERTA ESPECIAL DISPONÍVEL POR TEMPO LIMITADO",
-                          }),
-                        ],
+                        className: "pc-limited",
+                        children: [c.jsx(p1, { className: "w-3.5 h-3.5 stroke-[2.5]" }), c.jsx("span", { children: "OFERTA ESPECIAL DISPONÍVEL POR TEMPO LIMITADO" })],
                       }),
                     ],
                   }),
