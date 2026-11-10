@@ -11,6 +11,7 @@
   --history-graphite: oklch(0.2758715 0.0102015 260.70361);
   --history-terracotta: oklch(0.5448183 0.0816973 43.83195);
   --history-on-action: oklch(1.0000000 0.0000000 89.87556);
+  --history-offer-red: oklch(0.5 0.2 27);
   --history-ink-hover: color-mix(in oklab, var(--history-ink) 88%, var(--history-graphite));
   --history-conversion-hover: color-mix(in oklab, var(--history-conversion) 88%, var(--history-graphite));
   --history-border: color-mix(in oklab, var(--history-gold) 30%, var(--history-parchment));
@@ -114,3 +115,13 @@ body { background-color: var(--history-parchment); color: var(--history-graphite
 .history-page .oferta-ganhos { background: oklch(0.96 0.04 150); border: 1px solid oklch(0.85 0.08 150); }
 .history-page .oferta-ganhos-item { color: oklch(0.3 0.08 150); }
 .history-page .oferta-check { color: oklch(0.5 0.15 150); }
+.history-page .offer-original-price { color: var(--history-offer-red); }
+.history-page .offer-special-price { color: var(--history-conversion); font-size: 1.75rem; display: inline-block; }
+.history-page .offer-cta-pop { animation: offer-cta-pop 2.4s ease-in-out infinite; }
+@keyframes offer-cta-pop {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-3px) scale(1.025); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .history-page .offer-cta-pop { animation: none; }
+}
