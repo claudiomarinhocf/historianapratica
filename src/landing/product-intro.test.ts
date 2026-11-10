@@ -1,33 +1,36 @@
 import { describe, expect, it } from "vitest";
 import {
-  productIntroBenefits,
-  productIntroClosing,
-  productIntroTitle,
+  productContentsClosing,
+  productContentsTitle,
+  productContentsTopics,
 } from "./product-intro";
 
-describe("Product introduction section copy", () => {
+describe("Contents section copy", () => {
   it("shows the approved headline", () => {
-    expect(productIntroTitle).toBe(
-      "+300 Slides de História Prontos para Suas Aulas!",
+    expect(productContentsTitle).toBe(
+      "+300 Slides de História — Confira os Conteúdos!",
     );
   });
 
-  it("lists exactly the ten approved benefits, in order", () => {
-    expect([...productIntroBenefits]).toEqual([
-      "Mais de 300 slides de História ilustrados e organizados",
-      "Conteúdos de História Geral e História do Brasil",
-      "Material para o Ensino Fundamental II e Ensino Médio",
-      "Apresentações prontas para projetar em sala de aula",
-      "Arquivos em PowerPoint e PDF",
-      "Conteúdos sobre civilizações, revoluções e períodos históricos",
-      "Recursos visuais para facilitar a compreensão dos alunos",
-      "Material desenvolvido para economizar tempo de planejamento",
-      "Organização por temas para facilitar a busca dos conteúdos",
-      "Acesso digital após a confirmação da compra",
+  it("lists exactly the thirteen approved topics, in order", () => {
+    expect([...productContentsTopics]).toEqual([
+      "Pré-História e Origens da Humanidade",
+      "Mesopotâmia, Egito Antigo e Civilizações Orientais",
+      "Grécia Antiga, Roma e Origens da Democracia",
+      "Povos Indígenas e Civilizações Pré-Colombianas",
+      "Idade Média, Feudalismo e Sociedade Medieval",
+      "Renascimento Cultural e Reformas Religiosas",
+      "Grandes Navegações e Expansão Marítima",
+      "Brasil Colonial, Escravidão e Resistências",
+      "Iluminismo, Revolução Francesa e Revolução Industrial",
+      "Independência do Brasil e Brasil Império",
+      "Primeira e Segunda Guerra Mundial",
+      "Brasil República, Era Vargas e Ditadura Militar",
+      "Guerra Fria, Globalização e História Contemporânea",
     ]);
   });
 
   it("closes with the approved message", () => {
-    expect(productIntroClosing).toBe("E muito mais...");
+    expect(productContentsClosing).toBe("E muito mais...");
   });
 });
