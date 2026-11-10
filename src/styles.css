@@ -129,3 +129,93 @@ body { background-color: var(--history-parchment); color: var(--history-graphite
 @media (prefers-reduced-motion: reduce) {
   .history-page .offer-cta-pop { animation: none; }
 }
+
+/* ===== Nova seção de apresentação do produto ===== */
+.history-page #produto-apresentacao-section.hist-intro {
+  background-color: var(--history-parchment);
+  padding: 3rem 1rem;
+  overflow: hidden;
+}
+.hist-intro__card {
+  max-width: 700px;
+  margin-inline: auto;
+  background-color: var(--history-ivory);
+  border: 1px solid var(--history-border);
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 22px 60px -24px color-mix(in oklab, var(--history-ink) 34%, transparent);
+}
+.hist-intro__img {
+  display: block;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  object-fit: contain;
+}
+.hist-intro__head { margin-top: 1.5rem; text-align: center; }
+.hist-intro__title {
+  max-width: 560px;
+  margin-inline: auto;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--history-ink);
+}
+.hist-intro__list {
+  margin-top: 1.75rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.hist-intro__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  text-align: left;
+}
+.hist-intro__icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 1.55em;
+  height: 1.55em;
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  background-color: color-mix(in oklab, var(--history-conversion) 12%, var(--history-ivory));
+}
+.hist-intro__check { width: 0.85em; height: 0.85em; color: var(--history-conversion); }
+.hist-intro__text {
+  min-width: 0;
+  font-size: 0.875rem;
+  line-height: 1.375;
+  font-weight: 500;
+  color: var(--history-graphite);
+}
+.hist-intro__closing {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--history-deep-green);
+}
+@media (min-width: 640px) {
+  .history-page #produto-apresentacao-section.hist-intro { padding: 4rem 1rem; }
+  .hist-intro__card { padding: 2.25rem; }
+  .hist-intro__head { margin-top: 2rem; }
+  .hist-intro__title { font-size: 1.875rem; }
+  .hist-intro__list { margin-top: 2.25rem; gap: 0.875rem; }
+  .hist-intro__item { gap: 0.875rem; }
+  .hist-intro__icon { font-size: 1rem; }
+  .hist-intro__text { font-size: 1rem; }
+  .hist-intro__closing { margin-top: 2.5rem; font-size: 1.25rem; }
+}
+@media (min-width: 768px) {
+  .hist-intro__card { padding: 2.75rem; }
+  .hist-intro__title { font-size: 2rem; }
+}
