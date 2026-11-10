@@ -1338,6 +1338,73 @@ export default function Q1() {
         ],
       }),
       c.jsxs("section", {
+        id: "conteudos-slides-section",
+        className: "cv-auto hist-intro",
+        children: [
+          c.jsxs("div", {
+            className: "rev hist-intro__card",
+            children: [
+              c.jsx("img", {
+                src: produtoHistoriaImg.url,
+                alt: "Mockup do História na Prática com os conteúdos dos mais de 300 slides de História",
+                width: 600,
+                height: 405,
+                loading: "lazy",
+                decoding: "async",
+                className: "hist-intro__img",
+              }),
+              c.jsxs("div", {
+                className: "hist-intro__head",
+                children: [
+                  c.jsx("h2", {
+                    className: "hist-intro__title",
+                    children: productContentsTitle,
+                  }),
+                  c.jsx("div", {
+                    className: "filete-ouro w-32 mx-auto !mt-4",
+                  }),
+                ],
+              }),
+              c.jsx("ul", {
+                className: "hist-intro__list",
+                children: productContentsTopics.map((item) =>
+                  c.jsxs("li", {
+                    key: item,
+                    className: "hist-intro__item",
+                    children: [
+                      c.jsx("span", {
+                        "aria-hidden": "true",
+                        className: "hist-intro__icon",
+                        children: c.jsx("svg", {
+                          viewBox: "0 0 24 24",
+                          fill: "none",
+                          stroke: "currentColor",
+                          strokeWidth: "3",
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          className: "hist-intro__check",
+                          children: c.jsx("path", {
+                            d: "m5 13 4 4L19 7",
+                          }),
+                        }),
+                      }),
+                      c.jsx("span", {
+                        className: "hist-intro__text",
+                        children: item,
+                      }),
+                    ],
+                  }),
+                ),
+              }),
+              c.jsx("p", {
+                className: "hist-intro__closing",
+                children: productContentsClosing,
+              }),
+            ],
+          }),
+        ],
+      }),
+      c.jsxs("section", {
         id: "middle-cta-banner",
         className:
           "relative bg-[#2A2145] text-center text-white overflow-hidden",
