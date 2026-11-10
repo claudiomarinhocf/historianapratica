@@ -1697,8 +1697,6 @@ export default function Q1() {
                               }),
                             ],
                           }),
-                            ],
-                          }),
                         ],
                       }),
                       c.jsxs("div", {
@@ -1863,8 +1861,6 @@ export default function Q1() {
                                 children:
                                   "Prontos para projetar e 100% editáveis",
                               }),
-                            ],
-                          }),
                             ],
                           }),
                         ],
