@@ -247,6 +247,7 @@ body { background-color: var(--history-parchment); color: var(--history-graphite
 .history-page .pc-band { background: #263747; padding: 1.5rem 1.25rem 1.25rem; display: flex; flex-direction: column; align-items: center; gap: .7rem; }
 .history-page .pc-band-title { font-family: var(--font-display, inherit); font-weight: 900; font-size: 1.85rem; line-height: 1.1; color: #FFFCF6; text-transform: uppercase; }
 .history-page .pc-band-pill { display: inline-flex; align-items: center; gap: .35rem; background: #C49A52; color: #25282D; font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; padding: .3rem .85rem; border-radius: 999px; }
+.history-page .pc-payments { display: block; width: 100%; max-width: 340px; height: auto; margin: 0 auto; border-radius: 10px; }
 .history-page .pc-limited { display: flex; align-items: center; justify-content: center; gap: .35rem; color: #B91C1C; font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .03em; }
 @media (min-width: 640px) { .history-page .pc-title, .history-page .pc-band-title { font-size: 2.1rem; } .history-page .pc-body { padding: 1.5rem 2rem 2rem; } }
 

@@ -21,7 +21,8 @@ import slideHistoria5 from "@/assets/slide_historia_05.webp.asset.json";
 import slideHistoria6 from "@/assets/slide_historia_06.webp.asset.json";
 import slideHistoria7 from "@/assets/slide_historia_07.webp.asset.json";
 import slideHistoria8 from "@/assets/slide_historia_08.webp.asset.json";
-import pacoteBasicoImg from "@/assets/historia_pacote_basico.webp.asset.json";
+import produtoBasicoImg from "@/assets/produto_historia_basico.webp.asset.json";
+import pagamentosImg from "@/assets/pagamentos_historia.webp.asset.json";
 import pacoteCompletoImg from "@/assets/historia_pacote_completo.webp.asset.json";
 import produtoHistoriaImg from "@/assets/produto_historia_pratica_mockup.webp.asset.json";
 import {
@@ -1035,13 +1036,6 @@ export default function Q1() {
                   }),
                 ],
               }),
-              c.jsx("p", {
-                id: "hero-subtitle",
-                className:
-                  "text-xs sm:text-sm text-gray-600 max-w-2xl mx-auto font-sans leading-relaxed px-2 sm:px-4",
-                children:
-                  "Apresentações completas pra projetar em sala. Economize horas de planejamento e tenha aulas visuais de História que prendem a atenção dos alunos.",
-              }),
               c.jsxs("div", {
                 className: "space-y-4 max-w-md mx-auto pt-2",
                 children: [
@@ -1760,7 +1754,7 @@ export default function Q1() {
                   c.jsxs("div", {
                     className: "pc-body",
                     children: [
-                      c.jsx("img", { src: pacoteBasicoImg.url, alt: "Pacote Básico História na Prática", width: 600, height: 405, loading: "lazy", decoding: "async", className: "pc-img" }),
+              c.jsx("img", { src: produtoBasicoImg.url, alt: "Pacote Básico História na Prática", width: 700, height: 472, loading: "lazy", decoding: "async", className: "pc-img" }),
                       c.jsx("ul", {
                         className: "pc-list",
                         children: ["+150 Slides de História", "Prontos para projetar e 100% editáveis"].map((t) =>
@@ -1852,6 +1846,7 @@ export default function Q1() {
                         className: "pc-limited",
                         children: [c.jsx(p1, { className: "w-3.5 h-3.5 stroke-[2.5]" }), c.jsx("span", { children: "OFERTA ESPECIAL DISPONÍVEL POR TEMPO LIMITADO" })],
                       }),
+                      c.jsx("img", { src: pagamentosImg.url, alt: "Formas de pagamento aceitas", width: 1200, height: 144, loading: "lazy", decoding: "async", className: "pc-payments" }),
                     ],
                   }),
                 ],

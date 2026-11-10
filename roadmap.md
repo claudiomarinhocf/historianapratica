@@ -44,3 +44,9 @@
 ## Pendentes (aguardando o usuário)
 - Confirmação de entrega por WhatsApp/Drive na Hotmart
 
+## Ajustes de cards e primeira dobra
+- [x] Removido o texto "Apresentações completas pra projetar em sala..." da primeira dobra.
+- [x] Card Pacote Básico: nova arte do produto (700×472, transparência preservada) no lugar da antiga.
+- [x] Card Pacote Completo: faixa de formas de pagamento (1200×144) abaixo de "OFERTA ESPECIAL DISPONÍVEL POR TEMPO LIMITADO".
+- [x] Validação no computador e celular (393px e 320px): imagens carregando, sem cortes nem rolagem horizontal; build OK.
+
