@@ -22,6 +22,12 @@ import slideHistoria6 from "@/assets/slide_historia_06.webp.asset.json";
 import slideHistoria7 from "@/assets/slide_historia_07.webp.asset.json";
 import slideHistoria8 from "@/assets/slide_historia_08.webp.asset.json";
 import heroHistoriaImg from "@/assets/hero_historia_pratica_v2.webp.asset.json";
+import produtoHistoriaImg from "@/assets/produto_historia_pratica_mockup.webp.asset.json";
+import {
+  productIntroBenefits,
+  productIntroClosing,
+  productIntroTitle,
+} from "./product-intro";
 import depoimentoHistoria1 from "@/assets/depoimento_historia_01.webp.asset.json";
 import depoimentoHistoria2 from "@/assets/depoimento_historia_02.webp.asset.json";
 import depoimentoHistoria3 from "@/assets/depoimento_historia_03.webp.asset.json";
@@ -1257,6 +1263,93 @@ export default function Q1() {
                 ],
               }),
               c.jsx(X1, {}),
+            ],
+          }),
+        ],
+      }),
+      c.jsxs("section", {
+        id: "produto-apresentacao-section",
+        className: "cv-auto relative px-4 py-12 sm:py-16 overflow-hidden",
+        style: { backgroundColor: "var(--history-parchment)" },
+        children: [
+          c.jsxs("div", {
+            className:
+              "rev mx-auto w-full max-w-[700px] rounded-[24px] border p-6 sm:p-9 md:p-11",
+            style: {
+              backgroundColor: "var(--history-ivory)",
+              borderColor: "var(--history-border)",
+              boxShadow:
+                "0 22px 60px -24px color-mix(in oklab, var(--history-ink) 34%, transparent)",
+            },
+            children: [
+              c.jsx("img", {
+                src: produtoHistoriaImg.url,
+                alt: "Kit História na Prática com mais de 300 slides de História prontos para usar",
+                width: 600,
+                height: 405,
+                loading: "lazy",
+                decoding: "async",
+                className: "mx-auto w-full max-w-[520px] h-auto",
+                style: { objectFit: "contain" },
+              }),
+              c.jsxs("div", {
+                className: "mt-6 sm:mt-8 text-center",
+                children: [
+                  c.jsx("h2", {
+                    className:
+                      "font-display font-black text-2xl sm:text-3xl md:text-[32px] leading-tight tracking-tight mx-auto max-w-[560px]",
+                    style: { color: "var(--history-ink)" },
+                    children: productIntroTitle,
+                  }),
+                  c.jsx("div", {
+                    className: "filete-ouro w-32 mx-auto !mt-4",
+                  }),
+                ],
+              }),
+              c.jsx("ul", {
+                className: "mt-7 sm:mt-9 space-y-3 sm:space-y-3.5",
+                children: productIntroBenefits.map((item) =>
+                  c.jsxs("li", {
+                    className: "flex items-start gap-3 sm:gap-3.5 text-left",
+                    children: [
+                      c.jsx("span", {
+                        "aria-hidden": "true",
+                        className:
+                          "grid place-items-center shrink-0 rounded-full w-[1.55em] h-[1.55em]",
+                        style: {
+                          backgroundColor:
+                            "color-mix(in oklab, var(--history-conversion) 12%, var(--history-ivory))",
+                        },
+                        children: c.jsx("svg", {
+                          viewBox: "0 0 24 24",
+                          fill: "none",
+                          stroke: "currentColor",
+                          strokeWidth: "3",
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          className: "w-[0.85em] h-[0.85em]",
+                          style: { color: "var(--history-conversion)" },
+                          children: c.jsx("path", {
+                            d: "m5 13 4 4L19 7",
+                          }),
+                        }),
+                      }),
+                      c.jsx("span", {
+                        className:
+                          "min-w-0 text-sm sm:text-base leading-snug font-medium",
+                        style: { color: "var(--history-graphite)" },
+                        children: item,
+                      }),
+                    ],
+                  }),
+                ),
+              }),
+              c.jsx("p", {
+                className:
+                  "mt-8 sm:mt-10 text-center text-lg sm:text-xl font-bold tracking-tight",
+                style: { color: "var(--history-deep-green)" },
+                children: productIntroClosing,
+              }),
             ],
           }),
         ],
