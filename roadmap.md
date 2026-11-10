@@ -31,8 +31,10 @@
 - [x] Mockup do produto História na Prática na primeira dobra (imagem enviada pelo usuário).
 - [x] Depoimentos: cinco capturas reais enviadas pelo usuário no carrossel de "O que dizem nossos clientes".
 
+## Atualização das ofertas
+- [ ] Atualizar preços, economias, links Hotmart do popup e textos solicitados; remover descrição e acesso vitalício dos cards.
+- [ ] Aplicar preços antigos vermelhos e CTA do popup com movimento suave; validar preços e navegação em desktop e celular.
+
 ## Pendentes (aguardando o usuário)
-- Links de checkout do História na Prática (básico, completo e oferta do modal) — mantidos os links atuais até confirmação
-- Confirmação dos valores riscados (R$ 37,90 / R$ 127,00), valor dos bônus (R$ 97,24) e desconto do modal (R$ 15,90 / +R$ 5,90)
 - Confirmação de entrega por WhatsApp/Drive na Hotmart
 
