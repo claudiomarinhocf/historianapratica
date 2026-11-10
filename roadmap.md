@@ -1,8 +1,8 @@
 # Atualização: História na Prática
 
 ## Limpeza e carregamento inicial
-- [ ] Remover imagens locais sem referências; preservar assets CDN usados por versões anteriores.
-- [ ] Priorizar a imagem principal no início do carregamento e verificar no computador e celular.
+- [x] Remover 40 imagens locais sem referências (4,24 MB); preservar assets CDN usados por versões anteriores.
+- [x] Antecipar a imagem principal no head; computador e celular confirmam prioridade alta, imagem carregada e um único download; 14 testes aprovados e build OK.
 
 ## Otimização de imagens WebP
 - [x] Converter 10 imagens PNG usadas na página para WebP sem perda, preservando pixels, resolução e transparência; 8 slides já estavam em WebP.
