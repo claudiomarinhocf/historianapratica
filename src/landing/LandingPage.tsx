@@ -671,7 +671,7 @@ function V1({
                   c.jsx("h3", {
                     className:
                       "offer-modal-title font-black uppercase leading-snug",
-                    children: "ÚLTIMA OFERTA",
+                    children: "⚠️ ÚLTIMA OFERTA ⚠️",
                   }),
                 ],
               }),
