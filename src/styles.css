@@ -116,7 +116,10 @@ body { background-color: var(--history-parchment); color: var(--history-graphite
 .history-page .oferta-ganhos-item { color: oklch(0.3 0.08 150); }
 .history-page .oferta-check { color: oklch(0.5 0.15 150); }
 .history-page .offer-original-price { color: var(--history-offer-red); }
-.history-page .offer-special-price { color: var(--history-conversion); font-size: 1.75rem; display: inline-block; }
+.history-page .offer-special-price { color: var(--history-conversion); font-size: 2.5rem; line-height: 1.2; display: block; margin-top: 0.25rem; }
+.history-page .offer-modal-header { background-color: var(--history-offer-red); color: var(--history-on-action); }
+.history-page .offer-modal-title { width: 100%; padding-inline: 1.5rem; font-size: 1.5rem; text-align: center; letter-spacing: 0; }
+.history-page :is(#plan-basic-card, #plan-complete-card) .offer-original-price { font-size: 1.25rem; }
 .history-page .offer-cta-pop { animation: offer-cta-pop 2.4s ease-in-out infinite; }
 @keyframes offer-cta-pop {
   0%, 100% { transform: translateY(0) scale(1); }
