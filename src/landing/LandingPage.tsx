@@ -659,7 +659,7 @@ function V1({
             children: [
               c.jsxs("div", {
                 className:
-                  "bg-[#5E4B8B] text-white px-4 py-3.5 sm:px-5 sm:py-4 text-center relative flex flex-col items-center",
+                  "offer-modal-header px-4 py-3.5 sm:px-5 sm:py-4 text-center relative flex flex-col items-center",
                 children: [
                   c.jsx("button", {
                     onClick: Z,
@@ -668,15 +668,10 @@ function V1({
                     "aria-label": "Fechar",
                     children: c.jsx(Be, { className: "w-4 h-4 stroke-[2.5]" }),
                   }),
-                  c.jsx("div", {
-                    className:
-                      "w-9 h-9 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center mb-1.5 text-white shadow-inner",
-                    children: c.jsx(g0, { className: "w-5 h-5" }),
-                  }),
                   c.jsx("h3", {
                     className:
-                      "oferta-badge inline-flex items-center gap-1.5 justify-center text-sm sm:text-base font-black tracking-wide uppercase px-4 py-1.5 rounded-full shadow-md leading-snug",
-                    children: "🚨 ÚLTIMA OFERTA",
+                      "offer-modal-title font-black uppercase leading-snug",
+                    children: "ÚLTIMA OFERTA",
                   }),
                 ],
               }),
