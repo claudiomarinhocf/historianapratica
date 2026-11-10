@@ -14,3 +14,4 @@
 - Apply sales-page identity through scoped semantic theme overrides in the global stylesheet; preserve imported layout utilities and interactions to prevent visual-update regressions.
 - Keep offer prices and checkout destinations in a shared browser-safe offers module; derive savings from those values to prevent inconsistent pricing.
 - The committed global stylesheet is prebuilt Tailwind output that the build does not regenerate, so utility classes not already present there silently do nothing; style new sections with plain CSS rules added to that file rather than new utility classes.
+- Preload only the current hero image in the sales route head, matching its CDN pointer and eager/high-priority image, to avoid duplicate downloads or competition from below-fold media.

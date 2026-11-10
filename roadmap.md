@@ -1,5 +1,9 @@
 # Atualização: História na Prática
 
+## Limpeza e carregamento inicial
+- [ ] Remover imagens locais sem referências; preservar assets CDN usados por versões anteriores.
+- [ ] Priorizar a imagem principal no início do carregamento e verificar no computador e celular.
+
 ## Otimização de imagens WebP
 - [x] Converter 10 imagens PNG usadas na página para WebP sem perda, preservando pixels, resolução e transparência; 8 slides já estavam em WebP.
 - [x] Atualizar referências e conferir carregamento das 18 imagens em computador e celular (393px e 320px); build OK. Aviso de conexão do pixel externo Utmify identificado, sem relação com as imagens.
