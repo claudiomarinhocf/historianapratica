@@ -1012,8 +1012,6 @@ export default function Q1() {
                 className: "w-full my-3 sm:my-6 flex justify-center",
                 children: c.jsx("img", {
                   src: pacoteCompletoImg.url,
-                  srcSet: pacoteCompletoImg.url,
-                  sizes: "(max-width: 640px) 100vw, 896px",
                   alt: "Mockup do Pacote de Slides de História",
                   width: 700,
                   height: 700,
