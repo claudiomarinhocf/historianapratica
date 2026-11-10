@@ -1310,6 +1310,7 @@ export default function Q1() {
                 className: "mt-7 sm:mt-9 space-y-3 sm:space-y-3.5",
                 children: productIntroBenefits.map((item) =>
                   c.jsxs("li", {
+                    key: item,
                     className: "flex items-start gap-3 sm:gap-3.5 text-left",
                     children: [
                       c.jsx("span", {
