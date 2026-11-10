@@ -1532,6 +1532,49 @@ export default function Q1() {
         }),
       }),
       c.jsxs("section", {
+        id: "testimonials-section",
+        className:
+          "cv-auto relative overflow-hidden py-12 sm:py-16 bg-white border-b border-[#E3DCCF]",
+        children: [
+          c.jsx("svg", {
+            className:
+              "marca-secao left-[-34px] top-10 w-52 h-52 text-[#5E4B8B]",
+            viewBox: "0 0 24 24",
+            fill: "none",
+            stroke: "currentColor",
+            strokeWidth: "1.1",
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            "aria-hidden": "true",
+            children: c.jsx("path", {
+              d: "M21 11.5a8.4 8.4 0 01-11.8 7.7L3 21l1.9-5.9A8.4 8.4 0 1121 11.5z",
+            }),
+          }),
+          c.jsxs("div", {
+            className: "relative z-10 max-w-6xl mx-auto px-4 text-center",
+            children: [
+              c.jsx("div", {
+                className: "friso w-36 mx-auto mb-3",
+                "aria-hidden": "true",
+              }),
+              c.jsx("h2", {
+                className:
+                  "text-3xl sm:text-5xl font-black text-[#5E4B8B] font-display tracking-tight leading-tight",
+                children: "O que dizem nossos clientes",
+              }),
+              c.jsx("div", { className: "filete-ouro w-32 mx-auto mt-4" }),
+              c.jsx("p", {
+                className:
+                  "mt-3 text-sm sm:text-base md:text-lg font-bold text-gray-700 max-w-xl mx-auto mb-8 sm:mb-10 leading-snug",
+                children:
+                  "Resultados e depoimentos reais de professores que já estão utilizando em sala:",
+              }),
+              c.jsx(q1, {}),
+            ],
+          }),
+        ],
+      }),
+      c.jsxs("section", {
         id: "checkout-section",
         className:
           "relative overflow-hidden py-12 sm:py-14 bg-[#EFE7D8]/60 border-t border-[#E3DCCF] px-4 scroll-mt-12",
@@ -2054,49 +2097,6 @@ export default function Q1() {
                   }),
                 ],
               }),
-            ],
-          }),
-        ],
-      }),
-      c.jsxs("section", {
-        id: "testimonials-section",
-        className:
-          "cv-auto relative overflow-hidden py-12 sm:py-16 bg-white border-b border-[#E3DCCF]",
-        children: [
-          c.jsx("svg", {
-            className:
-              "marca-secao left-[-34px] top-10 w-52 h-52 text-[#5E4B8B]",
-            viewBox: "0 0 24 24",
-            fill: "none",
-            stroke: "currentColor",
-            strokeWidth: "1.1",
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            "aria-hidden": "true",
-            children: c.jsx("path", {
-              d: "M21 11.5a8.4 8.4 0 01-11.8 7.7L3 21l1.9-5.9A8.4 8.4 0 1121 11.5z",
-            }),
-          }),
-          c.jsxs("div", {
-            className: "relative z-10 max-w-6xl mx-auto px-4 text-center",
-            children: [
-              c.jsx("div", {
-                className: "friso w-36 mx-auto mb-3",
-                "aria-hidden": "true",
-              }),
-              c.jsx("h2", {
-                className:
-                  "text-3xl sm:text-5xl font-black text-[#5E4B8B] font-display tracking-tight leading-tight",
-                children: "O que dizem nossos clientes",
-              }),
-              c.jsx("div", { className: "filete-ouro w-32 mx-auto mt-4" }),
-              c.jsx("p", {
-                className:
-                  "mt-3 text-sm sm:text-base md:text-lg font-bold text-gray-700 max-w-xl mx-auto mb-8 sm:mb-10 leading-snug",
-                children:
-                  "Resultados e depoimentos reais de professores que já estão utilizando em sala:",
-              }),
-              c.jsx(q1, {}),
             ],
           }),
         ],
