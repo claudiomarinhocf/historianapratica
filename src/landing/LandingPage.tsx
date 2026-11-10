@@ -1029,7 +1029,7 @@ export default function Q1() {
                 children: [
                   c.jsx("p", { className: "hero-benefits-title", children: "Benefícios" }),
                   c.jsx("ul", {
-                    children: ["Aulas de História prontas, visuais e envolventes", "Economize horas de planejamento toda semana", "Mais de 300 slides prontos para projetar", "100% editáveis e alinhados à BNCC"].map((t) =>
+                    children: ["Aulas de História prontas, visuais e envolventes", "Economize horas de planejamento toda semana", "Mais de 300 slides prontos para projetar", "100% editáveis e prontos para usar em sala"].map((t) =>
                       c.jsxs("li", { children: [c.jsx(tn, { className: "hero-benefits-icon" }), c.jsx("span", { children: t })] }, t),
                     ),
                   }),
