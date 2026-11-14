@@ -2,6 +2,7 @@ import { ArrowDown, BookOpen, Check, Clock3, FileText, Landmark, Layers3, Lightb
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import mainProduct from '@/assets/historia_pacote_completo.webp.asset.json';
+import heroImage from '@/assets/hero_professor_com_ia.webp.asset.json';
 import { HotmartUpsellWidget } from './HotmartUpsellWidget';
 import { UPSELL, faqs, formatPrice, lessons } from './content';
 

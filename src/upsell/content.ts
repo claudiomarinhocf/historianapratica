@@ -1,9 +1,11 @@
+import coverAsset from '@/assets/capa_professor_com_ia.webp.asset.json';
+
 export const UPSELL = {
   price: 47.90,
   format: 'PDF',
   lessons: 8,
   approximatePages: 80,
-  cover: null as { url: string; width: number; height: number } | null,
+  cover: { url: coverAsset.url, width: 600, height: 600 } as { url: string; width: number; height: number } | null,
   // Only paste the official Hotmart SALES FUNNEL snippet supplied by the owner.
   widgetHtml: '',
 };
