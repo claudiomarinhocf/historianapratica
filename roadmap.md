@@ -1,5 +1,9 @@
 # Atualização: História na Prática
 
+## Carrossel das aulas no upsell
+- [ ] Publicar as oito artes enviadas em WebP e inserir um único carrossel antes da seção das oito aulas.
+- [ ] Validar movimento contínuo, pausa, navegação manual e movimento reduzido em computador e celular, preservando a página principal.
+
 ## Página de upsell Professor de História com IA
 - [x] Criar página isolada em /professor-de-historia-com-ia, com oferta R$ 47,90, conteúdo e perguntas frequentes; noindex/nofollow somente nesta página.
 - [x] Preparar integração isolada para o widget oficial, sem pagamentos simulados; preservar parâmetros recebidos; 22 testes aprovados.
