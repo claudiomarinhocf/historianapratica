@@ -29,6 +29,10 @@ export default function ProfessorIAPage() {
     widget?.focus({ preventScroll: true });
   };
   return <div className="ia-page">
+    <div className="ia-alert" role="alert">
+      <p className="ia-alert-label">⚠️ ATENÇÃO:</p>
+      <p className="ia-alert-message">VOCÊ NÃO TERÁ ESSA OPORTUNIDADE<br />NOVAMENTE SE FECHAR ESSA PÁGINA!</p>
+    </div>
     <header className="ia-header"><div className="ia-wrap"><Brand /><span className="ia-header-note">Uma nova possibilidade para suas aulas</span></div></header>
     <main>
       <section className="ia-opening">
@@ -38,7 +42,7 @@ export default function ProfessorIAPage() {
           <h1>Você já tem materiais prontos. Agora aprenda a criar suas próprias aulas com <em>Inteligência Artificial!</em></h1>
           <p className="ia-lead">Descubra como utilizar a IA para planejar aulas, elaborar atividades, criar apresentações, desenvolver avaliações e produzir recursos visuais de História com mais praticidade.</p>
           <div className="ia-hero-image"><img src={heroImage.url} width={1000} height={1000} alt="Mockup do e-book Professor de História com IA com as aulas do material" loading="eager" fetchPriority="high" decoding="async" /></div>
-          <div className="ia-opening-details"><span><BookOpen aria-hidden="true" /> E-book ilustrado em PDF</span><span>8 aulas práticas</span><span className="ia-small-price">{formatPrice(UPSELL.price)}</span></div>
+          <div className="ia-opening-details"><span><BookOpen aria-hidden="true" /> E-book ilustrado em PDF</span><span>8 aulas práticas</span></div>
           <Button variant="ghost" className="ia-jump" onClick={scrollToOffer}>Ver a oferta complementar <ArrowDown aria-hidden="true" /></Button>
         </div>
       </section>
@@ -63,7 +67,7 @@ export default function ProfessorIAPage() {
 
       <section className="ia-section ia-difference"><div className="ia-wrap">
         <div className="ia-section-heading"><h2>Você não precisa depender apenas de materiais prontos.</h2><p>Com o História na Prática, você já recebeu recursos que facilitam a preparação das suas aulas. Agora, com o Professor de História com IA, poderá aprender a desenvolver novos materiais e adaptá-los às necessidades das suas turmas.</p></div>
-        <div className="ia-comparison"><div><img src={mainProduct.url} alt="Materiais do História na Prática — Pacote Completo" width={700} height={700} loading="lazy" decoding="async" /><h3>História na Prática</h3><p>Materiais prontos para utilizar.</p></div><span className="ia-plus" aria-hidden="true">+</span><div><Lightbulb className="ia-comparison-icon" aria-hidden="true" /><h3>Professor de História com IA</h3><p>Conhecimento para criar e personalizar novos materiais.</p></div></div>
+        <div className="ia-comparison"><div><img src={mainProduct.url} alt="Materiais do História na Prática — Pacote Completo" width={700} height={700} loading="lazy" decoding="async" /><h3>História na Prática</h3><p>Materiais prontos para utilizar.</p></div><span className="ia-plus" aria-hidden="true">+</span><div><img src={heroImage.url} alt="E-book Professor de História com IA" width={125} height={125} loading="lazy" decoding="async" /><h3>Professor de História com IA</h3><p>Conhecimento para criar e personalizar novos materiais.</p></div></div>
         <p className="ia-together">Juntos, eles oferecem mais possibilidades para o seu planejamento pedagógico.</p>
       </div></section>
 
