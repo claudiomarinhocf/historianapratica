@@ -1,5 +1,10 @@
 # Atualização: História na Prática
 
+## Auditoria atual de imagens e carregamento
+- [ ] Medir arquivos, comprimir apenas com benefício e verificar qualidade/transparência.
+- [ ] Auditar arquivos sem uso preservando recursos de versões publicadas.
+- [ ] Conferir prioridades das primeiras imagens, páginas e interações; entregar tabela medida.
+
 ## Widget oficial Hotmart em /upsell
 - [x] Instalar HotmartSalesFunnel entre “Acesso imediato após a compra” e as bandeiras de pagamento, sem botões de pagamento próprios; script HTTP 200, um container/iframe, 17 testes aprovados, computador e celulares 393/320px sem rolagem horizontal. Hotmart exige compra em andamento; avisos Utmify preexistentes observados.
 - [x] Publicar na URL existente e conferir https://historianapratica.lovable.app/upsell: script HTTP 200, um container/iframe, preço R$ 47,90 preservado.
