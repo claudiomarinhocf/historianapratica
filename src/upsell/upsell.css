@@ -1,11 +1,17 @@
 /* Leaf-route stylesheet: every selector is isolated from the main sales page. */
 .ia-page { --ia-surface: var(--history-ivory); --ia-text: var(--history-graphite); --ia-ink: var(--history-ink); --ia-muted: color-mix(in oklab, var(--history-graphite) 78%, var(--history-ivory)); --ia-border: color-mix(in oklab, var(--history-ink) 17%, var(--history-ivory)); --ia-shadow: 0 18px 45px -22px color-mix(in oklab, var(--history-ink) 28%, transparent); --ia-book-shadow: 14px 18px 30px -10px color-mix(in oklab, var(--history-graphite) 35%, transparent); background: var(--ia-surface); color: var(--ia-text); font-family: var(--font-sans); position: relative; letter-spacing: 0; }
 .ia-page * { box-sizing: border-box; }
-.ia-page .ia-alert { background: #962B32; color: var(--history-ivory); text-align: center; padding: 10px 20px 12px; box-shadow: 0 6px 18px -8px color-mix(in oklab, var(--history-ink) 55%, transparent); animation: ia-alert-in .5s ease-out; }
-.ia-page .ia-alert-label { font-size: 14px; font-weight: 700; letter-spacing: .04em; color: #F7D99C; margin-bottom: 4px; }
-.ia-page .ia-alert-message { font-size: 13px; font-weight: 600; line-height: 1.5; text-wrap: balance; }
+.ia-page .ia-alert { background: #E7000C; color: #fff; text-align: center; padding: 10px 16px; animation: ia-alert-in .5s ease-out; }
+.ia-page .ia-alert-label { font-size: 15px; font-weight: 800; line-height: 1.3; margin: 0 0 3px; }
+.ia-page .ia-alert-message { font-size: 12px; font-weight: 500; line-height: 1.4; margin: 0; text-wrap: balance; }
 @keyframes ia-alert-in { from { opacity: 0; } to { opacity: 1; } }
-@media (min-width: 800px) { .ia-page .ia-alert { padding: 12px 24px; } .ia-page .ia-alert-label { font-size: 15px; } .ia-page .ia-alert-message { font-size: 14px; } }
+.ia-page .ia-progress-block { background: #F7F2E8; text-align: center; padding: 10px 16px 9px; border-bottom: 1px solid var(--ia-border); }
+.ia-page .ia-progress-text { font-size: 12px; font-weight: 600; color: var(--ia-ink); margin: 0 0 6px; }
+.ia-page .ia-progress { position: relative; width: min(260px, 100%); height: 16px; margin: 0 auto; border-radius: 999px; background: #DDD5C7; overflow: hidden; }
+.ia-page .ia-progress-fill { width: 95%; height: 100%; border-radius: 999px; background-color: #E7000C; background-image: repeating-linear-gradient(45deg, rgba(255,255,255,.18) 0 6px, transparent 6px 12px); }
+.ia-page .ia-progress span { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff; }
+.ia-page .ia-progress-note { font-size: 11px; color: var(--ia-muted); margin: 6px 0 0; }
+@media (min-width: 800px) { .ia-page .ia-alert-label { font-size: 17px; } .ia-page .ia-alert-message { font-size: 13px; } }
 .ia-page .ia-wrap { width: min(100% - 40px, 1000px); margin-inline: auto; }
 .ia-page .ia-header { border-bottom: 1px solid var(--ia-border); }
 .ia-page .ia-header .ia-wrap { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
@@ -54,7 +60,9 @@
 .ia-page .ia-benefit > svg { width: 28px; height: 28px; color: var(--history-terracotta); margin-bottom: 16px; }
 .ia-page .ia-benefit p { font-size: 13px; line-height: 1.75; margin-top: 10px; color: var(--ia-muted); }
 .ia-page .ia-lessons { display: grid; gap: 12px; }
-.ia-page .ia-benefits, .ia-page .ia-lessons-section { background: var(--history-parchment); }
+.ia-page .ia-benefits { background: var(--history-parchment); }
+.ia-page .ia-lessons-section { background: var(--history-ivory); }
+.ia-page .ia-lessons-section .ia-lesson { background: var(--history-parchment); }
 .ia-page .ia-benefit { background: var(--history-ivory); }
 .ia-page .ia-aulas-carousel { background: var(--history-ivory); overflow: hidden; }
 .ia-page .ia-aulas-carousel > .ia-wrap { max-width: 1240px; }
@@ -104,7 +112,7 @@
 .ia-page #hotmart-sales-funnel iframe { min-width: 0 !important; max-width: 100%; }
 .ia-page .ia-widget-error { font-size: 12px; line-height: 1.6; color: var(--ia-muted); margin-block: 12px; }
 .ia-page .ia-widget-placeholder { padding: 28px 20px; border: 1px dashed var(--ia-border); border-radius: 8px; font-size: 11px; color: var(--ia-muted); background: var(--history-parchment); }
-.ia-page .ia-faq { background: var(--history-parchment); }
+.ia-page .ia-faq { background: var(--history-ivory); }
 .ia-page .ia-faq .ia-wrap { max-width: 760px; }
 .ia-page .ia-faq-item { border-bottom: 1px solid var(--ia-border); }
 .ia-page .ia-faq-trigger { font-size: 14px; font-weight: 600; width: 100%; padding: 18px 0; line-height: 1.6; gap: 15px; color: var(--ia-ink); }
