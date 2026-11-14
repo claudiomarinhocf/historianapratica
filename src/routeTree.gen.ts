@@ -10,33 +10,44 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProfessorDeHistoriaComIaRouteImport } from './routes/professor-de-historia-com-ia'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProfessorDeHistoriaComIaRoute =
+  ProfessorDeHistoriaComIaRouteImport.update({
+    id: '/professor-de-historia-com-ia',
+    path: '/professor-de-historia-com-ia',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/professor-de-historia-com-ia': typeof ProfessorDeHistoriaComIaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/professor-de-historia-com-ia': typeof ProfessorDeHistoriaComIaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/professor-de-historia-com-ia': typeof ProfessorDeHistoriaComIaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/professor-de-historia-com-ia'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/professor-de-historia-com-ia'
+  id: '__root__' | '/' | '/professor-de-historia-com-ia'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ProfessorDeHistoriaComIaRoute: typeof ProfessorDeHistoriaComIaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +59,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/professor-de-historia-com-ia': {
+      id: '/professor-de-historia-com-ia'
+      path: '/professor-de-historia-com-ia'
+      fullPath: '/professor-de-historia-com-ia'
+      preLoaderRoute: typeof ProfessorDeHistoriaComIaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ProfessorDeHistoriaComIaRoute: ProfessorDeHistoriaComIaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
