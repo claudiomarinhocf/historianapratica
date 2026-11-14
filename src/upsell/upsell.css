@@ -19,6 +19,8 @@
 .ia-page .ia-opening-details { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 20px; margin-top: 24px; font-size: 12px; }
 .ia-page .ia-opening-details > span { display: inline-flex; align-items: center; gap: 7px; }
 .ia-page .ia-opening-details svg { width: 17px; height: 17px; color: var(--history-terracotta); }
+.ia-page .ia-hero-image { margin-top: 28px; }
+.ia-page .ia-hero-image img { max-width: 420px; width: 100%; height: auto; margin-inline: auto; display: block; filter: drop-shadow(0 22px 34px color-mix(in oklab, var(--history-ink) 30%, transparent)); }
 .ia-page .ia-small-price { font-size: 22px; font-weight: 800; color: var(--history-deep-green); }
 .ia-page .ia-jump { height: auto; margin-top: 20px; padding: 12px 18px; font-size: 13px; white-space: normal; color: var(--ia-ink); background: transparent; border: 1px solid var(--ia-border); border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; }
 .ia-page .ia-jump svg { width: 16px; height: 16px; }
