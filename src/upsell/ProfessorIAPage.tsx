@@ -83,10 +83,10 @@ export default function ProfessorIAPage() {
           <h3 className="ia-offer-card-title">Professor de História com IA</h3>
           <p className="ia-price-old">{formatPrice(UPSELL.oldPrice)}</p>
           <p className="ia-price">{formatPrice(UPSELL.price)}</p>
-           <HotmartSalesFunnel />
           <p className="ia-price-note">Pagamento único</p>
           <ul className="ia-offer-features">{['E-book digital ilustrado em PDF', '8 aulas práticas passo a passo', '+ 80 páginas ilustradas', 'Exemplos de comandos para IA'].map(item => <li key={item}><Check aria-hidden="true" />{item}</li>)}</ul>
           <ul className="ia-offer-gifts">{['Conteúdo voltado a professores de História', 'Acesso imediato após a compra'].map(item => <li key={item}><Gift aria-hidden="true" />{item}</li>)}</ul>
+          <HotmartSalesFunnel />
           <img className="ia-offer-flags" src={paymentFlags.url} width={340} height={41} alt="Bandeiras de pagamento aceitas: MasterCard, Visa, American Express, Diners Club, Hipercard, Elo e Banco do Brasil" loading="lazy" decoding="async" />
           <p className="ia-offer-guarantee"><ShieldCheck aria-hidden="true" /> Garantia de 7 dias</p>
         </div>
