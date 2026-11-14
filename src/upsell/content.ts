@@ -2,6 +2,7 @@ import coverAsset from '@/assets/capa_professor_com_ia.webp.asset.json';
 
 export const UPSELL = {
   price: 47.90,
+  oldPrice: 157.90,
   format: 'PDF',
   lessons: 8,
   approximatePages: 80,
