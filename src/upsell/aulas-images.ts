@@ -10,7 +10,7 @@ import { lessons } from './content';
 
 export const aulasImages = [aula1, aula2, aula3, aula4, aula5, aula6, aula7, aula8].map((asset, index) => ({
   url: asset.url,
-  alt: `Aula ${index + 1} — ${lessons[index][0]}`,
+  alt: `Aula ${index + 1} — ${lessons[index]?.[0] ?? ''}`,
   width: 600,
   height: 600,
 }));

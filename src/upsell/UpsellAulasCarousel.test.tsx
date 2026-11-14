@@ -8,7 +8,7 @@ const mocks = vi.hoisted(() => ({
 }));
 vi.mock('embla-carousel-auto-scroll', () => ({ default: () => ({ play: mocks.play, stop: mocks.stop }) }));
 vi.mock('embla-carousel-react', () => {
-  const api = { on: vi.fn((name: string, callback: () => void) => { mocks.events[name] = callback; return api; }), off: vi.fn(), scrollPrev: vi.fn(), scrollNext: vi.fn() };
+  const api = { on: vi.fn((name: string, callback: () => void) => { mocks.events[name] = callback; return api; }), off: vi.fn(() => api), scrollPrev: vi.fn(), scrollNext: vi.fn() };
   return { default: () => [vi.fn(), api] };
 });
 
@@ -47,10 +47,13 @@ describe('Lesson carousel playback', () => {
     vi.useFakeTimers();
     render(<UpsellAulasCarousel />);
     mocks.stop.mockClear();
-    mocks.events.pointerDown();
+    const pointerDown = mocks.events['pointerDown'];
+    const pointerUp = mocks.events['pointerUp'];
+    if (!pointerDown || !pointerUp) throw new Error('Missing interaction handlers');
+    pointerDown();
     expect(mocks.stop).toHaveBeenCalled();
     mocks.play.mockClear();
-    mocks.events.pointerUp();
+    pointerUp();
     vi.advanceTimersByTime(1799);
     expect(mocks.play).not.toHaveBeenCalled();
     vi.advanceTimersByTime(1);

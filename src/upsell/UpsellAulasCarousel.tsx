@@ -36,7 +36,7 @@ export function UpsellAulasCarousel() {
       clearTimeout(resumeTimer);
       resumeTimer = setTimeout(() => { interacting = false; sync(); }, 1800);
     };
-    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; sync(); }, { threshold: 0.1 });
+    const observer = new IntersectionObserver(([entry]) => { visible = entry?.isIntersecting ?? false; sync(); }, { threshold: 0.1 });
     observer.observe(section);
     onPreference();
     preference.addEventListener('change', onPreference);
