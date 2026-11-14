@@ -16,3 +16,5 @@
 - The committed global stylesheet is prebuilt Tailwind output that the build does not regenerate, so utility classes not already present there silently do nothing; style new sections with plain CSS rules added to that file rather than new utility classes.
 - Preload only the current hero image in the sales route head, matching its CDN pointer and eager/high-priority image, to avoid duplicate downloads or competition from below-fold media.
 - Exception to the lossless rule: the 1672x941 slide illustrations compress to ~6x their PNG size as lossless WebP, so encode those as high-quality lossy WebP (q85) with no resizing, and keep transparency intact where the source has it.
+- Keep the post-purchase upsell in its own route and scoped stylesheet, reusing existing tokens and UI controls without changing the main sales page.
+- Install only supplied official Hotmart funnel snippets in the isolated upsell widget; execute scripts after hydration in source order, cancel pending work on unmount, and leave acceptance/refusal to Hotmart.

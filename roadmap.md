@@ -1,5 +1,11 @@
 # Atualização: História na Prática
 
+## Página de upsell Professor de História com IA
+- [ ] Criar página isolada em /professor-de-historia-com-ia, com oferta R$ 47,90, conteúdo e perguntas frequentes.
+- [ ] Preparar integração isolada para o widget oficial, sem pagamentos simulados; preservar parâmetros recebidos.
+- [ ] Validar computador, celular, acesso direto, atualização e preservação da página principal.
+- [ ] Receber capa original e código oficial Hotmart; validar transação de teste após instalação (aguardando usuário).
+
 ## Limpeza e carregamento inicial
 - [x] Remover 40 imagens locais sem referências (4,24 MB); preservar assets CDN usados por versões anteriores.
 - [x] Antecipar a imagem principal no head; computador e celular confirmam prioridade alta, imagem carregada e um único download; 14 testes aprovados e build OK.

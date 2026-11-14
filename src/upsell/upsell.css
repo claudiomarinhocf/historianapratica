@@ -1,0 +1,83 @@
+/* Leaf-route stylesheet: every selector is isolated from the main sales page. */
+.ia-page { --ia-surface: var(--history-ivory); --ia-text: var(--history-graphite); --ia-ink: var(--history-ink); --ia-muted: color-mix(in oklab, var(--history-graphite) 78%, var(--history-ivory)); --ia-border: color-mix(in oklab, var(--history-ink) 17%, var(--history-ivory)); --ia-shadow: 0 18px 45px -22px color-mix(in oklab, var(--history-ink) 28%, transparent); --ia-book-shadow: 14px 18px 30px -10px color-mix(in oklab, var(--history-graphite) 35%, transparent); background: var(--ia-surface); color: var(--ia-text); font-family: var(--font-sans); position: relative; letter-spacing: 0; }
+.ia-page * { box-sizing: border-box; }
+.ia-page .ia-wrap { width: min(100% - 40px, 1000px); margin-inline: auto; }
+.ia-page .ia-header { border-bottom: 1px solid var(--ia-border); }
+.ia-page .ia-header .ia-wrap { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.ia-page .ia-brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ia-ink); font-weight: 800; font-size: 18px; line-height: 1.15; }
+.ia-page .ia-brand > svg { width: 30px; height: 30px; color: var(--history-terracotta); }
+.ia-page .ia-brand > span > span { display: block; font-weight: 500; font-size: 13px; margin-top: 4px; }
+.ia-page .ia-header-note { font-size: 12px; color: var(--ia-muted); }
+.ia-page .ia-centered { text-align: center; }
+.ia-page .ia-opening { padding: 44px 0 36px; border-bottom: 1px solid var(--ia-border); }
+.ia-page .ia-eyebrow { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 10px; font-weight: 700; color: var(--history-terracotta); line-height: 1.6; }
+.ia-page .ia-eyebrow svg { width: 17px; height: 17px; flex-shrink: 0; }
+.ia-page .ia-product-name { font-size: 15px; color: var(--ia-ink); font-weight: 700; margin: 23px 0 12px; }
+.ia-page h1 { max-width: 880px; margin-inline: auto; font-weight: 800; font-size: 28px; line-height: 1.25; color: var(--ia-ink); }
+.ia-page h1 em { color: var(--history-deep-green); font-style: normal; }
+.ia-page .ia-lead { max-width: 760px; margin: 20px auto 0; font-size: 14px; line-height: 1.8; color: var(--ia-muted); }
+.ia-page .ia-opening-details { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 20px; margin-top: 24px; font-size: 12px; }
+.ia-page .ia-opening-details > span { display: inline-flex; align-items: center; gap: 7px; }
+.ia-page .ia-opening-details svg { width: 17px; height: 17px; color: var(--history-terracotta); }
+.ia-page .ia-small-price { font-size: 22px; font-weight: 800; color: var(--history-deep-green); }
+.ia-page .ia-jump { height: auto; margin-top: 20px; padding: 12px 18px; font-size: 13px; white-space: normal; color: var(--ia-ink); background: transparent; border: 1px solid var(--ia-border); border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; }
+.ia-page .ia-jump svg { width: 16px; height: 16px; }
+.ia-page .ia-jump:hover { background: var(--history-parchment); }
+.ia-page :is(button, [tabindex]):focus-visible { outline: 3px solid var(--history-gold); outline-offset: 4px; }
+.ia-page .ia-section { padding: 42px 0; }
+.ia-page h2 { font-size: 24px; font-weight: 800; line-height: 1.3; color: var(--ia-ink); }
+.ia-page h3 { font-size: 15px; font-weight: 700; line-height: 1.5; }
+.ia-page p { overflow-wrap: break-word; }
+.ia-page .ia-section-label { font-size: 10px; font-weight: 700; color: var(--history-terracotta); margin-bottom: 12px; }
+.ia-page .ia-product-grid { display: grid; gap: 30px; align-items: center; }
+.ia-page .ia-product-grid > div > p:not(.ia-section-label) { margin-top: 16px; font-size: 14px; line-height: 1.8; color: var(--ia-muted); }
+.ia-page .ia-cover-pending { width: min(100%, 280px); aspect-ratio: 3 / 4; margin-inline: auto; border: 1px dashed var(--ia-border); background: var(--history-parchment); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 24px; color: var(--ia-muted); gap: 14px; border-radius: 8px; }
+.ia-page .ia-cover-pending svg { width: 48px; height: 48px; color: var(--history-terracotta); }
+.ia-page .ia-cover-pending span { font-size: 14px; font-weight: 600; }
+.ia-page .ia-cover-pending small { font-size: 11px; }
+.ia-page .ia-book { perspective: 1000px; padding: 20px; }
+.ia-page .ia-book img { max-width: 300px; width: 100%; height: auto; margin-inline: auto; transform: rotateY(-12deg); box-shadow: var(--ia-book-shadow); border-radius: 2px; }
+.ia-page .ia-checks { margin-top: 22px; display: grid; gap: 10px; }
+.ia-page .ia-checks li { display: flex; gap: 10px; align-items: center; font-size: 13px; }
+.ia-page .ia-checks svg { width: 17px; height: 17px; flex-shrink: 0; color: var(--history-deep-green); }
+.ia-page .ia-section-heading { max-width: 760px; margin: 0 auto 26px; text-align: center; }
+.ia-page .ia-section-heading > p:not(.ia-section-label) { margin-top: 18px; line-height: 1.8; font-size: 14px; }
+.ia-page .ia-benefits { background: var(--history-parchment); }
+.ia-page .ia-benefit-grid { display: grid; gap: 14px; }
+.ia-page .ia-benefit { background: var(--ia-surface); border: 1px solid var(--ia-border); border-radius: 8px; padding: 24px; box-shadow: var(--ia-shadow); }
+.ia-page .ia-benefit > svg { width: 28px; height: 28px; color: var(--history-terracotta); margin-bottom: 16px; }
+.ia-page .ia-benefit p { font-size: 13px; line-height: 1.75; margin-top: 10px; color: var(--ia-muted); }
+.ia-page .ia-lessons { display: grid; gap: 12px; }
+.ia-page .ia-lesson { display: flex; gap: 16px; align-items: flex-start; padding: 20px; border: 1px solid var(--ia-border); border-radius: 8px; }
+.ia-page .ia-lesson-number { flex-shrink: 0; font-size: 21px; line-height: 1.5; font-weight: 600; color: var(--history-terracotta); }
+.ia-page .ia-lesson h3 span { display: none; }
+.ia-page .ia-lesson p { margin-top: 6px; font-size: 12px; line-height: 1.7; color: var(--ia-muted); }
+.ia-page .ia-difference { background: var(--ia-ink); color: var(--history-ivory); }
+.ia-page .ia-difference h2 { color: var(--history-ivory); }
+.ia-page .ia-comparison { display: grid; gap: 20px; align-items: center; text-align: center; max-width: 720px; margin: auto; }
+.ia-page .ia-comparison img { width: 125px; height: 125px; object-fit: contain; margin: 0 auto 14px; }
+.ia-page .ia-comparison-icon { width: 70px; height: 70px; margin: 24px auto 32px; color: var(--history-gold); }
+.ia-page .ia-comparison p { font-size: 13px; line-height: 1.7; margin-top: 8px; }
+.ia-page .ia-plus { font-size: 32px; color: var(--history-gold); }
+.ia-page .ia-together { max-width: 630px; text-align: center; margin: 26px auto 0; font-size: 14px; font-weight: 600; color: var(--history-gold); }
+.ia-page .ia-offer h2 { max-width: 660px; margin: 16px auto 24px; }
+.ia-page .ia-offer-features { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 20px; max-width: 580px; margin: auto; }
+.ia-page .ia-offer-features li { display: flex; align-items: center; gap: 7px; font-size: 12px; }
+.ia-page .ia-offer-features svg { width: 16px; height: 16px; color: var(--history-deep-green); flex-shrink: 0; }
+.ia-page .ia-price { color: var(--history-deep-green); font-size: 48px; line-height: 1.2; font-weight: 800; margin-top: 28px; }
+.ia-page .ia-offer-support { max-width: 560px; margin: 18px auto 26px; font-size: 14px; line-height: 1.8; color: var(--ia-muted); }
+.ia-page .ia-widget { max-width: 680px; margin-inline: auto; scroll-margin-block: 30px; }
+.ia-page .ia-widget-placeholder { padding: 28px 20px; border: 1px dashed var(--ia-border); border-radius: 8px; font-size: 11px; color: var(--ia-muted); background: var(--history-parchment); }
+.ia-page .ia-faq { background: var(--history-parchment); }
+.ia-page .ia-faq .ia-wrap { max-width: 760px; }
+.ia-page .ia-faq-item { border-bottom: 1px solid var(--ia-border); }
+.ia-page .ia-faq-trigger { font-size: 14px; font-weight: 600; width: 100%; padding: 18px 0; line-height: 1.6; gap: 15px; color: var(--ia-ink); }
+.ia-page .ia-faq-trigger svg { flex-shrink: 0; color: var(--ia-ink); transition: transform .2s; }
+.ia-page .ia-faq-trigger[data-state=open] svg { transform: rotate(180deg); }
+.ia-page .ia-faq-answer { font-size: 13px; line-height: 1.8; color: var(--ia-muted); padding-bottom: 18px; }
+.ia-page .ia-footer { display: flex; align-items: center; flex-direction: column; gap: 18px; padding: 28px 20px; border-top: 1px solid var(--ia-border); text-align: center; }
+.ia-page .ia-footer p { font-size: 11px; color: var(--ia-muted); }
+@media (min-width: 640px) { .ia-page .ia-benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ia-page .ia-lessons { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ia-page .ia-comparison { grid-template-columns: minmax(0, 1fr) 50px minmax(0, 1fr); } }
+@media (min-width: 800px) { .ia-page .ia-opening { padding: 48px 0 40px; } .ia-page h1 { font-size: 40px; } .ia-page h2 { font-size: 30px; } .ia-page .ia-lead { font-size: 16px; } .ia-page .ia-product-grid { grid-template-columns: .8fr 1.2fr; gap: 60px; } .ia-page .ia-section { padding: 56px 0; } .ia-page .ia-benefit-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 479px) { .ia-page .ia-header-note { display: none; } .ia-page .ia-wrap { width: calc(100% - 32px); } }
+@media (prefers-reduced-motion: reduce) { .ia-page *, .ia-page *::before, .ia-page *::after { transition: none !important; animation: none !important; } }
