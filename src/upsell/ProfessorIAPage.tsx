@@ -2,6 +2,7 @@ import { ArrowDown, BookOpen, Check, Clock3, FileText, Landmark, Layers3, Lightb
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import mainProduct from '@/assets/historia_pacote_completo.webp.asset.json';
+import heroImage from '@/assets/hero_professor_com_ia.webp.asset.json';
 import { HotmartUpsellWidget } from './HotmartUpsellWidget';
 import { UPSELL, faqs, formatPrice, lessons } from './content';
 
@@ -36,6 +37,7 @@ export default function ProfessorIAPage() {
           <p className="ia-product-name">Professor de História com IA</p>
           <h1>Você já tem materiais prontos. Agora aprenda a criar suas próprias aulas com <em>Inteligência Artificial!</em></h1>
           <p className="ia-lead">Descubra como utilizar a IA para planejar aulas, elaborar atividades, criar apresentações, desenvolver avaliações e produzir recursos visuais de História com mais praticidade.</p>
+          <div className="ia-hero-image"><img src={heroImage.url} width={1000} height={1000} alt="Mockup do e-book Professor de História com IA com as aulas do material" loading="eager" fetchPriority="high" decoding="async" /></div>
           <div className="ia-opening-details"><span><BookOpen aria-hidden="true" /> E-book ilustrado em PDF</span><span>8 aulas práticas</span><span className="ia-small-price">{formatPrice(UPSELL.price)}</span></div>
           <Button variant="ghost" className="ia-jump" onClick={scrollToOffer}>Ver a oferta complementar <ArrowDown aria-hidden="true" /></Button>
         </div>
@@ -45,7 +47,7 @@ export default function ProfessorIAPage() {
         <BookPreview />
         <div><p className="ia-section-label">SEU PRÓXIMO PASSO</p><h2>Conheça o Professor de História com IA</h2>
           <p>Um guia digital ilustrado que ensina, passo a passo, como professores de História podem utilizar ferramentas de inteligência artificial para organizar seu planejamento e produzir materiais pedagógicos personalizados.</p>
-          <ul className="ia-checks">{['8 aulas práticas', 'Aproximadamente 80 páginas ilustradas', 'Conteúdo organizado passo a passo', 'Exemplos de comandos para IA', 'Material digital em PDF'].map(item => <li key={item}><Check aria-hidden="true" />{item}</li>)}</ul>
+          <ul className="ia-checks">{['8 aulas práticas', '+ 80 páginas ilustradas', 'Conteúdo organizado passo a passo', 'Exemplos de comandos para IA', 'Material digital em PDF'].map(item => <li key={item}><Check aria-hidden="true" />{item}</li>)}</ul>
         </div>
       </div></section>
 
@@ -67,7 +69,7 @@ export default function ProfessorIAPage() {
 
       <section className="ia-section ia-offer"><div className="ia-wrap ia-centered">
         <p className="ia-eyebrow">COMPLEMENTE SEU PLANEJAMENTO</p><h2>Adicione agora o Professor de História com IA à sua experiência!</h2>
-        <ul className="ia-offer-features">{['E-book digital ilustrado', '8 aulas práticas', 'Aproximadamente 80 páginas', 'Conteúdo voltado a professores de História'].map(item => <li key={item}><Check aria-hidden="true" />{item}</li>)}</ul>
+        <ul className="ia-offer-features">{['E-book digital ilustrado', '8 aulas práticas', '+ 80 páginas ilustradas', 'Conteúdo voltado a professores de História'].map(item => <li key={item}><Check aria-hidden="true" />{item}</li>)}</ul>
         <p className="ia-price">{formatPrice(UPSELL.price)}</p><p className="ia-offer-support">Uma oportunidade de complementar seu material e aprender novas formas de preparar suas aulas.</p>
         <HotmartUpsellWidget html={UPSELL.widgetHtml} />
       </div></section>
