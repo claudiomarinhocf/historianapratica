@@ -101,6 +101,10 @@
 .ia-page .ia-guarantee p { max-width: 620px; margin: 16px auto 0; font-size: 14px; line-height: 1.8; color: var(--ia-muted); }
 .ia-page .ia-guarantee p strong { color: var(--ia-ink); }
 .ia-page .ia-widget { max-width: 680px; margin-inline: auto; scroll-margin-block: 30px; }
+.ia-page .ia-sales-funnel { width: 100%; min-width: 0; margin-top: 18px; }
+.ia-page #hotmart-sales-funnel { width: 100%; min-width: 0; }
+.ia-page #hotmart-sales-funnel iframe { min-width: 0 !important; max-width: 100%; }
+.ia-page .ia-widget-error { font-size: 12px; line-height: 1.6; color: var(--ia-muted); margin-block: 12px; }
 .ia-page .ia-widget-placeholder { padding: 28px 20px; border: 1px dashed var(--ia-border); border-radius: 8px; font-size: 11px; color: var(--ia-muted); background: var(--history-parchment); }
 .ia-page .ia-faq { background: var(--history-parchment); }
 .ia-page .ia-faq .ia-wrap { max-width: 760px; }
