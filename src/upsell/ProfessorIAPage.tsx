@@ -1,12 +1,10 @@
 import { ArrowDown, BookOpen, Check, Clock3, FileText, Gift, Landmark, Layers3, Presentation, ShieldCheck } from 'lucide-react';
-import guaranteeSeal from '@/assets/selo_garantia_7dias.webp.asset.json';
 import paymentFlags from '@/assets/bandeiras_pagamento.webp.asset.json';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import mainProduct from '@/assets/historia_pacote_completo.webp.asset.json';
-import heroImage from '@/assets/hero_professor_com_ia.webp.asset.json';
+import heroImage from '@/assets/hero_professor_com_ia_v2.webp.asset.json';
 import { HotmartSalesFunnel } from './HotmartSalesFunnel';
-import { UpsellAulasCarousel } from './UpsellAulasCarousel';
 import { UPSELL, faqs, formatPrice, lessons } from './content';
 
 const benefits = [
@@ -28,16 +26,21 @@ export default function ProfessorIAPage() {
   };
   return <div className="ia-page">
     <div className="ia-alert" role="alert">
-      <p className="ia-alert-label">🎁 OFERTA EXCLUSIVA PARA VOCÊ!</p>
-      <p className="ia-alert-message">⚠️ Aproveite agora! Se sair desta página, perderá esta oferta.</p>
+      <p className="ia-alert-label">⚠️ ATENÇÃO: NÃO FECHE ESTA PÁGINA</p>
+      <p className="ia-alert-message">Sua compra está garantida! Conheça esta oferta especial antes de continuar.</p>
+    </div>
+    <div className="ia-progress-block">
+      <p className="ia-progress-text">Você está na etapa final da sua experiência...</p>
+      <div className="ia-progress" aria-hidden="true"><div className="ia-progress-fill" /><span>95%</span></div>
+      <p className="ia-progress-note">Seu acesso ao História na Prática já está garantido.</p>
     </div>
     <header className="ia-header"><div className="ia-wrap"><Brand /><span className="ia-header-note">Uma nova possibilidade para suas aulas</span></div></header>
     <main>
       <section className="ia-opening">
         <div className="ia-wrap ia-centered">
-          <p className="ia-product-name">Professor de História com IA</p>
-          <h1>Você já tem materiais prontos. Agora aprenda a criar suas próprias aulas com <em>Inteligência Artificial!</em></h1>
-          <p className="ia-lead">Descubra como utilizar a IA para planejar aulas, elaborar atividades, criar apresentações, desenvolver avaliações e produzir recursos visuais de História com mais praticidade.</p>
+          <p className="ia-product-name">EXCLUSIVO PARA QUEM ADQUIRIU O HISTÓRIA NA PRÁTICA</p>
+          <h1>E se você pudesse <em>criar suas próprias aulas</em> como as do História na Prática?</h1>
+          <p className="ia-lead">Com o Professor de História com IA, descubra como utilizar a inteligência artificial para desenvolver apresentações, atividades, avaliações e recursos visuais personalizados, seguindo um passo a passo prático.</p>
           <div className="ia-hero-image"><img src={heroImage.url} width={1000} height={1000} alt="Mockup do e-book Professor de História com IA com as aulas do material" loading="eager" fetchPriority="high" decoding="async" /></div>
           <div className="ia-opening-details"><span><BookOpen aria-hidden="true" /> E-book ilustrado em PDF</span><span>8 aulas práticas</span></div>
           <Button variant="ghost" className="ia-jump" onClick={scrollToOffer}>Ver a oferta complementar <ArrowDown aria-hidden="true" /></Button>
@@ -49,7 +52,6 @@ export default function ProfessorIAPage() {
         <div className="ia-benefit-grid">{benefits.map(({ icon: Icon, title, text }) => <article className="ia-benefit" key={title}><Icon aria-hidden="true" /><h3>{title}</h3><p>{text}</p></article>)}</div>
       </div></section>
 
-      <UpsellAulasCarousel />
 
       <section className="ia-section ia-lessons-section"><div className="ia-wrap">
         <div className="ia-section-heading"><p className="ia-section-label">DO PRIMEIRO COMANDO À AULA COMPLETA</p><h2>8 aulas para você começar a utilizar IA no ensino de História</h2></div>
@@ -77,12 +79,6 @@ export default function ProfessorIAPage() {
           <img className="ia-offer-flags" src={paymentFlags.url} width={340} height={41} alt="Bandeiras de pagamento aceitas: MasterCard, Visa, American Express, Diners Club, Hipercard, Elo e Banco do Brasil" loading="lazy" decoding="async" />
           <p className="ia-offer-guarantee"><ShieldCheck aria-hidden="true" /> Garantia de 7 dias</p>
         </div>
-      </div></section>
-
-      <section className="ia-section ia-guarantee"><div className="ia-wrap ia-centered">
-        <img src={guaranteeSeal.url} width={240} height={238} alt="Selo dourado de garantia de 7 dias" loading="lazy" decoding="async" />
-        <h2>Garantia de 7 dias</h2>
-        <p>Se você não curtir o material, devolvemos o seu dinheiro. <strong>Simples assim.</strong> Sem perguntas, sem burocracia. O risco é todo nosso.</p>
       </div></section>
 
       <section className="ia-section ia-faq"><div className="ia-wrap"><div className="ia-section-heading"><p className="ia-section-label">TIRE SUAS DÚVIDAS</p><h2>Perguntas frequentes</h2></div><Accordion type="single" collapsible>{faqs.map(([question, answer], index) => <AccordionItem className="ia-faq-item" value={`faq-${index}`} key={question}><AccordionTrigger className="ia-faq-trigger">{question}</AccordionTrigger><AccordionContent className="ia-faq-answer">{answer}</AccordionContent></AccordionItem>)}</Accordion></div></section>
