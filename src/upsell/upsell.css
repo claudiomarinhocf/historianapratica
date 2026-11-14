@@ -50,7 +50,7 @@
 .ia-page .ia-section-heading { max-width: 760px; margin: 0 auto 26px; text-align: center; }
 .ia-page .ia-section-heading > p:not(.ia-section-label) { margin-top: 18px; line-height: 1.8; font-size: 14px; }
 .ia-page .ia-benefit-grid { display: grid; gap: 14px; }
-.ia-page .ia-benefit { background: var(--ia-surface); border: 1px solid var(--ia-border); border-radius: 8px; padding: 24px; box-shadow: var(--ia-shadow); }
+.ia-page .ia-benefit { background: var(--history-parchment); border: 1px solid var(--ia-border); border-radius: 8px; padding: 24px; box-shadow: var(--ia-shadow); }
 .ia-page .ia-benefit > svg { width: 28px; height: 28px; color: var(--history-terracotta); margin-bottom: 16px; }
 .ia-page .ia-benefit p { font-size: 13px; line-height: 1.75; margin-top: 10px; color: var(--ia-muted); }
 .ia-page .ia-lessons { display: grid; gap: 12px; }
