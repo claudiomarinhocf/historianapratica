@@ -1,5 +1,10 @@
 # Atualização: História na Prática
 
+## Compactação visual do upsell
+- [x] Reduzir espaço acima do nome para 28px no computador e 20px no celular; remover a etapa de apresentação e alternar fundos.
+- [x] Remover botão de pausa do carrossel, mantendo movimento automático e proteção para movimento reduzido; ajustar espaçamentos e tamanhos no celular.
+- [x] Conferir 1142/393/320px sem rolagem horizontal e carrossel em movimento; 12 testes e build OK; página principal e Hotmart preservados.
+
 ## Auditoria atual de imagens e carregamento
 - [x] Medir 49 imagens (33 usadas); recomprimir quatro com pixels RGBA idênticos, economizando 62.982 bytes (0,44% do total usado).
 - [x] Auditar 16 arquivos sem referência atual; preservar todos porque versões anteriores publicadas podem depender deles; nenhum removido.
