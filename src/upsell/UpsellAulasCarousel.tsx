@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import EmblaCarousel, { type EmblaCarouselType } from 'embla-carousel';
 import AutoScroll from 'embla-carousel-auto-scroll';
-import { Pause, Play } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { aulasImages } from './aulas-images';
 
 export function UpsellAulasCarousel() {
@@ -10,8 +8,6 @@ export function UpsellAulasCarousel() {
   const viewportRef = useRef<HTMLDivElement>(null);
   const [embla, setEmbla] = useState<EmblaCarouselType>();
   const sectionRef = useRef<HTMLElement>(null);
-  const [paused, setPaused] = useState(false);
-  const [reducedMotion, setReducedMotion] = useState(false);
 
   useEffect(() => {
     const viewport = viewportRef.current;
@@ -32,10 +28,10 @@ export function UpsellAulasCarousel() {
     let interacting = false;
     let resumeTimer: ReturnType<typeof setTimeout> | undefined;
     const sync = () => {
-      if (paused || preference.matches || !visible || document.hidden || hovered || focused || interacting) plugin.stop();
+      if (preference.matches || !visible || document.hidden || hovered || focused || interacting) plugin.stop();
       else plugin.play(0);
     };
-    const onPreference = () => { setReducedMotion(preference.matches); sync(); };
+    const onPreference = () => { sync(); };
     const onEnter = (event: PointerEvent) => { if (event.pointerType !== 'touch') { hovered = true; sync(); } };
     const onLeave = () => { hovered = false; sync(); };
     const onFocus = () => { focused = true; sync(); };
@@ -67,7 +63,7 @@ export function UpsellAulasCarousel() {
       section.removeEventListener('focusout', onBlur);
       embla.off('pointerDown', onPointerDown).off('pointerUp', onPointerUp).off('reInit', sync);
     };
-  }, [embla, paused]);
+  }, [embla]);
 
   return <section ref={sectionRef} className="ia-section ia-aulas-carousel" aria-labelledby="ia-carousel-title" aria-roledescription="carrossel">
     <div className="ia-wrap">
@@ -84,7 +80,6 @@ export function UpsellAulasCarousel() {
           </div>)}
         </div>
       </div>
-      {!reducedMotion && <div className="ia-aulas-controls"><Button variant="ghost" className="ia-aulas-pause" aria-label={paused ? 'Reproduzir carrossel' : 'Pausar carrossel'} title={paused ? 'Reproduzir carrossel' : 'Pausar carrossel'} onClick={() => setPaused(value => !value)}>{paused ? <Play aria-hidden="true" /> : <Pause aria-hidden="true" />}</Button></div>}
     </div>
   </section>;
 }

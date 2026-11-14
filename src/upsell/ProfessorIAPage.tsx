@@ -20,11 +20,6 @@ function Brand() {
   return <span className="ia-brand"><Landmark aria-hidden="true" /><span>História <span>na Prática</span></span></span>;
 }
 
-function BookPreview() {
-  if (UPSELL.cover) return <div className="ia-book"><img src={UPSELL.cover.url} width={UPSELL.cover.width} height={UPSELL.cover.height} alt="Capa original do e-book Professor de História com IA" loading="lazy" decoding="async" /></div>;
-  return <div className="ia-cover-pending"><BookOpen aria-hidden="true" /><span>Capa original do e-book</span><small>Aguardando a imagem do material</small></div>;
-}
-
 export default function ProfessorIAPage() {
   const scrollToOffer = () => {
     const widget = document.getElementById('hotmart-upsell');
@@ -49,14 +44,6 @@ export default function ProfessorIAPage() {
         </div>
       </section>
 
-      <section className="ia-section ia-product"><div className="ia-wrap ia-product-grid">
-        <BookPreview />
-        <div><p className="ia-section-label">SEU PRÓXIMO PASSO</p><h2>Conheça o Professor de História com IA</h2>
-          <p>Um guia digital ilustrado que ensina, passo a passo, como professores de História podem utilizar ferramentas de inteligência artificial para organizar seu planejamento e produzir materiais pedagógicos personalizados.</p>
-          <ul className="ia-checks">{['8 aulas práticas', '+ 80 páginas ilustradas', 'Conteúdo organizado passo a passo', 'Exemplos de comandos para IA', 'Material digital em PDF'].map(item => <li key={item}><Check aria-hidden="true" />{item}</li>)}</ul>
-        </div>
-      </div></section>
-
       <section className="ia-section ia-benefits"><div className="ia-wrap">
         <div className="ia-section-heading"><p className="ia-section-label">MAIS POSSIBILIDADES, MENOS COMPLICAÇÃO</p><h2>Imagine preparar suas próximas aulas com muito mais facilidade!</h2></div>
         <div className="ia-benefit-grid">{benefits.map(({ icon: Icon, title, text }) => <article className="ia-benefit" key={title}><Icon aria-hidden="true" /><h3>{title}</h3><p>{text}</p></article>)}</div>
@@ -64,7 +51,7 @@ export default function ProfessorIAPage() {
 
       <UpsellAulasCarousel />
 
-      <section className="ia-section"><div className="ia-wrap">
+      <section className="ia-section ia-lessons-section"><div className="ia-wrap">
         <div className="ia-section-heading"><p className="ia-section-label">DO PRIMEIRO COMANDO À AULA COMPLETA</p><h2>8 aulas para você começar a utilizar IA no ensino de História</h2></div>
         <div className="ia-lessons">{lessons.map(([title, text], index) => <article className="ia-lesson" key={title}><span className="ia-lesson-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><div><h3><span>Aula {index + 1} — </span>{title}</h3><p>{text}</p></div></article>)}</div>
       </div></section>
