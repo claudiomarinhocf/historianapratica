@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { cleanup, fireEvent, render } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { UpsellAulasCarousel } from './UpsellAulasCarousel';
 
@@ -58,12 +58,5 @@ describe('Lesson carousel playback', () => {
     expect(mocks.play).not.toHaveBeenCalled();
     vi.advanceTimersByTime(1);
     expect(mocks.play).toHaveBeenCalled();
-  });
-  it('keeps automatic motion paused after the pause control is selected', () => {
-    render(<UpsellAulasCarousel />);
-    mocks.play.mockClear();
-    fireEvent.click(screen.getByRole('button', { name: 'Pausar carrossel' }));
-    expect(mocks.play).not.toHaveBeenCalled();
-    expect(mocks.stop).toHaveBeenCalled();
   });
 });

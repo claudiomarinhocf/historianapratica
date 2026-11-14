@@ -14,10 +14,10 @@
 .ia-page .ia-brand > span > span { display: block; font-weight: 500; font-size: 13px; margin-top: 4px; }
 .ia-page .ia-header-note { font-size: 12px; color: var(--ia-muted); }
 .ia-page .ia-centered { text-align: center; }
-.ia-page .ia-opening { padding: 44px 0 36px; border-bottom: 1px solid var(--ia-border); }
+.ia-page .ia-opening { padding: 24px 0 36px; border-bottom: 1px solid var(--ia-border); }
 .ia-page .ia-eyebrow { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 10px; font-weight: 700; color: var(--history-terracotta); line-height: 1.6; }
 .ia-page .ia-eyebrow svg { width: 17px; height: 17px; flex-shrink: 0; }
-.ia-page .ia-product-name { font-size: 15px; color: var(--ia-ink); font-weight: 700; margin: 23px 0 12px; }
+.ia-page .ia-product-name { font-size: 15px; color: var(--ia-ink); font-weight: 700; margin: 0 0 12px; }
 .ia-page h1 { max-width: 880px; margin-inline: auto; font-weight: 800; font-size: 28px; line-height: 1.25; color: var(--ia-ink); }
 .ia-page h1 em { color: var(--history-deep-green); font-style: normal; }
 .ia-page .ia-lead { max-width: 760px; margin: 20px auto 0; font-size: 14px; line-height: 1.8; color: var(--ia-muted); }
@@ -54,17 +54,15 @@
 .ia-page .ia-benefit > svg { width: 28px; height: 28px; color: var(--history-terracotta); margin-bottom: 16px; }
 .ia-page .ia-benefit p { font-size: 13px; line-height: 1.75; margin-top: 10px; color: var(--ia-muted); }
 .ia-page .ia-lessons { display: grid; gap: 12px; }
-.ia-page .ia-aulas-carousel { background: var(--history-parchment); overflow: hidden; }
+.ia-page .ia-benefits, .ia-page .ia-lessons-section { background: var(--history-parchment); }
+.ia-page .ia-benefit { background: var(--history-ivory); }
+.ia-page .ia-aulas-carousel { background: var(--history-ivory); overflow: hidden; }
 .ia-page .ia-aulas-carousel > .ia-wrap { max-width: 1240px; }
 .ia-page .ia-aulas-viewport { overflow: hidden; touch-action: pan-y pinch-zoom; cursor: grab; border-radius: 8px; }
 .ia-page .ia-aulas-viewport:active { cursor: grabbing; }
 .ia-page .ia-aulas-track { display: flex; margin-left: -16px; }
 .ia-page .ia-aulas-slide { flex: 0 0 83.333333%; min-width: 0; padding: 12px 0 18px 16px; }
 .ia-page .ia-aulas-slide img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 8px; box-shadow: var(--ia-shadow); user-select: none; }
-.ia-page .ia-aulas-controls { display: flex; justify-content: center; margin-top: 8px; }
-.ia-page .ia-aulas-pause { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--ia-border); border-radius: 50%; color: var(--ia-ink); background: var(--ia-surface); }
-.ia-page .ia-aulas-pause:hover { background: var(--ia-border); }
-.ia-page .ia-aulas-pause svg { width: 16px; height: 16px; }
 @media (min-width: 640px) { .ia-page .ia-aulas-slide { flex-basis: 43%; } }
 @media (min-width: 1000px) { .ia-page .ia-aulas-slide { flex-basis: 24%; } }
 .ia-page .ia-lesson { display: flex; gap: 16px; align-items: flex-start; padding: 20px; border: 1px solid var(--ia-border); border-radius: 8px; }
@@ -116,6 +114,7 @@
 .ia-page .ia-footer { display: flex; align-items: center; flex-direction: column; gap: 18px; padding: 28px 20px; border-top: 1px solid var(--ia-border); text-align: center; }
 .ia-page .ia-footer p { font-size: 11px; color: var(--ia-muted); }
 @media (min-width: 640px) { .ia-page .ia-benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ia-page .ia-lessons { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ia-page .ia-comparison { grid-template-columns: minmax(0, 1fr) 50px minmax(0, 1fr); } }
-@media (min-width: 800px) { .ia-page .ia-opening { padding: 48px 0 40px; } .ia-page h1 { font-size: 40px; } .ia-page h2 { font-size: 30px; } .ia-page .ia-lead { font-size: 16px; } .ia-page .ia-product-grid { grid-template-columns: .8fr 1.2fr; gap: 60px; } .ia-page .ia-section { padding: 56px 0; } .ia-page .ia-benefit-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 800px) { .ia-page .ia-opening { padding: 28px 0 40px; } .ia-page h1 { font-size: 40px; } .ia-page h2 { font-size: 30px; } .ia-page .ia-lead { font-size: 16px; } .ia-page .ia-product-grid { grid-template-columns: .8fr 1.2fr; gap: 60px; } .ia-page .ia-section { padding: 56px 0; } .ia-page .ia-benefit-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 @media (max-width: 479px) { .ia-page .ia-header-note { display: none; } .ia-page .ia-wrap { width: calc(100% - 32px); } }
 @media (prefers-reduced-motion: reduce) { .ia-page *, .ia-page *::before, .ia-page *::after { transition: none !important; animation: none !important; } }
+@media (max-width: 479px) { .ia-page .ia-header .ia-wrap { min-height: 64px; } .ia-page .ia-section { padding: 32px 0; } .ia-page .ia-opening { padding: 20px 0 28px; } .ia-page h1 { font-size: 26px; text-wrap: balance; } .ia-page h2 { font-size: 22px; text-wrap: balance; } .ia-page .ia-lead { line-height: 1.65; margin-top: 16px; } .ia-page .ia-benefit { padding: 20px; } .ia-page .ia-offer-card { padding: 24px 18px; } .ia-page .ia-offer-features li { font-size: 13px; } .ia-page .ia-price { font-size: 48px; } .ia-page .ia-lesson { padding: 16px; gap: 12px; } }
