@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import mainProduct from '@/assets/historia_pacote_completo.webp.asset.json';
 import heroImage from '@/assets/hero_professor_com_ia.webp.asset.json';
 import { HotmartUpsellWidget } from './HotmartUpsellWidget';
+import { UpsellAulasCarousel } from './UpsellAulasCarousel';
 import { UPSELL, faqs, formatPrice, lessons } from './content';
 
 const benefits = [
@@ -59,6 +60,8 @@ export default function ProfessorIAPage() {
         <div className="ia-section-heading"><p className="ia-section-label">MAIS POSSIBILIDADES, MENOS COMPLICAÇÃO</p><h2>Imagine preparar suas próximas aulas com muito mais facilidade!</h2></div>
         <div className="ia-benefit-grid">{benefits.map(({ icon: Icon, title, text }) => <article className="ia-benefit" key={title}><Icon aria-hidden="true" /><h3>{title}</h3><p>{text}</p></article>)}</div>
       </div></section>
+
+      <UpsellAulasCarousel />
 
       <section className="ia-section"><div className="ia-wrap">
         <div className="ia-section-heading"><p className="ia-section-label">DO PRIMEIRO COMANDO À AULA COMPLETA</p><h2>8 aulas para você começar a utilizar IA no ensino de História</h2></div>
