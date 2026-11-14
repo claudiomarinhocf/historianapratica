@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProfessorDeHistoriaComIaRouteImport } from './routes/professor-de-historia-com-ia'
+import { Route as UpsellRouteImport } from './routes/upsell'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -23,31 +24,40 @@ const ProfessorDeHistoriaComIaRoute =
     path: '/professor-de-historia-com-ia',
     getParentRoute: () => rootRouteImport,
   } as any)
+const UpsellRoute = UpsellRouteImport.update({
+  id: '/upsell',
+  path: '/upsell',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/professor-de-historia-com-ia': typeof ProfessorDeHistoriaComIaRoute
+  '/upsell': typeof UpsellRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/professor-de-historia-com-ia': typeof ProfessorDeHistoriaComIaRoute
+  '/upsell': typeof UpsellRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/professor-de-historia-com-ia': typeof ProfessorDeHistoriaComIaRoute
+  '/upsell': typeof UpsellRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/professor-de-historia-com-ia'
+  fullPaths: '/' | '/professor-de-historia-com-ia' | '/upsell'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/professor-de-historia-com-ia'
-  id: '__root__' | '/' | '/professor-de-historia-com-ia'
+  to: '/' | '/professor-de-historia-com-ia' | '/upsell'
+  id: '__root__' | '/' | '/professor-de-historia-com-ia' | '/upsell'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ProfessorDeHistoriaComIaRoute: typeof ProfessorDeHistoriaComIaRoute
+  UpsellRoute: typeof UpsellRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -66,12 +76,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProfessorDeHistoriaComIaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/upsell': {
+      id: '/upsell'
+      path: '/upsell'
+      fullPath: '/upsell'
+      preLoaderRoute: typeof UpsellRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ProfessorDeHistoriaComIaRoute: ProfessorDeHistoriaComIaRoute,
+  UpsellRoute: UpsellRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
