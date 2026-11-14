@@ -1,4 +1,4 @@
-import { ArrowDown, BookOpen, Check, Clock3, FileText, Landmark, Layers3, Lightbulb, Presentation, Sparkles } from 'lucide-react';
+import { ArrowDown, BookOpen, Check, Clock3, FileText, Landmark, Layers3, Presentation, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import mainProduct from '@/assets/historia_pacote_completo.webp.asset.json';

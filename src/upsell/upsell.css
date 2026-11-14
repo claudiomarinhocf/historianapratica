@@ -1,6 +1,11 @@
 /* Leaf-route stylesheet: every selector is isolated from the main sales page. */
 .ia-page { --ia-surface: var(--history-ivory); --ia-text: var(--history-graphite); --ia-ink: var(--history-ink); --ia-muted: color-mix(in oklab, var(--history-graphite) 78%, var(--history-ivory)); --ia-border: color-mix(in oklab, var(--history-ink) 17%, var(--history-ivory)); --ia-shadow: 0 18px 45px -22px color-mix(in oklab, var(--history-ink) 28%, transparent); --ia-book-shadow: 14px 18px 30px -10px color-mix(in oklab, var(--history-graphite) 35%, transparent); background: var(--ia-surface); color: var(--ia-text); font-family: var(--font-sans); position: relative; letter-spacing: 0; }
 .ia-page * { box-sizing: border-box; }
+.ia-page .ia-alert { background: #D92D20; color: var(--history-ivory); text-align: center; padding: 16px 20px 18px; box-shadow: 0 6px 18px -8px color-mix(in oklab, var(--history-ink) 55%, transparent); animation: ia-alert-in .5s ease-out; }
+.ia-page .ia-alert-label { font-size: 13px; font-weight: 700; letter-spacing: .06em; margin-bottom: 8px; }
+.ia-page .ia-alert-message { font-size: 17px; font-weight: 800; line-height: 1.45; text-wrap: balance; }
+@keyframes ia-alert-in { from { opacity: 0; } to { opacity: 1; } }
+@media (min-width: 800px) { .ia-page .ia-alert { padding: 20px 24px 22px; } .ia-page .ia-alert-label { font-size: 15px; } .ia-page .ia-alert-message { font-size: 22px; } }
 .ia-page .ia-wrap { width: min(100% - 40px, 1000px); margin-inline: auto; }
 .ia-page .ia-header { border-bottom: 1px solid var(--ia-border); }
 .ia-page .ia-header .ia-wrap { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
@@ -21,7 +26,6 @@
 .ia-page .ia-opening-details svg { width: 17px; height: 17px; color: var(--history-terracotta); }
 .ia-page .ia-hero-image { margin-top: 28px; }
 .ia-page .ia-hero-image img { max-width: 420px; width: 100%; height: auto; margin-inline: auto; display: block; filter: drop-shadow(0 22px 34px color-mix(in oklab, var(--history-ink) 30%, transparent)); }
-.ia-page .ia-small-price { font-size: 22px; font-weight: 800; color: var(--history-deep-green); }
 .ia-page .ia-jump { height: auto; margin-top: 20px; padding: 12px 18px; font-size: 13px; white-space: normal; color: var(--ia-ink); background: transparent; border: 1px solid var(--ia-border); border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; }
 .ia-page .ia-jump svg { width: 16px; height: 16px; }
 .ia-page .ia-jump:hover { background: var(--history-parchment); }
@@ -58,7 +62,6 @@
 .ia-page .ia-difference h2 { color: var(--history-ivory); }
 .ia-page .ia-comparison { display: grid; gap: 20px; align-items: center; text-align: center; max-width: 720px; margin: auto; }
 .ia-page .ia-comparison img { width: 125px; height: 125px; object-fit: contain; margin: 0 auto 14px; }
-.ia-page .ia-comparison-icon { width: 70px; height: 70px; margin: 24px auto 32px; color: var(--history-gold); }
 .ia-page .ia-comparison p { font-size: 13px; line-height: 1.7; margin-top: 8px; }
 .ia-page .ia-plus { font-size: 32px; color: var(--history-gold); }
 .ia-page .ia-together { max-width: 630px; text-align: center; margin: 26px auto 0; font-size: 14px; font-weight: 600; color: var(--history-gold); }
