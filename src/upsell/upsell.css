@@ -54,6 +54,19 @@
 .ia-page .ia-benefit > svg { width: 28px; height: 28px; color: var(--history-terracotta); margin-bottom: 16px; }
 .ia-page .ia-benefit p { font-size: 13px; line-height: 1.75; margin-top: 10px; color: var(--ia-muted); }
 .ia-page .ia-lessons { display: grid; gap: 12px; }
+.ia-page .ia-aulas-carousel { background: var(--history-parchment); overflow: hidden; }
+.ia-page .ia-aulas-carousel > .ia-wrap { max-width: 1240px; }
+.ia-page .ia-aulas-viewport { overflow: hidden; touch-action: pan-y pinch-zoom; cursor: grab; border-radius: 8px; }
+.ia-page .ia-aulas-viewport:active { cursor: grabbing; }
+.ia-page .ia-aulas-track { display: flex; margin-left: -16px; }
+.ia-page .ia-aulas-slide { flex: 0 0 83.333333%; min-width: 0; padding: 12px 0 18px 16px; }
+.ia-page .ia-aulas-slide img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 8px; box-shadow: var(--ia-shadow); user-select: none; }
+.ia-page .ia-aulas-controls { display: flex; justify-content: center; margin-top: 8px; }
+.ia-page .ia-aulas-pause { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--ia-border); border-radius: 50%; color: var(--ia-ink); background: var(--ia-surface); }
+.ia-page .ia-aulas-pause:hover { background: var(--ia-border); }
+.ia-page .ia-aulas-pause svg { width: 16px; height: 16px; }
+@media (min-width: 640px) { .ia-page .ia-aulas-slide { flex-basis: 43%; } }
+@media (min-width: 1000px) { .ia-page .ia-aulas-slide { flex-basis: 24%; } }
 .ia-page .ia-lesson { display: flex; gap: 16px; align-items: flex-start; padding: 20px; border: 1px solid var(--ia-border); border-radius: 8px; }
 .ia-page .ia-lesson-number { flex-shrink: 0; font-size: 21px; line-height: 1.5; font-weight: 600; color: var(--history-terracotta); }
 .ia-page .ia-lesson h3 span { display: none; }

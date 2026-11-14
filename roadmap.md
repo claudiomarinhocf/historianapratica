@@ -1,10 +1,15 @@
 # Atualização: História na Prática
 
+## Carrossel das aulas no upsell
+- [x] Publicar as oito artes enviadas em WebP sem perda (16,6% mais leves) e inserir um único carrossel antes da seção das oito aulas.
+- [x] Validar movimento contínuo, pausa, navegação manual e movimento reduzido em computador (1280px e 1142px) e celular (393px e 320px), preservando a página principal; 12 testes aprovados e build OK. Falhas externas do pixel Utmify preexistentes.
+
 ## Página de upsell Professor de História com IA
 - [x] Criar página isolada em /professor-de-historia-com-ia, com oferta R$ 47,90, conteúdo e perguntas frequentes; noindex/nofollow somente nesta página.
 - [x] Preparar integração isolada para o widget oficial, sem pagamentos simulados; preservar parâmetros recebidos; 22 testes aprovados.
 - [x] Validar computador, celular (393px e 320px), acesso direto, atualização, FAQ e rolagem até a oferta; arquivos, textos e links da página principal inalterados e popup existente abre normalmente; build OK. Avisos externos de rastreamento observados; nenhuma transação Hotmart realizada.
-- [ ] Receber capa original e código oficial Hotmart; validar transação de teste após instalação (aguardando usuário).
+- [x] Aplicar capa original e imagem principal enviadas pelo usuário.
+- [ ] Receber código oficial Hotmart; validar transação de teste após instalação (aguardando usuário).
 
 ## Limpeza e carregamento inicial
 - [x] Remover 40 imagens locais sem referências (4,24 MB); preservar assets CDN usados por versões anteriores.
