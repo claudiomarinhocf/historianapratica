@@ -72,8 +72,7 @@ export function UpsellAulasCarousel() {
   return <section ref={sectionRef} className="ia-section ia-aulas-carousel" aria-labelledby="ia-carousel-title" aria-roledescription="carrossel">
     <div className="ia-wrap">
       <div className="ia-section-heading">
-        <h2 id="ia-carousel-title">VEJA UM POUCO DO QUE VOCÊ VAI APRENDER! 📚</h2>
-        <p>Conheça as 8 aulas ilustradas que vão ajudar você a utilizar a Inteligência Artificial no ensino de História.</p>
+        <h2 id="ia-carousel-title">O QUE VAI RECEBER:</h2>
       </div>
       <div className="ia-aulas-viewport" ref={viewportRef} tabIndex={0} aria-label="Aulas ilustradas" onKeyDown={event => {
         if (event.key === 'ArrowLeft') { event.preventDefault(); embla?.scrollPrev(); }

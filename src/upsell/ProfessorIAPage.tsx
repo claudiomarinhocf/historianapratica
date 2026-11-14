@@ -79,6 +79,7 @@ export default function ProfessorIAPage() {
         <p className="ia-eyebrow">COMPLEMENTE SEU PLANEJAMENTO</p><h2>Adicione agora o Professor de História com IA à sua experiência!</h2>
         <div className="ia-offer-card">
           <span className="ia-offer-badge">⭐ OFERTA ESPECIAL</span>
+          <img className="ia-offer-card-image" src={heroImage.url} width={1000} height={1000} alt="Mockup do e-book Professor de História com IA com as aulas do material" loading="lazy" decoding="async" />
           <h3 className="ia-offer-card-title">Professor de História com IA</h3>
           <p className="ia-price-old">{formatPrice(UPSELL.oldPrice)}</p>
           <p className="ia-price">{formatPrice(UPSELL.price)}</p>
@@ -94,7 +95,7 @@ export default function ProfessorIAPage() {
       <section className="ia-section ia-guarantee"><div className="ia-wrap ia-centered">
         <img src={guaranteeSeal.url} width={240} height={238} alt="Selo dourado de garantia de 7 dias" loading="lazy" decoding="async" />
         <h2>Garantia de 7 dias</h2>
-        <p>Se você não se encantar pelo material, devolvemos o seu dinheiro. <strong>Assim de simples.</strong> Sem perguntas, sem burocracia. O risco é todo nosso.</p>
+        <p>Se você não curtir o material, devolvemos o seu dinheiro. <strong>Simples assim.</strong> Sem perguntas, sem burocracia. O risco é todo nosso.</p>
       </div></section>
 
       <section className="ia-section ia-faq"><div className="ia-wrap"><div className="ia-section-heading"><p className="ia-section-label">TIRE SUAS DÚVIDAS</p><h2>Perguntas frequentes</h2></div><Accordion type="single" collapsible>{faqs.map(([question, answer], index) => <AccordionItem className="ia-faq-item" value={`faq-${index}`} key={question}><AccordionTrigger className="ia-faq-trigger">{question}</AccordionTrigger><AccordionContent className="ia-faq-answer">{answer}</AccordionContent></AccordionItem>)}</Accordion></div></section>
