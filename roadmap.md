@@ -1,8 +1,8 @@
 # Atualização: História na Prática
 
 ## Widget oficial Hotmart em /upsell
-- [ ] Instalar HotmartSalesFunnel abaixo do preço, sem botões de pagamento próprios; validar carregamento, duplicação, erros e dispositivos móveis.
-- [ ] Publicar na URL existente e conferir a página publicada.
+- [x] Instalar HotmartSalesFunnel abaixo do preço, sem botões de pagamento próprios; script HTTP 200, um container/iframe, 17 testes aprovados, computador e celulares 393/320px sem rolagem horizontal. Hotmart exige compra em andamento; avisos Utmify preexistentes observados.
+- [x] Publicar na URL existente e conferir https://historianapratica.lovable.app/upsell: script HTTP 200, um container/iframe, preço R$ 47,90 preservado.
 - [ ] Validar aceite/recusa em compra real iniciada no checkout Hotmart (depende de compra e contexto real do funil).
 
 ## Carrossel das aulas no upsell
