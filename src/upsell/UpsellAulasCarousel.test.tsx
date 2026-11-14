@@ -7,9 +7,9 @@ const mocks = vi.hoisted(() => ({
   events: {} as Record<string, () => void>,
 }));
 vi.mock('embla-carousel-auto-scroll', () => ({ default: () => ({ play: mocks.play, stop: mocks.stop }) }));
-vi.mock('embla-carousel-react', () => {
-  const api = { on: vi.fn((name: string, callback: () => void) => { mocks.events[name] = callback; return api; }), off: vi.fn(() => api), scrollPrev: vi.fn(), scrollNext: vi.fn() };
-  return { default: () => [vi.fn(), api] };
+vi.mock('embla-carousel', () => {
+  const api = { on: vi.fn((name: string, callback: () => void) => { mocks.events[name] = callback; return api; }), off: vi.fn(() => api), scrollPrev: vi.fn(), scrollNext: vi.fn(), destroy: vi.fn() };
+  return { default: () => api };
 });
 
 beforeEach(() => {

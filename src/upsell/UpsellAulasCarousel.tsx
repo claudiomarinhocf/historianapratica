@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import useEmblaCarousel from 'embla-carousel-react';
+import EmblaCarousel, { type EmblaCarouselType } from 'embla-carousel';
 import AutoScroll from 'embla-carousel-auto-scroll';
 import { Pause, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -7,10 +7,19 @@ import { aulasImages } from './aulas-images';
 
 export function UpsellAulasCarousel() {
   const autoScroll = useRef(AutoScroll({ speed: 0.65, playOnInit: false, stopOnInteraction: true }));
-  const [viewportRef, embla] = useEmblaCarousel({ loop: true, align: 'start', dragFree: true }, [autoScroll.current]);
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const [embla, setEmbla] = useState<EmblaCarouselType>();
   const sectionRef = useRef<HTMLElement>(null);
   const [paused, setPaused] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const viewport = viewportRef.current;
+    if (!viewport) return;
+    const carousel = EmblaCarousel(viewport, { loop: true, align: 'start', dragFree: true }, [autoScroll.current]);
+    setEmbla(carousel);
+    return () => carousel.destroy();
+  }, []);
 
   useEffect(() => {
     const section = sectionRef.current;
