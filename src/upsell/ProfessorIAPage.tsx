@@ -1,4 +1,4 @@
-import { ArrowDown, BookOpen, Check, Clock3, FileText, Gift, Landmark, Layers3, Presentation, ShieldCheck, Sparkles } from 'lucide-react';
+import { ArrowDown, BookOpen, Check, Clock3, FileText, Gift, Landmark, Layers3, Presentation, ShieldCheck } from 'lucide-react';
 import guaranteeSeal from '@/assets/selo_garantia_7dias.webp.asset.json';
 import paymentFlags from '@/assets/bandeiras_pagamento.webp.asset.json';
 import { Button } from '@/components/ui/button';
