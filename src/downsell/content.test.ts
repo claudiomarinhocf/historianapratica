@@ -9,7 +9,7 @@ describe('Downsell commercial rules', () => {
   it('delivers an illustrated PDF rather than video', () => { expect(DOWNSELL.product.format).toBe('PDF'); });
   it('retains all 8 practical lessons', () => { expect(DOWNSELL.product.lessons).toBe(8); });
   it('retains the 80-page content base', () => { expect(DOWNSELL.product.approximatePages).toBe(80); });
-  it('does not configure payment before the official stage is supplied', () => { expect(DOWNSELL.widgetConfigured).toBe(false); });
+  it('records the official funnel snippet supplied for the downsell', () => { expect(DOWNSELL.widgetSnippetSupplied).toBe(true); });
   it('preserves purchase and tracking parameters without rewriting them', () => {
     const search = { purchaseContext: 'test-context', utm_source: 'hotmart', off: 'downsell-stage', unknown: ['a', 'b'] };
     expect(preserveDownsellSearch(search)).toEqual(search);

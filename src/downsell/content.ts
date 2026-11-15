@@ -6,7 +6,7 @@ export const DOWNSELL = {
   price: 27.90,
   previousPrice: UPSELL.price,
   product: UPSELL,
-  widgetConfigured: false,
+  widgetSnippetSupplied: true,
 } as const;
 
 export function preserveDownsellSearch(search: Record<string, unknown>): Record<string, unknown> {
