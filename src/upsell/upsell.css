@@ -15,9 +15,6 @@
 .ia-page .ia-wrap { width: min(100% - 40px, 1000px); margin-inline: auto; }
 .ia-page .ia-header { border-bottom: 1px solid var(--ia-border); }
 .ia-page .ia-header .ia-wrap { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-.ia-page .ia-brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ia-ink); font-weight: 800; font-size: 18px; line-height: 1.15; }
-.ia-page .ia-brand > svg { width: 30px; height: 30px; color: var(--history-terracotta); }
-.ia-page .ia-brand > span > span { display: block; font-weight: 500; font-size: 13px; margin-top: 4px; }
 .ia-page .ia-header-note { font-size: 12px; color: var(--ia-muted); }
 .ia-page .ia-centered { text-align: center; }
 .ia-page .ia-opening { padding: 24px 0 36px; border-bottom: 1px solid var(--ia-border); }
@@ -119,8 +116,6 @@
 .ia-page .ia-faq-trigger svg { flex-shrink: 0; color: var(--ia-ink); transition: transform .2s; }
 .ia-page .ia-faq-trigger[data-state=open] svg { transform: rotate(180deg); }
 .ia-page .ia-faq-answer { font-size: 13px; line-height: 1.8; color: var(--ia-muted); padding-bottom: 18px; }
-.ia-page .ia-footer { display: flex; align-items: center; flex-direction: column; gap: 18px; padding: 28px 20px; border-top: 1px solid var(--ia-border); text-align: center; }
-.ia-page .ia-footer p { font-size: 11px; color: var(--ia-muted); }
 @media (min-width: 640px) { .ia-page .ia-benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ia-page .ia-lessons { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ia-page .ia-comparison { grid-template-columns: minmax(0, 1fr) 50px minmax(0, 1fr); } }
 @media (min-width: 800px) { .ia-page .ia-opening { padding: 28px 0 40px; } .ia-page h1 { font-size: 40px; } .ia-page h2 { font-size: 30px; } .ia-page .ia-lead { font-size: 16px; } .ia-page .ia-product-grid { grid-template-columns: .8fr 1.2fr; gap: 60px; } .ia-page .ia-section { padding: 56px 0; } .ia-page .ia-benefit-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 @media (max-width: 479px) { .ia-page .ia-header-note { display: none; } .ia-page .ia-wrap { width: calc(100% - 32px); } }
