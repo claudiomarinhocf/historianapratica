@@ -1,8 +1,8 @@
 # Atualização: História na Prática
 
 ## Página de Downsell
-- [ ] Criar /downsell isolado, com oferta configurável de R$ 27,90 e o mesmo e-book do Upsell.
-- [ ] Conferir acesso direto, parâmetros, imagens, preço e layout no computador e celular; preservar as páginas existentes.
+- [x] Criar /downsell isolado, com oferta configurável de R$ 27,90 e o mesmo e-book do Upsell; placeholder dedicado sem carregar o widget do Upsell.
+- [x] Conferir acesso direto e recarga, parâmetros, imagens, preço e layout em 1280/393/320px sem overflow; 28 testes aprovados e build OK. Principal e Upsell preservados; avisos de fetch dos scripts externos observados. Downsell mais curto, sem carrossel ou botões fictícios.
 - [ ] Receber configuração oficial da etapa Downsell e confirmar R$ 27,90 na Hotmart antes da publicação.
 
 ## Ajustes atuais do topo e carrossel
