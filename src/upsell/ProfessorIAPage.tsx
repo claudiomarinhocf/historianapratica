@@ -6,10 +6,9 @@ import { UPSELL, formatPrice } from './content';
 import { UpsellAulasCarousel } from './UpsellAulasCarousel';
 
 const benefits = [
-  { icon: Clock3, title: 'Economize tempo no planejamento', text: 'Aprenda a utilizar IA como apoio à organização do trabalho docente.' },
-  { icon: FileText, title: 'Crie atividades personalizadas', text: 'Desenvolva questões, exercícios e propostas adaptadas aos objetivos de aprendizagem.' },
-  { icon: Presentation, title: 'Produza aulas mais visuais', text: 'Utilize IA para apoiar a criação de apresentações e recursos didáticos.' },
-  { icon: Layers3, title: 'Aproveite melhor seu material', text: 'Combine os recursos do História na Prática com as técnicas apresentadas no novo e-book.' },
+  { icon: Clock3, title: 'Economize tempo', text: 'Aprenda a planejar suas aulas com mais rapidez utilizando inteligência artificial.' },
+  { icon: FileText, title: 'Crie seus próprios materiais', text: 'Produza apresentações, atividades e avaliações personalizadas com apoio da IA.' },
+  { icon: Presentation, title: 'Aulas mais criativas', text: 'Descubra como desenvolver recursos visuais e estratégias para envolver seus alunos.' },
 ];
 
 export default function ProfessorIAPage() {
