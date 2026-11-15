@@ -1,4 +1,4 @@
-import { ArrowDown, BookOpen, Check, Clock3, FileText, Gift, Landmark, Layers3, Presentation, ShieldCheck } from 'lucide-react';
+import { ArrowDown, BookOpen, Check, Clock3, FileText, Gift, Layers3, Presentation, ShieldCheck } from 'lucide-react';
 import paymentFlags from '@/assets/bandeiras_pagamento.webp.asset.json';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero_professor_com_ia_v2.webp.asset.json';
@@ -11,10 +11,6 @@ const benefits = [
   { icon: Presentation, title: 'Produza aulas mais visuais', text: 'Utilize IA para apoiar a criação de apresentações e recursos didáticos.' },
   { icon: Layers3, title: 'Aproveite melhor seu material', text: 'Combine os recursos do História na Prática com as técnicas apresentadas no novo e-book.' },
 ];
-
-function Brand() {
-  return <span className="ia-brand"><Landmark aria-hidden="true" /><span>História <span>na Prática</span></span></span>;
-}
 
 export default function ProfessorIAPage() {
   const scrollToOffer = () => {
@@ -74,6 +70,5 @@ export default function ProfessorIAPage() {
       </div></section>
 
     </main>
-    <footer className="ia-footer"><Brand /><p>História na Prática · Materiais para quem ensina História.</p></footer>
   </div>;
 }
