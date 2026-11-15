@@ -28,9 +28,9 @@ export default function ProfessorIAPage() {
         <div className="ia-wrap ia-centered">
           <p className="ia-product-name">EXCLUSIVO PARA QUEM ADQUIRIU O HISTÓRIA NA PRÁTICA</p>
           <h1>E se você pudesse <em>criar suas próprias aulas</em> como as do História na Prática?</h1>
-          <HotmartSalesFunnel placement="hero" />
-          <p className="ia-lead">Com o Professor de História com IA, aprenda, passo a passo, a criar apresentações, atividades, avaliações e recursos visuais personalizados usando inteligência artificial.</p>
           <div className="ia-hero-image"><img src={heroImage.url} width={1000} height={1000} alt="Mockup do e-book Professor de História com IA com as aulas do material" loading="eager" fetchPriority="high" decoding="async" /></div>
+          <p className="ia-lead">Com o Professor de História com IA, aprenda, passo a passo, a criar apresentações, atividades, avaliações e recursos visuais personalizados usando inteligência artificial.</p>
+          <HotmartSalesFunnel placement="hero" />
         </div>
       </section>
 
