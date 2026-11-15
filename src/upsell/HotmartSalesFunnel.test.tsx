@@ -11,6 +11,21 @@ afterEach(() => {
 });
 
 describe('Official Hotmart sales funnel', () => {
+  it('mounts the official funnel at both requested placements with one shared script', async () => {
+    const { HotmartSalesFunnel } = await import('./HotmartSalesFunnel');
+    const mount = vi.fn();
+    const init = vi.fn(() => ({ mount }));
+    render(<StrictMode><HotmartSalesFunnel placement="lessons" /><HotmartSalesFunnel /></StrictMode>);
+    await waitFor(() => expect(document.querySelectorAll(`script[src="${url}"]`)).toHaveLength(1));
+    window.checkoutElements = { init };
+    document.querySelector(`script[src="${url}"]`)?.dispatchEvent(new Event('load'));
+    await waitFor(() => expect(mount).toHaveBeenCalledTimes(2));
+    expect(mount).toHaveBeenCalledWith('#hotmart-sales-funnel-lessons');
+    expect(mount).toHaveBeenCalledWith('#hotmart-sales-funnel');
+    expect(init).toHaveBeenNthCalledWith(1, 'salesFunnel');
+    expect(init).toHaveBeenNthCalledWith(2, 'salesFunnel');
+  });
+
   it('loads one official script and mounts once after load under StrictMode and rerenders', async () => {
     const { HotmartSalesFunnel } = await import('./HotmartSalesFunnel');
     const mount = vi.fn();

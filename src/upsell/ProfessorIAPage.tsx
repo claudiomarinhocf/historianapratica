@@ -1,11 +1,9 @@
 import { ArrowDown, BookOpen, Check, Clock3, FileText, Gift, Landmark, Layers3, Presentation, ShieldCheck } from 'lucide-react';
 import paymentFlags from '@/assets/bandeiras_pagamento.webp.asset.json';
 import { Button } from '@/components/ui/button';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import mainProduct from '@/assets/historia_pacote_completo.webp.asset.json';
 import heroImage from '@/assets/hero_professor_com_ia_v2.webp.asset.json';
 import { HotmartSalesFunnel } from './HotmartSalesFunnel';
-import { UPSELL, faqs, formatPrice, lessons } from './content';
+import { UPSELL, formatPrice, lessons } from './content';
 
 const benefits = [
   { icon: Clock3, title: 'Economize tempo no planejamento', text: 'Aprenda a utilizar IA como apoio à organização do trabalho docente.' },
@@ -34,7 +32,6 @@ export default function ProfessorIAPage() {
       <div className="ia-progress" aria-hidden="true"><div className="ia-progress-fill" /><span>95%</span></div>
       <p className="ia-progress-note">Seu acesso ao História na Prática já está garantido.</p>
     </div>
-    <header className="ia-header"><div className="ia-wrap"><Brand /><span className="ia-header-note">Uma nova possibilidade para suas aulas</span></div></header>
     <main>
       <section className="ia-opening">
         <div className="ia-wrap ia-centered">
@@ -56,12 +53,7 @@ export default function ProfessorIAPage() {
       <section className="ia-section ia-lessons-section"><div className="ia-wrap">
         <div className="ia-section-heading"><p className="ia-section-label">DO PRIMEIRO COMANDO À AULA COMPLETA</p><h2>8 aulas para você começar a utilizar IA no ensino de História</h2></div>
         <div className="ia-lessons">{lessons.map(([title, text], index) => <article className="ia-lesson" key={title}><span className="ia-lesson-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><div><h3><span>Aula {index + 1} — </span>{title}</h3><p>{text}</p></div></article>)}</div>
-      </div></section>
-
-      <section className="ia-section ia-difference"><div className="ia-wrap">
-        <div className="ia-section-heading"><h2>Você não precisa depender apenas de materiais prontos.</h2><p>Com o História na Prática, você já recebeu recursos que facilitam a preparação das suas aulas. Agora, com o Professor de História com IA, poderá aprender a desenvolver novos materiais e adaptá-los às necessidades das suas turmas.</p></div>
-        <div className="ia-comparison"><div><img src={mainProduct.url} alt="Materiais do História na Prática — Pacote Completo" width={700} height={700} loading="lazy" decoding="async" /><h3>História na Prática</h3><p>Materiais prontos para utilizar.</p></div><span className="ia-plus" aria-hidden="true">+</span><div><img src={heroImage.url} alt="E-book Professor de História com IA" width={125} height={125} loading="lazy" decoding="async" /><h3>Professor de História com IA</h3><p>Conhecimento para criar e personalizar novos materiais.</p></div></div>
-        <p className="ia-together">Juntos, eles oferecem mais possibilidades para o seu planejamento pedagógico.</p>
+        <HotmartSalesFunnel placement="lessons" />
       </div></section>
 
       <section className="ia-section ia-offer"><div className="ia-wrap ia-centered">
@@ -81,7 +73,6 @@ export default function ProfessorIAPage() {
         </div>
       </div></section>
 
-      <section className="ia-section ia-faq"><div className="ia-wrap"><div className="ia-section-heading"><p className="ia-section-label">TIRE SUAS DÚVIDAS</p><h2>Perguntas frequentes</h2></div><Accordion type="single" collapsible>{faqs.map(([question, answer], index) => <AccordionItem className="ia-faq-item" value={`faq-${index}`} key={question}><AccordionTrigger className="ia-faq-trigger">{question}</AccordionTrigger><AccordionContent className="ia-faq-answer">{answer}</AccordionContent></AccordionItem>)}</Accordion></div></section>
     </main>
     <footer className="ia-footer"><Brand /><p>História na Prática · Materiais para quem ensina História.</p></footer>
   </div>;

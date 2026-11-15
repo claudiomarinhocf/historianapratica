@@ -23,7 +23,7 @@
 .ia-page .ia-opening { padding: 24px 0 36px; border-bottom: 1px solid var(--ia-border); }
 .ia-page .ia-eyebrow { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 10px; font-weight: 700; color: var(--history-terracotta); line-height: 1.6; }
 .ia-page .ia-eyebrow svg { width: 17px; height: 17px; flex-shrink: 0; }
-.ia-page .ia-product-name { font-size: 15px; color: var(--ia-ink); font-weight: 700; margin: 0 0 12px; }
+.ia-page .ia-product-name { display: inline-block; max-width: 100%; padding: 9px 16px; border-radius: 16px; background: color-mix(in oklab, var(--history-ink) 10%, var(--history-ivory)); font-size: 15px; line-height: 1.5; color: var(--ia-ink); font-weight: 700; margin: 0 0 16px; text-wrap: balance; }
 .ia-page h1 { max-width: 880px; margin-inline: auto; font-weight: 800; font-size: 28px; line-height: 1.25; color: var(--ia-ink); }
 .ia-page h1 em { color: var(--history-deep-green); font-style: normal; }
 .ia-page .ia-lead { max-width: 760px; margin: 20px auto 0; font-size: 14px; line-height: 1.8; color: var(--ia-muted); }
@@ -108,8 +108,8 @@
 .ia-page .ia-guarantee p strong { color: var(--ia-ink); }
 .ia-page .ia-widget { max-width: 680px; margin-inline: auto; scroll-margin-block: 30px; }
 .ia-page .ia-sales-funnel { width: 100%; min-width: 0; margin-top: 18px; }
-.ia-page #hotmart-sales-funnel { width: 100%; min-width: 0; }
-.ia-page #hotmart-sales-funnel iframe { min-width: 0 !important; max-width: 100%; }
+.ia-page :is(#hotmart-sales-funnel, #hotmart-sales-funnel-lessons) { width: 100%; min-width: 0; }
+.ia-page :is(#hotmart-sales-funnel, #hotmart-sales-funnel-lessons) iframe { min-width: 0 !important; max-width: 100%; }
 .ia-page .ia-widget-error { font-size: 12px; line-height: 1.6; color: var(--ia-muted); margin-block: 12px; }
 .ia-page .ia-widget-placeholder { padding: 28px 20px; border: 1px dashed var(--ia-border); border-radius: 8px; font-size: 11px; color: var(--ia-muted); background: var(--history-parchment); }
 .ia-page .ia-faq { background: var(--history-ivory); }
