@@ -116,7 +116,7 @@
 .ia-page .ia-faq-trigger svg { flex-shrink: 0; color: var(--ia-ink); transition: transform .2s; }
 .ia-page .ia-faq-trigger[data-state=open] svg { transform: rotate(180deg); }
 .ia-page .ia-faq-answer { font-size: 13px; line-height: 1.8; color: var(--ia-muted); padding-bottom: 18px; }
-@media (min-width: 640px) { .ia-page .ia-benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ia-page .ia-lessons { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ia-page .ia-comparison { grid-template-columns: minmax(0, 1fr) 50px minmax(0, 1fr); } }
+@media (min-width: 640px) { .ia-page .ia-lessons { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ia-page .ia-comparison { grid-template-columns: minmax(0, 1fr) 50px minmax(0, 1fr); } }
 @media (min-width: 800px) { .ia-page .ia-opening { padding: 28px 0 40px; } .ia-page h1 { font-size: 36px; } .ia-page h2 { font-size: 30px; } .ia-page .ia-lead { font-size: 16px; } .ia-page .ia-product-grid { grid-template-columns: .8fr 1.2fr; gap: 60px; } .ia-page .ia-section { padding: 56px 0; } .ia-page .ia-benefit-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 900px; margin-inline: auto; } }
 @media (max-width: 479px) { .ia-page .ia-header-note { display: none; } .ia-page .ia-wrap { width: calc(100% - 32px); } }
 @media (prefers-reduced-motion: reduce) { .ia-page *, .ia-page *::before, .ia-page *::after { transition: none !important; animation: none !important; } }
