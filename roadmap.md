@@ -1,5 +1,10 @@
 # Atualização: História na Prática
 
+## Página de agradecimento
+- [ ] Criar /obrigado com mensagem geral, imagem existente, instruções, resumo e suporte, sem confirmar pagamentos ou liberar arquivos.
+- [ ] Excluir /professor-de-historia-com-ia e conferir as quatro páginas em computador e celular.
+- [ ] Ativar acesso aos materiais quando o usuário fornecer o link oficial de entrega; configurar destino final na Hotmart após publicação.
+
 ## Página de Downsell
 - [x] Criar /downsell isolado, com oferta configurável de R$ 27,90 e o mesmo e-book do Upsell; placeholder dedicado sem carregar o widget do Upsell.
 - [x] Conferir acesso direto e recarga, parâmetros, imagens, preço e layout em 1280/393/320px sem overflow; 28 testes aprovados e build OK. Principal e Upsell preservados; avisos de fetch dos scripts externos observados. Downsell mais curto, sem carrossel ou botões fictícios.

@@ -1,0 +1,54 @@
+.thanks-page { min-height: 100vh; position: relative; background: var(--thanks-bg); color: var(--thanks-text); font-family: var(--font-sans); letter-spacing: 0; }
+.thanks-brand { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 22px 18px; color: var(--thanks-ink); border-bottom: 1px solid var(--thanks-border); font-size: 19px; font-weight: 500; }
+.thanks-brand svg { width: 30px; height: 30px; color: var(--thanks-gold); }
+.thanks-welcome { max-width: 760px; margin: auto; padding: 28px 24px 32px; text-align: center; }
+.thanks-confirmation { display: grid; place-items: center; width: 56px; height: 56px; margin: 0 auto 18px; border-radius: 50%; color: var(--thanks-positive); background: var(--thanks-positive-soft); }
+.thanks-confirmation svg { width: 32px; height: 32px; }
+.thanks-page h1 { color: var(--thanks-ink); font-size: 30px; line-height: 1.3; font-weight: 800; }
+.thanks-page h1 span { display: block; }
+.thanks-subtitle { max-width: 660px; margin: 16px auto 0; font-size: 17px; line-height: 1.7; font-weight: 500; }
+.thanks-product { display: block; width: 340px; max-width: 100%; aspect-ratio: 1; object-fit: contain; margin: 20px auto; }
+.thanks-warm { max-width: 630px; margin: auto; font-size: 14px; line-height: 1.8; }
+.thanks-inner { max-width: 1000px; padding: 32px 24px; margin: auto; }
+.thanks-page h2 { color: var(--thanks-ink); font-size: 22px; line-height: 1.45; font-weight: 700; text-align: center; }
+.thanks-access { background: var(--thanks-surface); border-block: 1px solid var(--thanks-border); }
+.thanks-steps { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; margin-top: 24px; }
+.thanks-step { background: var(--thanks-bg); border: 1px solid var(--thanks-border); border-radius: 8px; padding: 20px; }
+.thanks-step-top { display: flex; align-items: center; justify-content: space-between; color: var(--thanks-positive); font-size: 11px; font-weight: 700; margin-bottom: 14px; }
+.thanks-step-top svg { width: 23px; height: 23px; color: var(--thanks-ink); }
+.thanks-step h3 { color: var(--thanks-ink); font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.thanks-step p { font-size: 13px; line-height: 1.8; }
+.thanks-materials { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px 28px; max-width: 690px; margin: 22px auto 0; }
+.thanks-materials li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; line-height: 1.6; }
+.thanks-materials svg { width: 19px; height: 19px; flex-shrink: 0; color: var(--thanks-positive); margin-top: 2px; }
+.thanks-action { text-align: center; margin-top: 28px; }
+.thanks-page .thanks-button { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; height: auto; max-width: 100%; padding: 14px 28px; border-radius: 8px; background: var(--thanks-action); color: var(--thanks-on-action); font-size: 14px; line-height: 1.5; font-weight: 700; white-space: normal; transition: background-color .15s; }
+.thanks-page .thanks-button:disabled { opacity: .65; cursor: not-allowed; }
+.thanks-page .thanks-button:not(:disabled):hover { background: var(--thanks-positive); }
+.thanks-action p { max-width: 460px; margin: 12px auto 0; font-size: 12px; line-height: 1.7; }
+.thanks-support { max-width: 760px; padding: 24px; margin: 0 auto; display: flex; align-items: flex-start; gap: 14px; border-top: 1px solid var(--thanks-border); }
+.thanks-support > svg { width: 25px; height: 25px; flex-shrink: 0; color: var(--thanks-positive); }
+.thanks-support h2 { text-align: left; font-size: 16px; }
+.thanks-support p { font-size: 13px; line-height: 1.8; margin-top: 8px; }
+.thanks-ending { background: var(--thanks-ink); color: var(--thanks-surface); padding: 28px 24px; text-align: center; }
+.thanks-ending-symbol { display: flex; align-items: center; justify-content: center; gap: 16px; color: var(--thanks-gold); margin-bottom: 14px; }
+.thanks-ending-symbol svg { width: 25px; height: 25px; }
+.thanks-ending-symbol span { width: 50px; height: 1px; background: var(--thanks-gold); }
+.thanks-ending p { max-width: 630px; margin: auto; font-size: 17px; font-weight: 500; line-height: 1.7; }
+.thanks-ending strong { display: block; font-size: 12px; color: var(--thanks-gold); margin-top: 14px; }
+@media (max-width: 640px) {
+  .thanks-brand { padding: 17px; font-size: 17px; }
+  .thanks-welcome { padding: 24px 20px; }
+  .thanks-page h1 { font-size: 24px; }
+  .thanks-subtitle { font-size: 15px; }
+  .thanks-product { width: 280px; margin: 18px auto; }
+  .thanks-inner { padding: 26px 20px; }
+  .thanks-page h2 { font-size: 20px; }
+  .thanks-steps { grid-template-columns: 1fr; gap: 12px; margin-top: 20px; }
+  .thanks-step { padding: 16px 18px; }
+  .thanks-step-top { margin-bottom: 8px; }
+  .thanks-materials { grid-template-columns: 1fr; max-width: 340px; }
+  .thanks-support { padding: 24px 20px; }
+  .thanks-support h2 { font-size: 15px; }
+  .thanks-ending p { font-size: 15px; }
+}
