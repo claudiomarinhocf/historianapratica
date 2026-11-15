@@ -75,7 +75,7 @@ export function UpsellAulasCarousel() {
         if (event.key === 'ArrowRight') { event.preventDefault(); embla?.scrollNext(); }
       }}>
         <div className="ia-aulas-track">
-          {aulasImages.map((image, index) => <div className="ia-aulas-slide" key={image.url} role="group" aria-roledescription="slide" aria-label={`${index + 1} de 8`}>
+          {aulasImages.map((image, index) => <div className="ia-aulas-slide" key={image.url} role="group" aria-roledescription="slide" aria-label={`${index + 1} de ${aulasImages.length}`}>
             <img src={image.url} alt={image.alt} width={image.width} height={image.height} loading="lazy" decoding="async" draggable={false} />
           </div>)}
         </div>
