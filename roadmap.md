@@ -1,9 +1,9 @@
 # Atualização: História na Prática
 
 ## Ajustes atuais do topo e carrossel
-- [ ] Substituir detalhes e botão da abertura pelo widget Hotmart; ajustar textos e tamanhos no celular.
-- [ ] Trocar a seção de oito aulas pelo carrossel “O QUE VAI RECEBER:” com os oito anexos em WebP e fundos alternados.
-- [ ] Conferir carregamento, movimento e apresentação em computador e celular, preservando a oferta e a página principal.
+- [x] Substituir detalhes e botão da abertura pelo widget Hotmart; ajustar textos e tamanhos no celular.
+- [x] Trocar a seção de oito aulas pelo carrossel “O QUE VAI RECEBER:” com os oito anexos em WebP sem perda e fundos alternados.
+- [x] Conferir 1280/393/320px sem rolagem horizontal, exclusividade em uma linha, oito imagens carregadas e carrossel em movimento, dois iframes com um script; 13 testes e build OK. Oferta e página principal preservadas. Aceite e recusa permanecem dependentes do contexto real Hotmart; falhas externas de rastreamento observadas.
 
 ## Simplificação atual do upsell
 - [x] Retirar cabeçalho do anexo, perguntas frequentes e comparação; destacar exclusividade numa caixa e preservar fundos alternados.
