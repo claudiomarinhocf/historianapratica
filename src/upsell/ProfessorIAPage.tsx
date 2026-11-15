@@ -1,4 +1,4 @@
-import { Check, Clock3, FileText, Gift, Layers3, Presentation, ShieldCheck } from 'lucide-react';
+import { Check, Clock3, FileText, Gift, Presentation, ShieldCheck } from 'lucide-react';
 import paymentFlags from '@/assets/bandeiras_pagamento.webp.asset.json';
 import heroImage from '@/assets/hero_professor_com_ia_v2.webp.asset.json';
 import { HotmartSalesFunnel } from './HotmartSalesFunnel';
