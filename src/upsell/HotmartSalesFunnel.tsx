@@ -37,9 +37,9 @@ function loadOfficialScript() {
 }
 
 /** The official library owns the funnel's payment actions and iframe contents. */
-export function HotmartSalesFunnel({ placement = 'offer' }: { placement?: 'offer' | 'lessons' }) {
-  const containerId = placement === 'lessons' ? 'hotmart-sales-funnel-lessons' : 'hotmart-sales-funnel';
-  const wrapperId = placement === 'lessons' ? 'hotmart-upsell-lessons' : 'hotmart-upsell';
+export function HotmartSalesFunnel({ placement = 'offer' }: { placement?: 'offer' | 'lessons' | 'hero' }) {
+  const containerId = placement === 'offer' ? 'hotmart-sales-funnel' : `hotmart-sales-funnel-${placement}`;
+  const wrapperId = placement === 'offer' ? 'hotmart-upsell' : `hotmart-upsell-${placement}`;
   const container = useRef<HTMLDivElement>(null);
   const initialized = useRef(false);
   const [failed, setFailed] = useState(false);

@@ -1,9 +1,9 @@
-import { ArrowDown, BookOpen, Check, Clock3, FileText, Gift, Layers3, Presentation, ShieldCheck } from 'lucide-react';
+import { Check, Clock3, FileText, Gift, Layers3, Presentation, ShieldCheck } from 'lucide-react';
 import paymentFlags from '@/assets/bandeiras_pagamento.webp.asset.json';
-import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero_professor_com_ia_v2.webp.asset.json';
 import { HotmartSalesFunnel } from './HotmartSalesFunnel';
-import { UPSELL, formatPrice, lessons } from './content';
+import { UPSELL, formatPrice } from './content';
+import { UpsellAulasCarousel } from './UpsellAulasCarousel';
 
 const benefits = [
   { icon: Clock3, title: 'Economize tempo no planejamento', text: 'Aprenda a utilizar IA como apoio à organização do trabalho docente.' },
@@ -13,15 +13,10 @@ const benefits = [
 ];
 
 export default function ProfessorIAPage() {
-  const scrollToOffer = () => {
-    const widget = document.getElementById('hotmart-upsell');
-    widget?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'center' });
-    widget?.focus({ preventScroll: true });
-  };
   return <div className="ia-page">
     <div className="ia-alert" role="alert">
       <p className="ia-alert-label">⚠️ ATENÇÃO: NÃO FECHE ESTA PÁGINA</p>
-      <p className="ia-alert-message">Sua compra está garantida! Conheça esta oferta especial antes de continuar.</p>
+      <p className="ia-alert-message">Conheça esta oferta especial antes de continuar.</p>
     </div>
     <div className="ia-progress-block">
       <p className="ia-progress-text">Você está na etapa final da sua experiência...</p>
@@ -33,10 +28,9 @@ export default function ProfessorIAPage() {
         <div className="ia-wrap ia-centered">
           <p className="ia-product-name">EXCLUSIVO PARA QUEM ADQUIRIU O HISTÓRIA NA PRÁTICA</p>
           <h1>E se você pudesse <em>criar suas próprias aulas</em> como as do História na Prática?</h1>
-          <p className="ia-lead">Com o Professor de História com IA, descubra como utilizar a inteligência artificial para desenvolver apresentações, atividades, avaliações e recursos visuais personalizados, seguindo um passo a passo prático.</p>
+          <HotmartSalesFunnel placement="hero" />
+          <p className="ia-lead">Com o Professor de História com IA, aprenda, passo a passo, a criar apresentações, atividades, avaliações e recursos visuais personalizados usando inteligência artificial.</p>
           <div className="ia-hero-image"><img src={heroImage.url} width={1000} height={1000} alt="Mockup do e-book Professor de História com IA com as aulas do material" loading="eager" fetchPriority="high" decoding="async" /></div>
-          <div className="ia-opening-details"><span><BookOpen aria-hidden="true" /> E-book ilustrado em PDF</span><span>8 aulas práticas</span></div>
-          <Button variant="ghost" className="ia-jump" onClick={scrollToOffer}>Ver a oferta complementar <ArrowDown aria-hidden="true" /></Button>
         </div>
       </section>
 
@@ -46,11 +40,7 @@ export default function ProfessorIAPage() {
       </div></section>
 
 
-      <section className="ia-section ia-lessons-section"><div className="ia-wrap">
-        <div className="ia-section-heading"><p className="ia-section-label">DO PRIMEIRO COMANDO À AULA COMPLETA</p><h2>8 aulas para você começar a utilizar IA no ensino de História</h2></div>
-        <div className="ia-lessons">{lessons.map(([title, text], index) => <article className="ia-lesson" key={title}><span className="ia-lesson-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><div><h3><span>Aula {index + 1} — </span>{title}</h3><p>{text}</p></div></article>)}</div>
-        <HotmartSalesFunnel placement="lessons" />
-      </div></section>
+      <UpsellAulasCarousel />
 
       <section className="ia-section ia-offer"><div className="ia-wrap ia-centered">
         <p className="ia-eyebrow">COMPLEMENTE SEU PLANEJAMENTO</p><h2>Adicione agora o Professor de História com IA à sua experiência!</h2>

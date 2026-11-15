@@ -15,12 +15,12 @@ describe('Official Hotmart sales funnel', () => {
     const { HotmartSalesFunnel } = await import('./HotmartSalesFunnel');
     const mount = vi.fn();
     const init = vi.fn(() => ({ mount }));
-    render(<StrictMode><HotmartSalesFunnel placement="lessons" /><HotmartSalesFunnel /></StrictMode>);
+    render(<StrictMode><HotmartSalesFunnel placement="hero" /><HotmartSalesFunnel /></StrictMode>);
     await waitFor(() => expect(document.querySelectorAll(`script[src="${url}"]`)).toHaveLength(1));
     window.checkoutElements = { init };
     document.querySelector(`script[src="${url}"]`)?.dispatchEvent(new Event('load'));
     await waitFor(() => expect(mount).toHaveBeenCalledTimes(2));
-    expect(mount).toHaveBeenCalledWith('#hotmart-sales-funnel-lessons');
+    expect(mount).toHaveBeenCalledWith('#hotmart-sales-funnel-hero');
     expect(mount).toHaveBeenCalledWith('#hotmart-sales-funnel');
     expect(init).toHaveBeenNthCalledWith(1, 'salesFunnel');
     expect(init).toHaveBeenNthCalledWith(2, 'salesFunnel');
