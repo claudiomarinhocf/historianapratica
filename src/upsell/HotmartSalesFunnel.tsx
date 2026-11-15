@@ -37,7 +37,9 @@ function loadOfficialScript() {
 }
 
 /** The official library owns the funnel's payment actions and iframe contents. */
-export function HotmartSalesFunnel() {
+export function HotmartSalesFunnel({ placement = 'offer' }: { placement?: 'offer' | 'lessons' }) {
+  const containerId = placement === 'lessons' ? 'hotmart-sales-funnel-lessons' : 'hotmart-sales-funnel';
+  const wrapperId = placement === 'lessons' ? 'hotmart-upsell-lessons' : 'hotmart-upsell';
   const container = useRef<HTMLDivElement>(null);
   const initialized = useRef(false);
   const [failed, setFailed] = useState(false);
@@ -54,15 +56,15 @@ export function HotmartSalesFunnel() {
       if (!checkoutElements) throw new Error('Hotmart initialization unavailable');
       // The vendor also auto-detects this ID; do not mount twice if it got here first.
       if (!host.hasChildNodes()) {
-        checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+        checkoutElements.init('salesFunnel').mount(`#${containerId}`);
       }
       initialized.current = true;
     }).catch(() => { if (!cancelled) setFailed(true); });
     return () => { cancelled = true; };
-  }, []);
+  }, [containerId]);
 
-  return <div id="hotmart-upsell" className="ia-widget ia-sales-funnel" tabIndex={-1} aria-label="Oferta complementar Hotmart">
-    <div id="hotmart-sales-funnel" ref={container} />
+  return <div id={wrapperId} className="ia-widget ia-sales-funnel" tabIndex={-1} aria-label="Oferta complementar Hotmart">
+    <div id={containerId} ref={container} />
     {failed && <p className="ia-widget-error" role="alert">Não foi possível carregar a oferta da Hotmart. Atualize a página para tentar novamente.</p>}
   </div>;
 }

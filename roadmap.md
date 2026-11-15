@@ -1,5 +1,10 @@
 # Atualização: História na Prática
 
+## Simplificação atual do upsell
+- [x] Retirar cabeçalho do anexo, perguntas frequentes e comparação; destacar exclusividade numa caixa e preservar fundos alternados.
+- [x] Acrescentar widget oficial ao final das oito aulas, mantendo o widget na oferta e um único carregamento do script.
+- [ ] Conferir testes, computador e celular; transação financeira continua dependendo de compra real Hotmart.
+
 ## Compactação visual do upsell
 - [x] Reduzir espaço acima do nome para 28px no computador e 20px no celular; remover a etapa de apresentação e alternar fundos.
 - [x] Remover botão de pausa do carrossel, mantendo movimento automático e proteção para movimento reduzido; ajustar espaçamentos e tamanhos no celular.
