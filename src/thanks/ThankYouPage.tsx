@@ -1,17 +1,14 @@
-import { BookOpen, Check, CircleCheck, Landmark, Mail, FolderOpen, GraduationCap, LifeBuoy } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { BookOpen, CircleCheck, Landmark, Mail, FolderOpen, GraduationCap, LifeBuoy } from 'lucide-react';
 import productImage from '@/assets/historia_pacote_completo.webp.asset.json';
-import { getThankYouState, THANKS } from './content';
+import { THANKS } from './content';
 
 const steps = [
   { icon: Mail, title: 'Confira seu e-mail', text: 'Verifique a caixa de entrada do e-mail utilizado na compra. Confira também as pastas de spam e promoções.' },
   { icon: FolderOpen, title: 'Acesse a área de entrega', text: 'Siga as instruções enviadas pela Hotmart para acessar os materiais adquiridos.' },
   { icon: GraduationCap, title: 'Comece a utilizar', text: 'Explore os slides, atividades, mapas mentais e planos de aula e organize suas próximas aulas!' },
 ];
-const materials = ['+300 slides de História', '+60 atividades de História', '+30 mapas mentais', '+30 planos de aula', 'Guia de Planejamento Anual de História'];
 
 export default function ThankYouPage() {
-  const { deliveryUrl } = getThankYouState({});
   return (
     <div className="thanks-page">
       <header className="thanks-brand" aria-label="História na Prática">
@@ -37,16 +34,6 @@ export default function ThankYouPage() {
                 </li>
               ))}
             </ol>
-          </div>
-        </section>
-        <section className="thanks-summary" aria-labelledby="thanks-summary-title">
-          <div className="thanks-inner">
-            <h2 id="thanks-summary-title">O que você encontra no História na Prática</h2>
-            <ul className="thanks-materials">{materials.map(material => <li key={material}><Check aria-hidden="true" /><span>{material}</span></li>)}</ul>
-            <div className="thanks-action">
-              {deliveryUrl ? <Button asChild className="thanks-button"><a href={deliveryUrl}>ACESSAR MEUS MATERIAIS 📚</a></Button> : <Button className="thanks-button" disabled aria-describedby="thanks-access-note">ACESSAR MEUS MATERIAIS 📚</Button>}
-              {!deliveryUrl && <p id="thanks-access-note">Para acessar seus materiais, siga as instruções enviadas pela Hotmart ao seu e-mail.</p>}
-            </div>
           </div>
         </section>
         <section className="thanks-support" aria-labelledby="thanks-support-title">
