@@ -21,7 +21,7 @@
 .ia-page .ia-eyebrow { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 10px; font-weight: 700; color: var(--history-terracotta); line-height: 1.6; }
 .ia-page .ia-eyebrow svg { width: 17px; height: 17px; flex-shrink: 0; }
 .ia-page .ia-product-name { display: inline-block; max-width: 100%; padding: 9px 16px; border-radius: 16px; background: color-mix(in oklab, var(--history-ink) 10%, var(--history-ivory)); font-size: 15px; line-height: 1.5; color: var(--ia-ink); font-weight: 700; margin: 0 0 16px; text-wrap: balance; }
-.ia-page h1 { max-width: 880px; margin-inline: auto; font-weight: 800; font-size: 28px; line-height: 1.25; color: var(--ia-ink); }
+.ia-page h1 { max-width: 880px; margin-inline: auto; font-weight: 800; font-size: 26px; line-height: 1.25; color: var(--ia-ink); }
 .ia-page h1 em { color: var(--history-deep-green); font-style: normal; }
 .ia-page .ia-lead { max-width: 760px; margin: 20px auto 0; font-size: 14px; line-height: 1.8; color: var(--ia-muted); }
 .ia-page .ia-opening-details { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 20px; margin-top: 24px; font-size: 12px; }
@@ -105,8 +105,8 @@
 .ia-page .ia-guarantee p strong { color: var(--ia-ink); }
 .ia-page .ia-widget { max-width: 680px; margin-inline: auto; scroll-margin-block: 30px; }
 .ia-page .ia-sales-funnel { width: 100%; min-width: 0; margin-top: 18px; }
-.ia-page :is(#hotmart-sales-funnel, #hotmart-sales-funnel-lessons) { width: 100%; min-width: 0; }
-.ia-page :is(#hotmart-sales-funnel, #hotmart-sales-funnel-lessons) iframe { min-width: 0 !important; max-width: 100%; }
+.ia-page :is(#hotmart-sales-funnel, #hotmart-sales-funnel-lessons, #hotmart-sales-funnel-hero) { width: 100%; min-width: 0; }
+.ia-page :is(#hotmart-sales-funnel, #hotmart-sales-funnel-lessons, #hotmart-sales-funnel-hero) iframe { min-width: 0 !important; max-width: 100%; }
 .ia-page .ia-widget-error { font-size: 12px; line-height: 1.6; color: var(--ia-muted); margin-block: 12px; }
 .ia-page .ia-widget-placeholder { padding: 28px 20px; border: 1px dashed var(--ia-border); border-radius: 8px; font-size: 11px; color: var(--ia-muted); background: var(--history-parchment); }
 .ia-page .ia-faq { background: var(--history-ivory); }
@@ -117,7 +117,8 @@
 .ia-page .ia-faq-trigger[data-state=open] svg { transform: rotate(180deg); }
 .ia-page .ia-faq-answer { font-size: 13px; line-height: 1.8; color: var(--ia-muted); padding-bottom: 18px; }
 @media (min-width: 640px) { .ia-page .ia-benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ia-page .ia-lessons { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ia-page .ia-comparison { grid-template-columns: minmax(0, 1fr) 50px minmax(0, 1fr); } }
-@media (min-width: 800px) { .ia-page .ia-opening { padding: 28px 0 40px; } .ia-page h1 { font-size: 40px; } .ia-page h2 { font-size: 30px; } .ia-page .ia-lead { font-size: 16px; } .ia-page .ia-product-grid { grid-template-columns: .8fr 1.2fr; gap: 60px; } .ia-page .ia-section { padding: 56px 0; } .ia-page .ia-benefit-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 800px) { .ia-page .ia-opening { padding: 28px 0 40px; } .ia-page h1 { font-size: 36px; } .ia-page h2 { font-size: 30px; } .ia-page .ia-lead { font-size: 16px; } .ia-page .ia-product-grid { grid-template-columns: .8fr 1.2fr; gap: 60px; } .ia-page .ia-section { padding: 56px 0; } .ia-page .ia-benefit-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 @media (max-width: 479px) { .ia-page .ia-header-note { display: none; } .ia-page .ia-wrap { width: calc(100% - 32px); } }
 @media (prefers-reduced-motion: reduce) { .ia-page *, .ia-page *::before, .ia-page *::after { transition: none !important; animation: none !important; } }
-@media (max-width: 479px) { .ia-page .ia-header .ia-wrap { min-height: 64px; } .ia-page .ia-section { padding: 32px 0; } .ia-page .ia-opening { padding: 20px 0 28px; } .ia-page h1 { font-size: 26px; text-wrap: balance; } .ia-page h2 { font-size: 22px; text-wrap: balance; } .ia-page .ia-lead { line-height: 1.65; margin-top: 16px; } .ia-page .ia-benefit { padding: 20px; } .ia-page .ia-offer-card { padding: 24px 18px; } .ia-page .ia-offer-features li { font-size: 13px; } .ia-page .ia-price { font-size: 48px; } .ia-page .ia-lesson { padding: 16px; gap: 12px; } }
+@media (max-width: 479px) { .ia-page .ia-header .ia-wrap { min-height: 64px; } .ia-page .ia-section { padding: 32px 0; } .ia-page .ia-opening { padding: 20px 0 28px; } .ia-page .ia-product-name { font-size: 9px; white-space: nowrap; padding: 9px 8px; } .ia-page h1 { font-size: 24px; text-wrap: balance; } .ia-page h2 { font-size: 22px; text-wrap: balance; } .ia-page .ia-lead { line-height: 1.65; margin-top: 16px; } .ia-page .ia-benefit { padding: 20px; } .ia-page .ia-offer-card { padding: 24px 18px; } .ia-page .ia-offer-features li { font-size: 13px; } .ia-page .ia-price { font-size: 48px; } .ia-page .ia-lesson { padding: 16px; gap: 12px; } }
+@media (max-width: 359px) { .ia-page .ia-product-name { font-size: 8px; } }
