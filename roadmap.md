@@ -3,7 +3,8 @@
 ## Página de Downsell
 - [x] Criar /downsell isolado, com oferta configurável de R$ 27,90 e o mesmo e-book do Upsell; placeholder dedicado sem carregar o widget do Upsell.
 - [x] Conferir acesso direto e recarga, parâmetros, imagens, preço e layout em 1280/393/320px sem overflow; 28 testes aprovados e build OK. Principal e Upsell preservados; avisos de fetch dos scripts externos observados. Downsell mais curto, sem carrossel ou botões fictícios.
-- [ ] Receber configuração oficial da etapa Downsell e confirmar R$ 27,90 na Hotmart antes da publicação.
+- [x] Reordenar imagem e texto, remover título comercial do card, animar preço e instalar uma instância do widget oficial fornecido para Downsell; 13 testes e build OK, 1280/393/320px sem overflow, um script/container/iframe e movimento reduzido respeitado. Hotmart exige compra em andamento no acesso direto.
+- [ ] Confirmar R$ 27,90 e validar aceite/recusa no contexto real da etapa Downsell na Hotmart antes da publicação.
 
 ## Ajustes atuais do topo e carrossel
 - [x] Substituir detalhes e botão da abertura pelo widget Hotmart; ajustar textos e tamanhos no celular.
