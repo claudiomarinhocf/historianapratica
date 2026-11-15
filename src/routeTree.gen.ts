@@ -11,7 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as DownsellRouteImport } from './routes/downsell'
-import { Route as ProfessorDeHistoriaComIaRouteImport } from './routes/professor-de-historia-com-ia'
+import { Route as ObrigadoRouteImport } from './routes/obrigado'
 import { Route as UpsellRouteImport } from './routes/upsell'
 
 const IndexRoute = IndexRouteImport.update({
@@ -24,12 +24,11 @@ const DownsellRoute = DownsellRouteImport.update({
   path: '/downsell',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProfessorDeHistoriaComIaRoute =
-  ProfessorDeHistoriaComIaRouteImport.update({
-    id: '/professor-de-historia-com-ia',
-    path: '/professor-de-historia-com-ia',
-    getParentRoute: () => rootRouteImport,
-  } as any)
+const ObrigadoRoute = ObrigadoRouteImport.update({
+  id: '/obrigado',
+  path: '/obrigado',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const UpsellRoute = UpsellRouteImport.update({
   id: '/upsell',
   path: '/upsell',
@@ -39,35 +38,34 @@ const UpsellRoute = UpsellRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/downsell': typeof DownsellRoute
-  '/professor-de-historia-com-ia': typeof ProfessorDeHistoriaComIaRoute
+  '/obrigado': typeof ObrigadoRoute
   '/upsell': typeof UpsellRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/downsell': typeof DownsellRoute
-  '/professor-de-historia-com-ia': typeof ProfessorDeHistoriaComIaRoute
+  '/obrigado': typeof ObrigadoRoute
   '/upsell': typeof UpsellRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/downsell': typeof DownsellRoute
-  '/professor-de-historia-com-ia': typeof ProfessorDeHistoriaComIaRoute
+  '/obrigado': typeof ObrigadoRoute
   '/upsell': typeof UpsellRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/downsell' | '/professor-de-historia-com-ia' | '/upsell'
+  fullPaths: '/' | '/downsell' | '/obrigado' | '/upsell'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/downsell' | '/professor-de-historia-com-ia' | '/upsell'
-  id:
-    '__root__' | '/' | '/downsell' | '/professor-de-historia-com-ia' | '/upsell'
+  to: '/' | '/downsell' | '/obrigado' | '/upsell'
+  id: '__root__' | '/' | '/downsell' | '/obrigado' | '/upsell'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DownsellRoute: typeof DownsellRoute
-  ProfessorDeHistoriaComIaRoute: typeof ProfessorDeHistoriaComIaRoute
+  ObrigadoRoute: typeof ObrigadoRoute
   UpsellRoute: typeof UpsellRoute
 }
 
@@ -87,11 +85,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DownsellRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/professor-de-historia-com-ia': {
-      id: '/professor-de-historia-com-ia'
-      path: '/professor-de-historia-com-ia'
-      fullPath: '/professor-de-historia-com-ia'
-      preLoaderRoute: typeof ProfessorDeHistoriaComIaRouteImport
+    '/obrigado': {
+      id: '/obrigado'
+      path: '/obrigado'
+      fullPath: '/obrigado'
+      preLoaderRoute: typeof ObrigadoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/upsell': {
@@ -107,7 +105,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DownsellRoute: DownsellRoute,
-  ProfessorDeHistoriaComIaRoute: ProfessorDeHistoriaComIaRoute,
+  ObrigadoRoute: ObrigadoRoute,
   UpsellRoute: UpsellRoute,
 }
 export const routeTree = rootRouteImport

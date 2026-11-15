@@ -7,6 +7,14 @@ import { routeTree } from "@/routeTree.gen";
 // Match routes without running loaders or rendering: loaders may need a server or
 // network the test run lacks, and jsdom never loads the stylesheets React waits on.
 describe("App routing", () => {
+  it.each(['/upsell', '/downsell', '/obrigado'])('matches the requested funnel page %s', (path) => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+    expect(router.matchRoutes(path).at(-1)?.routeId).toBe(path);
+  });
+  it('no longer matches the deleted legacy upsell address', () => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+    expect(router.matchRoutes('/professor-de-historia-com-ia').at(-1)?.routeId).toBe(rootRouteId);
+  });
   it("matches a page for / instead of falling back to not found", () => {
     const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
 
