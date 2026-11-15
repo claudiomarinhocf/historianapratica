@@ -1,0 +1,30 @@
+/* Only the downsell leaf loads these scoped layout rules. */
+.ds-page { min-height: 100vh; position: relative; background: var(--ds-surface); color: var(--ds-text); font-family: var(--font-sans); letter-spacing: 0; }
+.ds-page * { box-sizing: border-box; }
+.ds-alert { background: var(--ds-alert); color: var(--ds-alert-text); padding: 11px 16px; text-align: center; }
+.ds-alert p { font-size: 14px; font-weight: 800; line-height: 1.4; text-wrap: balance; }
+.ds-alert small { display: block; margin-top: 3px; font-size: 12px; line-height: 1.5; }
+.ds-wrap { width: min(100% - 32px, 780px); margin-inline: auto; }
+.ds-opening { text-align: center; padding: 26px 0 22px; }
+.ds-seal { display: inline-block; padding: 7px 14px; border: 1px solid var(--ds-gold); border-radius: 8px; background: var(--ds-card); color: var(--ds-ink); font-size: 11px; line-height: 1.4; font-weight: 700; }
+.ds-page h1 { color: var(--ds-ink); font-size: 32px; line-height: 1.3; font-weight: 800; margin: 16px auto 12px; max-width: 760px; }
+.ds-page h1 em { color: var(--ds-price); font-style: normal; }
+.ds-subtitle { max-width: 660px; margin-inline: auto; font-size: 14px; line-height: 1.7; color: var(--ds-muted); }
+.ds-hero { display: block; width: min(100%, 300px); height: auto; aspect-ratio: 1; object-fit: contain; margin: 18px auto 0; }
+.ds-offer { padding: 0 0 32px; }
+.ds-card { width: min(100%, 520px); margin-inline: auto; padding: 24px; border: 2px solid var(--ds-price); border-radius: 18px; background: var(--ds-card); box-shadow: var(--ds-shadow); text-align: center; }
+.ds-card h2 { font-size: 22px; line-height: 1.35; font-weight: 800; color: var(--ds-ink); text-wrap: balance; }
+.ds-product { display: flex; gap: 14px; align-items: center; justify-content: center; margin: 16px auto 12px; }
+.ds-product img { width: 94px; height: 94px; object-fit: contain; flex-shrink: 0; }
+.ds-product h3 { max-width: 235px; font-size: 18px; line-height: 1.4; font-weight: 700; text-align: left; color: var(--ds-ink); }
+.ds-old { color: var(--ds-muted); font-size: 18px; line-height: 1.5; font-weight: 600; }
+.ds-price { color: var(--ds-price); font-size: 54px; line-height: 1.15; font-weight: 800; margin-top: 2px; }
+.ds-payment { font-size: 12px; margin-top: 4px; color: var(--ds-muted); }
+.ds-widget { margin-top: 18px; padding: 18px 14px; border: 1px dashed var(--ds-border); border-radius: 8px; background: var(--ds-surface); color: var(--ds-muted); }
+.ds-widget p { font-size: 10px; font-weight: 600; line-height: 1.6; overflow-wrap: anywhere; }
+.ds-widget small { display: block; font-size: 11px; line-height: 1.6; margin-top: 5px; }
+.ds-features { display: grid; gap: 9px; text-align: left; margin: 20px auto 0; max-width: 350px; }
+.ds-features li { display: flex; align-items: center; gap: 9px; font-size: 13px; line-height: 1.5; }
+.ds-features svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--ds-price); }
+.ds-same { padding-top: 14px; margin-top: 18px; border-top: 1px solid var(--ds-border); font-size: 12px; line-height: 1.6; color: var(--ds-ink); font-weight: 600; }
+@media (max-width: 479px) { .ds-alert p { font-size: 12px; } .ds-alert small { font-size: 11px; } .ds-opening { padding-top: 22px; } .ds-page h1 { font-size: 24px; } .ds-subtitle { font-size: 13px; line-height: 1.6; } .ds-hero { width: min(100%, 240px); margin-top: 12px; } .ds-card { padding: 20px 16px; } .ds-card h2 { font-size: 20px; } .ds-product { gap: 10px; } .ds-product h3 { font-size: 16px; } .ds-product img { width: 80px; height: 80px; } .ds-price { font-size: 48px; } }

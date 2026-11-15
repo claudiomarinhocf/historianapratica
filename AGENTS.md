@@ -17,6 +17,7 @@
 - Preload only the current hero image in the sales route head, matching its CDN pointer and eager/high-priority image, to avoid duplicate downloads or competition from below-fold media.
 - Exception to the lossless rule: the 1672x941 slide illustrations compress to ~6x their PNG size as lossless WebP, so encode those as high-quality lossy WebP (q85) with no resizing, and keep transparency intact where the source has it.
 - Keep the post-purchase upsell in its own route and scoped stylesheet, reusing existing tokens and UI controls without changing the main sales page.
+- Keep downsell content and styles isolated under its own route, deriving product details and the previous price from upsell data; render only a dedicated inert placeholder until the official downsell configuration is supplied, to avoid reusing the wrong payment stage.
 - Use HotmartSalesFunnel for the supplied official funnel integration: share one script-load promise, mount after hydration/load with cancellation and duplicate guards, and leave acceptance/refusal to Hotmart to preserve its post-purchase context.
 - Give each requested Hotmart placement a distinct container ID while sharing the script loader; this prevents duplicate DOM IDs and keeps the official widget at the opening and offer placements.
 - Initialize the upsell lesson carousel's framework-neutral Embla engine in a React effect, not the React wrapper, to avoid a separate cached React hook dispatcher; use continuous auto-scroll with eight CDN pointers and respect reduced motion, visibility and interaction.

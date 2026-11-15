@@ -258,3 +258,6 @@ body { background-color: var(--history-parchment); color: var(--history-graphite
 .history-page .hero-benefits li { display: flex; align-items: flex-start; gap: .6rem; font-size: .92rem; color: #25282D; line-height: 1.4; }
 .history-page .hero-benefits-icon { flex-shrink: 0; width: 1.25rem; height: 1.25rem; padding: .2rem; border-radius: 999px; background: #E8F8F0; color: #16A34A; stroke-width: 3; margin-top: .05rem; }
 .history-page #hero-image-container img { max-width: 700px; }
+
+/* Dedicated downsell roles; no existing page selectors are changed. */
+.ds-page { --ds-alert: #E7000C; --ds-alert-text: var(--color-white); --ds-price: var(--history-deep-green); --ds-surface: var(--history-parchment); --ds-card: var(--history-ivory); --ds-ink: var(--history-ink); --ds-text: var(--history-graphite); --ds-gold: var(--history-gold); --ds-border: color-mix(in oklab, var(--history-ink) 18%, var(--history-ivory)); --ds-muted: color-mix(in oklab, var(--history-graphite) 78%, var(--history-ivory)); --ds-shadow: 0 16px 40px -24px color-mix(in oklab, var(--history-ink) 38%, transparent); }
