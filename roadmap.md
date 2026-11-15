@@ -1,8 +1,8 @@
 # Atualização: História na Prática
 
 ## Página de agradecimento
-- [ ] Criar /obrigado com mensagem geral, imagem existente, instruções, resumo e suporte, sem confirmar pagamentos ou liberar arquivos.
-- [ ] Excluir /professor-de-historia-com-ia e conferir as quatro páginas em computador e celular.
+- [x] Criar /obrigado com mensagem geral, imagem existente, instruções, resumo e suporte, sem confirmar pagamentos ou liberar arquivos; botão desativado sem link oficial.
+- [x] Excluir /professor-de-historia-com-ia (404) e conferir as quatro páginas; 11 testes aprovados, build OK e /obrigado em 1280/393/320px sem overflow. Avisos externos de fetch persistem nas páginas existentes.
 - [ ] Ativar acesso aos materiais quando o usuário fornecer o link oficial de entrega; configurar destino final na Hotmart após publicação.
 
 ## Página de Downsell
