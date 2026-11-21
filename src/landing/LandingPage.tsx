@@ -21,7 +21,7 @@ import slideHistoria5 from "@/assets/slide_historia_05.webp.asset.json";
 import slideHistoria6 from "@/assets/slide_historia_06.webp.asset.json";
 import slideHistoria7 from "@/assets/slide_historia_07.webp.asset.json";
 import slideHistoria8 from "@/assets/slide_historia_08.webp.asset.json";
-import produtoBasicoImg from "@/assets/produto_historia_basico.webp.asset.json";
+import produtoBasicoImg from "@/assets/produto_historia_basico_v2.webp.asset.json";
 import pagamentosImg from "@/assets/pagamentos_historia.webp.asset.json";
 import pacoteCompletoImg from "@/assets/historia_pacote_completo.webp.asset.json";
 import produtoHistoriaImg from "@/assets/produto_historia_pratica_mockup.webp.asset.json";
@@ -1752,10 +1752,10 @@ export default function Q1() {
                   c.jsxs("div", {
                     className: "pc-body",
                     children: [
-              c.jsx("img", { src: produtoBasicoImg.url, alt: "Pacote Básico História na Prática", width: 700, height: 472, loading: "lazy", decoding: "async", className: "pc-img" }),
+              c.jsx("img", { src: produtoBasicoImg.url, alt: "Pacote Básico História na Prática", width: 500, height: 333, loading: "lazy", decoding: "async", className: "pc-img" }),
                       c.jsx("ul", {
                         className: "pc-list",
-                        children: ["+150 Slides de História", "Prontos para projetar e 100% editáveis"].map((t) =>
+                        children: ["+300 Slides de História", "Prontos para projetar e 100% editáveis"].map((t) =>
                           c.jsxs("li", { className: "pc-item", children: [c.jsx("span", { className: "pc-check", children: c.jsx(tn, { className: "w-3.5 h-3.5 stroke-[3]" }) }), c.jsx("span", { children: t })] }, t),
                         ),
                       }),
